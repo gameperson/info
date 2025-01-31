@@ -3,15 +3,16 @@
 
 ## Abstract
 
-Artificial intelligence (AI) is reshaping how people interact with data and ideas, making knowledge more accessible than ever before. Yet, for many, AI remains unfamiliar or even unsettling.
+Artificial intelligence (AI) is reshaping how people interact with data and ideas, making knowledge more accessible than ever before. Yet, for many, AI remains unfamiliar or even unsettling, leaving them out of the benefits of using AI for themselves.
 
-This article explores how anyone can effectively engage with AI as a tool for learning, critical thinking, and discovery. By structuring interactions with AI through thoughtful questioning and exploration, complex concepts can become clearer, new connections can emerge, and understanding can deepen in unexpected ways.
+This article explores how anyone can effectively engage with AI as a tool for learning, critical thinking, and discovery. By structuring interactions with AI through thoughtful questioning and exploration, complex concepts will become clearer, new connections will emerge, and understanding can deepen in unexpected ways.
 
-Developing confidence in using AI, not as a replacement reasoning, as a thought partner to support curiosity and open new pathways for finding useful and accurate information.
+Developing confidence in using AI -- not as a replacement for reasoning, but as a thought partner -- can open new pathways for finding reliable information, recognizing inconsistencies, and refininrefining undetstnding within broader foundation of 
+factual information.
 
-This arctical was written in collaboration with Scholar GPT, where we take a practical look at how different types of questions shape AI’s responses and how refining prompts can enhance clarity and insight.
+This arctical was written in collaboration with Scholar GPT, where we take a practical look at how different types of questions shape AI’s responses. By examining how AI analyzes information, cross-references sources, and adjusts to more precise queries, we’ll explore how refining prompts can enhance clarity and insight.
 
-Using an example from mathematics, we will demonstrate how AI can help make even the most abstract ideas more approachable through informed querry with iteration and refinement.
+Using an example from mathematics, we'll demonstrate how AI can help make even the most abstract ideas more approachable -- not only by providing information, but also by testing assumptions, uncovering gaps in reasoning, and encouraging deeper inquiry through iteration and refinement.
 
 ---
 
