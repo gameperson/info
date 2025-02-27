@@ -1,0 +1,110 @@
+/* style.css - Default Light Theme */
+
+/* Basic Reset and Global Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Fallback font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Dark text */
+}
+
+/* Header Styles */
+.site-header {
+    background-color: #e0e0e0;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Navigation Styles */
+.site-nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.site-nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+}
+
+.site-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+.site-main {
+    padding: 2rem;
+    max-width: 800px; /* Limit content width for readability */
+    margin: 0 auto; /* Center content */
+}
+
+.content-section {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.content-paragraph {
+    margin-bottom: 1rem;
+}
+
+/* Article Preview Styles */
+.article-preview {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.article-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.article-excerpt {
+    margin-bottom: 1rem;
+}
+
+.article-link {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.article-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #e0e0e0;
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.footer-text {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .site-nav li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
