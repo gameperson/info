@@ -1,0 +1,19 @@
+/* dark-style.css - Dark Theme */
+
+body {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+}
+
+.site-header, .site-footer {
+    background-color: #333;
+    border-color: #555;
+}
+
+.site-nav a {
+    color: #89cff0; /* Dark theme link color */
+}
+
+.article-preview {
+    border-color: #555;
+}
