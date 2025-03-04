@@ -3,58 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A simple index of pages with tags and search functionality">
-    <meta name="keywords" content="HTML, index, pages, tags, search">
-    <meta name="author" content="Your Name">
     <title>Site Index</title>
-    <style>
+    <link rel="stylesheet" href="../style.css">
+    
+    <style> /* Default styles if no external stylesheet is found */
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
             line-height: 1.6;
-            background-color: #2e2e2e;
-            color: #e0e0e0;
         }
-        h1 {
-            font-size: 2em;
-            color: #ffffff;
+        header {
+            background-color: #f0f0f0;
+            padding: 1rem;
+            text-align: center;
         }
-        ul {
-            list-style-type: none;
+        nav ul {
+            list-style: none;
             padding: 0;
         }
-        li {
-            margin: 10px 0;
+        nav li {
+            display: inline;
+            margin: 0 1rem;
         }
-        a {
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        /* Styles for the Index Page */
+        .index-title {
+            text-align: center;
+            font-size: 2.5em; /* Adjust as needed */
+            margin-bottom: 0.5em;
+            color: #e0e0e0; /* Dark gray, adjust as needed */
+        }
+        .index-subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 1em;
+            color: #666; /* Lighter gray, adjust as needed */
+        }
+        .index-list {
+            list-style: none;
+            padding: 0;
+            max-width: 800px; /* Adjust as needed */
+            margin: 0 auto;
+        }
+        .index-list li {
+            margin-bottom: 1em;
+            padding: 1em;
+            border: 1px solid #ddd; /* Light gray border, adjust as needed */
+            border-radius: 5px;
+        }
+        .index-list li a {
             text-decoration: none;
-            color: #81c7ff;
+            color: #007bff; /* Blue link color, adjust as needed */    
         }
-        a:hover {
+        .index-list li a:hover {
             text-decoration: underline;
         }
-        .search-bar {
-            margin-bottom: 20px;
-        }
-        input[type="text"] {
-            padding: 10px;
-            width: 80%;
-            max-width: 400px;
-            border: 1px solid #444;
-            border-radius: 4px;
-            background-color: #444;
-            color: #e0e0e0;
-        }
-        button {
-            padding: 10px 15px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
+        .index-list li .tags {
+            font-size: 0.9em;
+            color: #888; /* Gray tag color, adjust as needed */
+            margin-top: 0.5em;
+            display: block;
         }
         .disclaimer {
             background-color: #202020;
@@ -69,78 +83,91 @@
             color: red;
             text-decoration: underline;
         }
-        .button-bar {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            padding: 10px;
-            background-color: #444;
-        }
-        .footer {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #1e1e1e;
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
             text-align: center;
         }
-    </style>
-</head>
-<body>
-    <h1>Site Index</h1>
-    <!-- 
-    <div class="search-bar">
-        <input type="text" id="search" placeholder="Search pages by keyword...">
-        <button onclick="searchPages()">Search</button>
-    </div>
-    -->
-
-    <ul id="page-list">
-        <li><a href="./pages/consumer-internet-security.html" data-tags="intenet safety, web security, malware, phishing">Internet Security Basics</a></li>
-        <li><a href="./pages/President-over-Government.html" data-tags="government, president, congress, supreme court, house of represetatives, Senate">Presidency over all</a></li>
-        <li><a href="./pages/interpreting-technical-information.html" data-tags="data, statistics, analysis, scientific">Undestanding Technical Information</a></li>
-        <li><a href="./pages/understanding-propaganda-intro.html" data-tags="propaganda, social, trends">Introduction to Porpaganda</a></li>
-        <li><a href="./pages/propaganda-old-and-new.html" data-tags="propaganda, social, trends">A History of Porpaganda</a></li>
-        <li><a href="./pages/Trolls-Lies-AI.html" data-tags="Russia’s War on Truth and Lies — And How to FIGHT Back">Trolls, Lies, and AI: Russia’s War on Truth and Lies — And How to FIGHT Back</a></li>
-        <li><a href="./pages/Reality-Shift.html" data-tags="Reality Shift: Navigating the Critical Threats">Reality Shift: Navigating the Critical Threats</a></li>
-        <!-- needs editing
-        <li><a href="./pages/using-scholar-GPT.html" data-tags="AI, research, using AI">A Using Scholar GPT</a></li>
-        -->
-    </ul>
-
-    <div class="disclaimer">
-        <p><strong>Disclaimer:</strong> This website is currently under development. The content, though acurate for the most part, has not been reviewed as carfuly as a full release. Some links may be broken or lead to incomplete or inaccurate content. We are working on this site so it will soon be finished, and the information will be confirmed and updated for our version 1. Please check back later for more.</p>
-        <p>Thank you</p>
-        <!--
-        <p>> If you notice any issues, please feel free to <a href="mailto:contact@yourwebsite.com">contact us</a>.</p>
-        -->
-    </div>
-
-    <!--
-    <div class="button-bar"
-        <button onclick="location.href='/pages/about.html'">About</button>
-        <button onclick="location.href='/pages/contact.html'">Contact</button>
-        <button onclick="location.href='/pages/services.html'">Services</button>
-        <button onclick="location.href='/pages/blog.html'">Blog</button>
-    </div>
-    -->
-
-    <div class="footer">
-        <sub>&copy; 2025 gameperson@github. All rights reserved.</sub>
-    </div>
-
-    <script>
-        function searchPages() {
-            const query = document.getElementById('search').value.toLowerCase();
-            const pages = document.querySelectorAll('#page-list li');
-
-            pages.forEach(page => {
-                const tags = page.querySelector('a').dataset.tags;
-                if (tags.includes(query)) {
-                    page.style.display = '';
-                } else {
-                    page.style.display = 'none';
-                }
-            });
+        img {
+            max-width: 100%;
+            height: auto;
         }
-    </script>
+    </style>
+    
+    <meta name="description" content="Site Index">
+    <meta name="keywords" content="HTML, index, pages, tags">
+    <meta name="authors" content="ChatGPT, Google Gemini and gameperson@github">
+    <meta property="og:title" content="Site Index">
+    <meta property="og:description" content="Site Index">
+    <meta property="og:url" content="https://gameperson.github.io/info/index.html">
+    <meta property="og:type" content="index">
+    <meta property="og:image" content="images/bulb.png">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:title" content="Site Index" />
+    <meta name="twitter:description" content="Site Index" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="images/bulb.png" />
+
+    <link rel="icon" href="images/bulb.ico" type="image/x-icon">
+    <link rel="icon" href="images/bulb.svg" type="image/svg+xml">
+    <link rel="icon" href="images/bulb.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/bulb.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/bulb.png">
+</head>
+
+<body>
+    <main>
+        <section id="index">
+            <h1 class="index-title">Digital Insights: Exploring Technology, Security, and the Future</h1>
+            <p class="index-subtitle">Articles by AI, edited by gameperson@github</p>   
+            <ul class="index-list" id="page-list">
+                <li><a href="./pages/Internet-Security.html" data-tags="intenet safety, web security, malware, phishing">Internet Security Basics</a></li>
+                <li><a href="./pages/President-over-Government.html" data-tags="government, president, congress, supreme court, house of represetatives, Senate">Presidency over all</a></li>
+                <li><a href="./pages/interpreting-technical-information.html" data-tags="data, statistics, analysis, scientific">Undestanding Technical Information</a></li>
+                <li><a href="./pages/understanding-propaganda-intro.html" data-tags="propaganda, social, trends">Introduction to Porpaganda</a></li>
+                <li><a href="./pages/propaganda-old-and-new.html" data-tags="propaganda, social, trends">A History of Porpaganda</a></li>
+                <li><a href="./pages/Trolls-Lies-AI.html" data-tags="Russia’s War on Truth and Lies — And How to FIGHT Back">Trolls, Lies, and AI: Russia’s War on Truth and Lies — And How to FIGHT Back</a></li>
+                <li><a href="./pages/Reality-Shift.html" data-tags="Reality Shift: Navigating the Critical Threats">Reality Shift: Navigating the Critical Threats</a></li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+                <p>Heavily AI leveraged research into the most important topics of the day</p>
+                <p>We create unique and informative content from deep dives into hot topics and current evcents.</p>
+            <h3>Our Team</h3>
+                <ul>
+                    <li>Authors: ChatGPT, Google Gemini</li>
+                    <li>Editor and Producer: gameperson@github</li>
+                </ul>
+        </section>
+    </main>
+
+    <footer>
+        <section id="disclaimer">
+            <div class="disclaimer">
+                <p><strong>Disclaimer:</strong> The content provided on this website is for informational and educational purposes only. It reflects the analysis and perspectives of ChatGPT, Google Gemini, and other sources edited and produced by gameperson@github. While we strive for accuracy, currency and reliability, the information presented may not always be up-to-date or comprehensive. The views expressed do not necessarily represent the opinions of all contributors or affiliated parties.</p>
+                <p>Much of this content is under development and will not necessarily be complete, accurate or representative of the finished articles. Your patience is appreciated.</p>
+                <p>Readers are always encouraged to conduct their own research and consult relevant sources before making any decisions based on any information provided. No matter our best efforts, we are not responsible for any errors or omissions, or for any actions taken as a result of this content.</p>
+                <p>This website may contain links to external websites for further information. We do not endorse or take responsibility for the content of these external sites.</p>
+                <p>The information on this site, especially regarding AI and any future technologies, is speculative and should be treated as such.</p>
+                <p>By using this website, you acknowledge and agree to this disclaimer.</p>
+                <p>Thank you</p>
+                <p> If you want to report any issues, please feel free to <a href="mailto:gameperson@gmail.com">contact us</a>.</p>
+            </div>
+        </section>
+        
+        <section id="footer">
+            <div class="footer-content">
+                <img src="images/bulb_18.png" alt="Your Bright Brain">
+                <p class="footer-text">&copy; 2025 gameperson@github</p>
+            </div>
+        </section>
+        
+    </footer>
 </body>
 </html>
