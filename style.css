@@ -44,6 +44,45 @@ body {
     text-decoration: underline;
 }
 
+/* Styles for the Index Page */
+.index-title {
+    text-align: center;
+    font-size: 2.5em; /* Adjust as needed */
+    margin-bottom: 0.5em;
+    color: #333; /* Dark gray, adjust as needed */
+}
+.index-subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: #666; /* Lighter gray, adjust as needed */
+}
+.index-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+}
+.index-list li {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #ddd; /* Light gray border, adjust as needed */
+    border-radius: 5px;
+}
+.index-list li a {
+    text-decoration: none;
+    color: #007bff; /* Blue link color, adjust as needed */    
+}
+.index-list li a:hover {
+    text-decoration: underline;
+}
+.index-list li .tags {
+    font-size: 0.9em;
+    color: #888; /* Gray tag color, adjust as needed */
+    margin-top: 0.5em;
+    display: block;
+}
+
 /* Main Content Styles */
 .site-main {
     padding: 2rem;
@@ -170,6 +209,16 @@ body {
     padding: 1rem;
     text-align: center;
     border-top: 1px solid #ccc;
+}
+
+.footer-content {
+  display: inline-flex; /* Use inline-flex for inline alignment */
+  align-items: center; /* Vertically align items */
+  gap: 30px; /* Add space between image and text */
+}
+
+.footer-image {
+  height: 20px; /* Adjust image height as needed */
 }
 
 .footer-text {
