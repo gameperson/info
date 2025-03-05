@@ -148,46 +148,20 @@ It’s also crucial to recognize subtle signs of scams, including emotional mani
 
 ## Glossary
 
-- **Algorithmic Bias:** Systematic and repeatable errors in a computer system that create unfair outcomes, such as privileging one arbitrary group of users over others.
-- **Antivirus Software:** A program designed to detect and remove malicious software from your device.
-- **Backup:** A copy of important files stored separately to protect against data loss.
-- **Data Breach:** An incident where sensitive information is accessed or stolen without permission, often on a massive scale due to big data storage.
-- **Deepfake:** AI-generated media, such as videos or audio recordings, that realistically mimic
-- **Encryption:** A method of converting information into a secure format that can only be accessed with a key or password.
-- **HTTPS:** A secure version of HTTP used to encrypt data sent between your browser and a website.
-- **Internet of Things (IoT):** Devices connected to the internet, like smart home gadgets, that can communicate and share data.
-- **Malware:** Malicious software, including viruses, ransomware, and spyware, that harms devices or steals data.
-- **Password Manager:** A tool that securely stores and generates strong passwords for your accounts.
-- **Phishing:** A scam where attackers trick people into revealing sensitive information by pretending to be a trusted entity.
-- **Two-Factor Authentication (2FA):** A security process requiring two forms of identification to access an account.
-- **Virtual Private Network (VPN):** A service that encrypts your internet connection and hides your IP address.
-- **Zero-Day Attack:** A cyberattack that exploits a software vulnerability before the developer can fix it.
- 
----
+* **Algorithmic Bias:** Systematic and repeatable errors in a computer system that create unfair outcomes, such as privileging one arbitrary group of users over others.
+* **Antivirus Software:** A program designed to detect and remove malicious software from your device.
+* **Backup:** A copy of important files stored separately to protect against data loss.
+* **Data Breach:** An incident where sensitive information is accessed or stolen without permission, often on a massive scale due to big data storage.
+* **Deepfake:** AI-generated media, such as videos or audio recordings, that realistically mimic
 
-## Further Reading
-
-Here are additional resources to expand your knowledge of internet security:
-
-1.  [StaySafeOnline.org](https://staysafeonline.org) - Tips for staying safe online from the National Cybersecurity Alliance.
-2.  [FTC Consumer Information](https://www.consumer.ftc.gov/topics/online-security) - Advice from the Federal Trade Commission on online security.
-3.  [Cybersecurity & Infrastructure Security Agency (CISA)](https://www.cisa.gov) - Official government resources on cybersecurity threats and best practices.
-4.  [Have I Been Pwned](https://haveibeenpwned.com) - Check if your email or accounts have been part of a data breach.
-5.  [Google Safety Center](https://safety.google) - Tools and tips for staying secure online.
-6.  [Microsoft Security Tips](https://www.microsoft.com/en-us/security/default.aspx) - Guidance on protecting devices and accounts.
-7.  [Krebs on Security](https://krebsonsecurity.com) - A blog featuring the latest news on cybersecurity.
-8.  [MIT Technology Review](https://www.technologyreview.com/) - In-depth articles on emerging cybersecurity threats, AI, and data privacy.
-9.  [Wired](https://www.wired.com/) - Excellent coverage of cybersecurity news, technology trends, and their societal impact.
-10. [The Record by Recorded Future](https://therecord.media/) - In-depth cybersecurity reporting and analysis, covering advanced threats and nation-state activity.
-11. [Dark Reading](https://www.darkreading.com/) - Comprehensive source for cybersecurity news, analysis, and expert opinions.
-12. [AI Safety Institute](https://aisafety.gov/) - Resources dedicated to AI safety, including cybersecurity implications.
-13. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) - Valuable resources on AI risk management, including security and privacy considerations.
-14. [Electronic Frontier Foundation (EFF) on AI](https://www.eff.org/issues/artificial-intelligence) - Insights into the privacy and security implications of AI technologies.
-15. [EFF Surveillance Self-Defense](https://ssd.eff.org) - Practical tips for protecting privacy and security online.
-16. [The Future of Privacy Forum (FPF)](https://fpf.org/) - Research and analysis on data privacy issues and emerging technologies.
-17. [Data & Society](https://datasociety.net/) - Exploration of the social and cultural implications of data-centric technologies.
-18. [The Privacy Rights Clearinghouse (PRC)](https://privacyrights.org/) - Information on data breaches, privacy rights, and how to protect personal information.
-19. [NIST Post-Quantum Cryptography](https://www.nist.gov/programs/cryptography/post-quantum-cryptography) - Information on post-quantum cryptography.
-20. [Internet Society's Online Trust Alliance (OTA)](https://www.internetsociety.org/initiatives/online-trust-alliance/) - Resources on IoT security best practices.
+* **Encryption:** A method of converting information into a secure format that can only be accessed with a key or password.
+* **HTTPS:** A secure version of HTTP used to encrypt data sent between your browser and a website.
+* **Internet of Things (IoT):** Devices connected to the internet, like smart home gadgets, that can communicate and share data.
+* **Malware:** Malicious software, including viruses, ransomware, and spyware, that harms devices or steals data.
+* **Password Manager:** A tool that securely stores and generates strong passwords for your accounts.
+* **Phishing:** A scam where attackers trick people into revealing sensitive information by pretending to be a trusted entity.
+* **Two-Factor Authentication (2FA):** A security process requiring two forms of identification to access an account.
+* **Virtual Private Network (VPN):** A service that encrypts your internet connection and hides your IP address.
+* **Zero-Day Attack:** A cyberattack that exploits a software vulnerability before the developer can fix it.
 
 ---
