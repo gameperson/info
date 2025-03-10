@@ -3,172 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Index</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Deep Dives into Today's Topics Curated by gameperson@github</title>
+    <link rel="stylesheet" href="./style.css">
     
-    <style> /* Default styles if no external stylesheet is found */
+    <meta name="description" content="Explore insightful articles on technology, security, and the digital world. Gameperson offers AI-powered research and expert editing for a unique perspective.">
+    <meta name="keywords" content="AI, technology, security, research, digital insights, information, analysis, gameperson">
+    <meta name="authors" content="ChatGPT, Google Gemini and gameperson@github">
+    
+    <meta property="og:title" content="Deep Dives into Today's Topics Curated by gameperson@github">
+    <meta property="og:description" content="Gameperson: Curated Digital Insights">
+    <meta property="og:url" content="https://gameperson.github.io/info/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/bulb_A.png">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <meta name="twitter:title" content="Deep Dives into Today's Topics Curated by gameperson@github" />
+    <meta name="twitter:description" content="Gameperson: Curated Digital Insights" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="./images/bulb_A.png" />
+
+    <link rel="icon" href="./images/bulb_A.ico" type="image/x-icon">
+    <link rel="icon" href="./images/bulb_A.svg" type="image/svg+xml">
+    <link rel="icon" href="./images/bulb_A.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/bulb_A.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./images/bulb_A.png">
+
+    <style>
         body {
             font-family: sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
-        header {
-            background-color: #f0f0f0;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav li {
-            display: inline;
-            margin: 0 1rem;
-        }
         main {
-            padding: 2rem;
+            padding: 1rem;
         }
-        section {
-            margin-bottom: 2rem;
-        }
-        /* Styles for the Index Page */
         .index-title {
             text-align: center;
-            font-size: 2.5em; /* Adjust as needed */
+            font-size: 1.5em;
             margin-bottom: 0.5em;
-            color: #e0e0e0; /* Dark gray, adjust as needed */
         }
         .index-subtitle {
             text-align: center;
-            font-size: 1.2em;
+            font-size: 1em;
             margin-bottom: 1em;
-            color: #666; /* Lighter gray, adjust as needed */
         }
         .index-list {
             list-style: none;
             padding: 0;
-            max-width: 800px; /* Adjust as needed */
-            margin: 0 auto;
         }
         .index-list li {
-            margin-bottom: 1em;
-            padding: 1em;
-            border: 1px solid #ddd; /* Light gray border, adjust as needed */
-            border-radius: 5px;
-        }
-        .index-list li a {
-            text-decoration: none;
-            color: #007bff; /* Blue link color, adjust as needed */    
-        }
-        .index-list li a:hover {
-            text-decoration: underline;
-        }
-        .index-list li .tags {
-            font-size: 0.9em;
-            color: #888; /* Gray tag color, adjust as needed */
-            margin-top: 0.5em;
-            display: block;
+            margin-bottom: 0.5em;
         }
         .disclaimer {
-            background-color: #202020;
-            color: red;
-            padding: 15px;
             text-align: center;
-            font-size: 1.2em;
-            border: 2px solid #ff9900;
-            margin: 20px 0;
+            padding: 10px;
+            background-color: #eee; /* Light gray background */
+            font-size: .8em;
         }
-        .disclaimer a {
-            color: red;
-            text-decoration: underline;
-        }
-
         footer {
-            background-color: #333;
-            color: white;
-            padding: 1rem;
             text-align: center;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
+            padding: 1rem;
+            background-color: #f0f0f0; /* Very light gray */
         }
     </style>
-    
-    <meta name="description" content="Site Index">
-    <meta name="keywords" content="HTML, index, pages, tags">
-    <meta name="authors" content="ChatGPT, Google Gemini and gameperson@github">
-    <meta property="og:title" content="Site Index">
-    <meta property="og:description" content="Site Index">
-    <meta property="og:url" content="https://gameperson.github.io/info/index.html">
-    <meta property="og:type" content="index">
-    <meta property="og:image" content="images/bulb_A.png">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta name="twitter:title" content="Site Index" />
-    <meta name="twitter:description" content="Site Index" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="images/bulb_A.png" />
-
-    <link rel="icon" href="images/bulb_A.ico" type="image/x-icon">
-    <link rel="icon" href="images/bulb_A.svg" type="image/svg+xml">
-    <link rel="icon" href="images/bulb_A.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="images/bulb_A.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="images/bulb_A.png">
 </head>
-
 <body>
     <main>
         <section id="index">
-            <h1 class="index-title">Digital Insights: Exploring Technology, Security, and the Future</h1>
-            <p class="index-subtitle">Articles by AI, edited by gameperson@github</p>   
+            <h1 class="index-title">Deep Dives into Today's Topics Curated by gameperson@github</h1>
+            <p class="index-subtitle"><large>AI-powered research, human-edited content.</large></p>   
             <ul class="index-list" id="page-list">
-                <li><a href="./pages/Internet-Security.html" data-tags="intenet safety, web security, malware, phishing">Internet Security Basics</a></li>
-                <li><a href="./pages/Executive-Imbalance.html" data-tags="government, president, congress, supreme court, house of represetatives, Senate">The Imbalance of Power and Executive Overreach</a></li>
-                <li><a href="./pages/interpreting-technical-information.html" data-tags="data, statistics, analysis, scientific">Undestanding Technical Information</a></li>
-                <li><a href="./pages/understanding-propaganda-intro.html" data-tags="propaganda, social, trends">Introduction to Porpaganda</a></li>
-                <li><a href="./pages/propaganda-old-and-new.html" data-tags="propaganda, social, trends">A History of Porpaganda</a></li>
-                <li><a href="./pages/Trolls-Lies-AI.html" data-tags="Russia’s War on Truth and Lies — And How to FIGHT Back">Trolls, Lies, and AI: Russia’s War on Truth and Lies — And How to FIGHT Back</a></li>
-                <li><a href="./pages/Reality-Shift.html" data-tags="Reality Shift: Navigating the Critical Threats">Reality Shift: Navigating the Critical Threats</a></li>
-                <li><a href="./pages/Institutional-Trust.html" data-tags="The Crisis of Credibility: Rebuilding Trust in a World of Eroding Certainty">The Crisis of Credibility: Rebuilding Trust in a World of Eroding Certainty</a></li>
-            </ul>
+                <li><a href="./pages/Internet-Security.html" data-tags="internet safety, web security, malware, phishing">Internet Security Basics: Essential strategies for staying safe online.</a></li>
+                <li><a href="./pages/Executive-Imbalance.html" data-tags="government, president, congress, supreme court, house of represetatives, Senate">The Imbalance of Power and Executive Overreach: Examining the dynamics of government.</a></li>
+                <li><a href="./pages/interpreting-technical-information.html" data-tags="data, statistics, analysis, scientific">Understanding Technical Information: Decoding data in a complex world.</a></li>
+                <li><a href="./pages/understanding-propaganda-intro.html" data-tags="propaganda, social, trends">Introduction to Propaganda: Recognizing manipulation in media and society.</a></li>
+                <li><a href="./pages/propaganda-old-and-new.html" data-tags="propaganda, social, trends">A History of Propaganda: From ancient tactics to modern influence.</a></li>
+                <li><a href="./pages/Trolls-Lies-AI.html" data-tags="Russia’s War on Truth and Lies — And How to FIGHT Back">Trolls, Lies, and AI: Russia’s War on Truth and Lies — And How to FIGHT Back: Fighting misinformation in the digital age.</a></li>
+                <li><a href="./pages/Reality-Shift.html" data-tags="Reality Shift: Navigating the Critical Threats">Reality Shift: Navigating the Critical Threats: Facing the challenges of a rapidly changing world.</a></li>
+                <li><a href="./pages/Institutional-Trust.html" data-tags="The Crisis of Credibility: Rebuilding Trust in a World of Eroding Certainty">Institutional Trust: The Crisis of Credibility: Rebuilding trust in a world of Eroding Certainty.</a></li>
+           </ul>
         </section>
-
         <section id="about">
-            <h2>About Us</h2>
-                <p>Heavily AI leveraged research into the most important topics of the day</p>
-                <p>We create unique and informative content from deep dives into hot topics and current evcents.</p>
-            <h3>Our Team</h3>
-                <ul>
-                    <li>Authors: ChatGPT, Google Gemini</li>
-                    <li>Editor and Producer: gameperson@github</li>
-                </ul>
+            <h2>About gameperson@github</h2>
+            <p>We specialize in creating in-depth, AI-assisted content that explores critical topics of our time. Our team—comprising advanced AI and expert human editors—delivers unique, insightful articles. We're open to collaborations and contract work. If you have a project or topic you'd like to explore, let's connect!</p>
+            <h2>Our Team</h2>
+            <p><b>Authors:</b> ChatGPT, Google Gemini <br>
+            <b>Editor and Producer:</b> gameperson@github</p>
         </section>
     </main>
-
     <footer>
-        <section id="disclaimer">
+        <aside id="disclaimer">
             <div class="disclaimer">
-                <p><strong>Disclaimer:</strong> The content provided on this website is for informational and educational purposes only. It reflects the analysis and perspectives of ChatGPT, Google Gemini, and other sources edited and produced by gameperson@github. While we strive for accuracy, currency and reliability, the information presented may not always be up-to-date or comprehensive. The views expressed do not necessarily represent the opinions of all contributors or affiliated parties.</p>
-                <p>Much of this content is under development and will not necessarily be complete, accurate or representative of the finished articles. Your patience is appreciated.</p>
-                <p>Readers are always encouraged to conduct their own research and consult relevant sources before making any decisions based on any information provided. No matter our best efforts, we are not responsible for any errors or omissions, or for any actions taken as a result of this content.</p>
-                <p>This website may contain links to external websites for further information. We do not endorse or take responsibility for the content of these external sites.</p>
-                <p>The information on this site, especially regarding AI and any future technologies, is speculative and should be treated as such.</p>
-                <p>By using this website, you acknowledge and agree to this disclaimer.</p>
-                <p>Thank you</p>
-                <p> If you want to report any issues, please feel free to <a href="mailto:gameperson@gmail.com">contact us</a>.</p>
+                <p>Disclaimer: The content here is for informational purposes. While we strive for accuracy, it reflects our analysis and may not always be comprehensive. We encourage independent research and responsible interpretation. <a href="./gameperson_Disclaimer.html">Full Disclaimer.</a></p>
             </div>
-        </section>
-        
+        </aside>
         <section id="footer">
             <div class="footer-content">
-                <img src="images/bulb_A_24.png" alt="Your Bright Brain">
+                <img src="./images/bulb_A_18.png" alt="Big Bright Brains">
                 <p class="footer-text">&copy; 2025 gameperson@github</p>
             </div>
-        </section>
-        
+        </section>                
     </footer>
 </body>
 </html>
