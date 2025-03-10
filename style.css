@@ -1,234 +1,266 @@
-/* style.css - Default Light Theme */
+/* style.css - Default Theme */
 
-/* Basic Reset and Global Styles */
+/* Basic Reset */
+body, p, a, h1, h2, ul, li, footer, aside {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Arial', sans-serif; /* Fallback font */
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f9f9f9; /* Light background */
-    color: #333; /* Dark text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    padding: 20px;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
-/* Header Styles */
-.site-header {
-    background-color: #e0e0e0;
-    padding: 1rem;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
+/* Color Palette */
+body {
+    background-color: #f8f8f8; /* Very light gray background */
+    color: #333; /* Dark gray text */
 }
 
-.site-title {
-    margin: 0;
-    font-size: 2rem;
+a {
+    color: #0070c9; /* Slightly darker blue links */
 }
 
-/* Navigation Styles */
-.site-nav ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 1rem;
+aside#disclaimer .disclaimer {
+    background-color: #f0f0f0; /* Slightly darker light gray */
+    color: #555;
+    border: 1px solid #ddd;
 }
 
-.site-nav li {
-    display: inline;
-    margin: 0 1rem;
+footer {
+    background-color: #e8e8e8; /* Slightly darker light gray */
+    color: #444;
 }
 
-.site-nav a {
+/* Typography */
+h1, h2 {
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 0.6em;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1.2em;
+}
+
+/* Link Styles */
+a {
+    color: #0070c9;
     text-decoration: none;
-    color: #007bff; /* Link color */
 }
 
-.site-nav a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-/* Styles for the Index Page */
-.index-title {
-    text-align: center;
-    font-size: 2.5em; /* Adjust as needed */
-    margin-bottom: 0.5em;
-    color: #333; /* Dark gray, adjust as needed */
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
 }
-.index-subtitle {
+
+/* Center Content */
+.center-content {
     text-align: center;
-    font-size: 1.2em;
-    margin-bottom: 1em;
-    color: #666; /* Lighter gray, adjust as needed */
+    margin-top: 50px;
 }
+
+.center-content p {
+    margin: 10px;
+}
+
+/* Index Section */
 .index-list {
     list-style: none;
     padding: 0;
-    max-width: 800px; /* Adjust as needed */
+    max-width: 800px;
     margin: 0 auto;
 }
+
 .index-list li {
     margin-bottom: 1em;
     padding: 1em;
-    border: 1px solid #ddd; /* Light gray border, adjust as needed */
+    border: 1px solid #ddd;
     border-radius: 5px;
+    text-align: center;
 }
+
 .index-list li a {
+    display: inline-block;
+    padding: 0.8em 1.2em;
+    background-color: #f0f0f0;
+    color: #333;
     text-decoration: none;
-    color: #007bff; /* Blue link color, adjust as needed */    
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
+
 .index-list li a:hover {
-    text-decoration: underline;
+    background-color: #e0e0e0;
 }
+
 .index-list li .tags {
     font-size: 0.9em;
-    color: #888; /* Gray tag color, adjust as needed */
+    color: #888;
     margin-top: 0.5em;
     display: block;
 }
 
-/* Main Content Styles */
-.site-main {
-    padding: 2rem;
-    max-width: 800px; /* Limit content width for readability */
-    margin: 0 auto; /* Center content */
-}
-
-.content-section {
-    margin-bottom: 2rem;
-}
-
-.section-title {
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-}
-
-.content-paragraph {
-    margin-bottom: 1rem;
-}
-
-/* Article Preview Styles */
-.article-preview {
+/* Disclaimer Section */
+aside#disclaimer .disclaimer {
+    background-color: #f0f0f0;
+    color: #555;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9em;
     border: 1px solid #ddd;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    margin: 20px auto;
+    max-width: 800px;
 }
 
-.article-title {
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
-}
-
-.article-excerpt {
-    margin-bottom: 1rem;
-}
-
-.article-link {
-    text-decoration: none;
-    color: #007bff;
-}
-
-.article-link:hover {
+aside#disclaimer .disclaimer a {
+    color: #0070c9;
     text-decoration: underline;
 }
 
-/* immages */
-.image-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.image-container img {
-    width: 90%;
-    max-width: 600px;
-    border-radius: 8px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* share buttons */
-.share-container {
-    text-align: center;
-    margin: 30px 0;
-    padding: 15px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.share-container h3 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.share-button {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
+/* gameperson_Disclaimer.html Styles */
+#full-disclaimer {
+    padding: 2em;
+    max-width: 800px;
+    margin: 2em auto;
+    background-color: #f8f8f8; /* Light background */
+    border: 1px solid #ddd;
     border-radius: 5px;
-    transition: 0.3s ease;
 }
 
-.twitter { background-color: #1DA1F2; color: white; }
-.facebook { background-color: #1877F2; color: white; }
-.reddit { background-color: #FF4500; color: white; }
-.bluesky { background-color: #0085FF; color: white; }
-.email { background-color: #606060; color: white; }
-.linkedin { background-color: #0077B5; color: white; }
-.whatsapp { background-color: #25D366; color: white; }
-.telegram { background-color: #0088cc; color: white; }
-
-.share-button:hover {
-    opacity: 0.8;
+#full-disclaimer h1 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #333;
 }
 
-/* quick-guide text boxes */
-.quick-guide {
-    background-color: #f9f9f9; /* Light gray background */
-    border-left: 5px solid #007acc; /* Blue left border for emphasis */
-    padding: 15px;
-    margin: 20px 0;
-    font-family: Arial, sans-serif;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+#full-disclaimer .disclaimer p {
+    line-height: 1.8; /* Improved line spacing */
+    margin-bottom: 1.2em;
+    color: #444;
 }
 
-.quick-guide h3 {
-    color: #007acc;
-    margin-top: 0;
+#full-disclaimer .disclaimer a {
+    color: #0070c9;
+    text-decoration: underline;
 }
 
-.quick-guide ul {
-    padding-left: 20px;
+#full-disclaimer .return-link {
+    text-align: center;
+    margin-top: 2em;
 }
 
-.quick-guide li {
+#full-disclaimer .return-link a {
+    background-color: #f0f0f0; /* Light gray background (matches index links) */
+    color: #333; /* Dark gray text (matches index links) */
+    padding: 0.8em 1.2em; /* Adjusted padding (smaller) */
+    border-radius: 5px; /* Matches index links */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    border: 1px solid #ddd; /* Add a subtle border */
+    font-weight: normal; /* Normal font weight */
+    box-shadow: none; /* Remove box shadow */
+}
+
+#full-disclaimer .return-link a:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+
+footer {
+    background-color: #e8e8e8;
+    color: #444;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer img {
+    max-width: 100px;
+    height: auto;
     margin-bottom: 10px;
 }
 
-/* Footer Styles */
-.site-footer {
-    background-color: #e0e0e0;
-    padding: 1rem;
-    text-align: center;
-    border-top: 1px solid #ccc;
-}
-
-.footer-content {
-  display: inline-flex; /* Use inline-flex for inline alignment */
-  align-items: center; /* Vertically align items */
-  gap: 30px; /* Add space between image and text */
-}
-
-.footer-image {
-  height: 20px; /* Adjust image height as needed */
-}
-
-.footer-text {
-    margin: 0;
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Responsive Design */
+
+/* For screens smaller than 992px (larger tablets/small laptops) */
+@media (max-width: 992px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+}
+
+/* For screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .index-title {
+        font-size: 2.2em;
+    }
+
+    .index-subtitle {
+        font-size: 1.1em;
+    }
+
+    .index-list li {
+        padding: 0.8em;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+/* For screens smaller than 600px (phones) */
 @media (max-width: 600px) {
-    .site-nav li {
+    .index-list li {
         display: block;
         margin: 0.5rem 0;
+    }
+
+    .index-title {
+        font-size: 1.9em;
+    }
+}
+
+/* For screens smaller than 480px (smaller phones) */
+@media (max-width: 480px) {
+    .index-title {
+        font-size: 1.7em;
     }
 }
