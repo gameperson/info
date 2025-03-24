@@ -25,6 +25,8 @@
     <link rel="apple-touch-icon" href="./images/bulb_A.png">    
 </head>
 <body>
+    
+<!-- Header -->
     <header class="site-header">
         <h1 class="index-title" id="top">Full Disclaimer</h1>
         <h3 class="index-subtitle">AI-powered research, human-edited content</h3>
@@ -42,6 +44,8 @@
                 aria-label="Toggle Theme (Footer)">
         </div>
     </header>
+    
+<!-- Main -->
     <main class="container">
         <section class="content-section">
             <div class="disclaimer" id="disclaimer">
@@ -81,50 +85,32 @@
                 </div>
         </section>
     </main>
-     <footer>
+
+<!-- Footer -->
+    <footer>
         <section id="footer">
             <div class="footer-content">
                 <nav class="site-nav">
                     <ul class="nav-list">
-                        <li><a href="javascript:history.back();">Back</a></li> 
                         <li><a href="#top">Top of Page</a></li>
+                        <li><a href="javascript:history.back();">Back</a></li> 
                         <li><a href="./index.html" aria-label="Site Index">Article Index Page</a></li>
                     </ul>
                 </nav>
             </div>
+    <!-- Theme Toggle Button -->
         <div class="theme-toggle centered" style="margin-top: 1rem;">
-            <img id="theme-icon-footer" src="./images/bulb_A.png" 
-                 alt="Theme Icon" 
-                 style="width: 40px; cursor: pointer;" 
-                 onclick="toggleTheme()" 
-                 aria-label="Toggle Theme (Footer)">
+            <img id="theme-icon-footer" src="./images/bulb_white.png" 
+                alt="Theme Icon" 
+                style="width: 40px; cursor: pointer;" 
+                onclick="toggleTheme()" 
+                aria-label="Toggle Theme (Footer)">
         </div>
         <div>
             <p class="footer-text">&copy; 2025 gameperson@github</p>
         </div>
     </footer>
-    <script>
-        function toggleTheme() {
-            document.body.classList.toggle('light-theme'); // Toggle the light-theme class
-            const isDark = document.body.classList.contains('light-mode'); // Check if light-theme is present
-            const navIcon = document.getElementById('theme-icon-nav');
-            const footerIcon = document.getElementById('theme-icon-footer');
-            if (navIcon) {
-                navIcon.src = isDark ? './images/bulb_black.png' : './images/bulb_white.png';
-                navIcon.alt = isDark ? 'Light Mode Icon' : 'Dark Mode Icon';
-            }
-            if (footerIcon) {
-                footerIcon.src = isDark ? './images/bulb_black.png' : './images/bulb_white.png';
-                footerIcon.alt = isDark ? 'Light Mode Icon' : 'Light Mode Icon';
-            }
-        }
-        window.onload = () => {
-            const isLight = document.body.classList.contains('light-theme'); // Check if light-theme is present
-            const navIcon = document.getElementById('theme-icon-nav');
-            const footerIcon = document.getElementById('theme-icon-footer');
-        if (navIcon) navIcon.src = isLight ? './images/bulb_black.png' : './images/bulb_white.png'; // Corrected icon logic
-        if (footerIcon) footerIcon.src = isLight ? './images/bulb_black.png' : './images/bulb_white.png'; // Corrected icon logic
-        };
-    </script>
+<!-- Theme Switcher -->
+    <script src="./js/theme-switch.js"></script>
 </body>
 </html>
