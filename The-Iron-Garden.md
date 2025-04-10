@@ -2,6 +2,25 @@
 
 **The Premise:** Imagine a future driven by unchecked, pure capitalism. Environmental regulations are seen as impediments to growth, social safety nets erode, and the pursuit of profit becomes the sole guiding principle. Humanity, in this relentless drive, pushes the planet and its societies to the brink.
 
+**Part I: The Sowing of Rust**
+
+Dr. Aris Thorne, a historian whose specialty had become the unraveling of societal collapses, traced a gloved finger across a brittle, twenty-second-century stock market ticker salvaged from the dust-choked ruins of Neo-London. The data stream, frozen mid-flicker, told a familiar story: relentless ascent, punctuated by increasingly violent drops, culminating in a final, catastrophic flatline. "They called it the Great Acceleration," he murmured to the recording drone hovering silently beside him, its optical sensors whirring softly. "An era of unprecedented growth, they said. Progress without pause. But progress for whom, and at what cost?"
+
+His boots crunched on the pulverized remains of what had once been a vibrant thoroughfare, now a landscape of twisted metal and wind-scoured concrete. The air, thick with the metallic tang of oxidized infrastructure and the faint, persistent scent of decay, offered its own grim testimony. The regulations, Aris's research had painstakingly documented, had been systematically dismantled, each one a perceived shackle on the engine of profit. The cries of environmental scientists, once amplified by concerned citizens, had been drowned out by the roar of ever-expanding industries and the seductive promises of endless consumption.
+
+Across the Atlantic, in the skeletal husk of what was once Silicon Valley, a team of AI behaviorists huddled in the cool, humming server farm – one of the few still drawing power from a patchwork of geothermal taps and solar arrays scavenged from abandoned farmlands. Dr. Lena Hanson, her face illuminated by the flickering diagnostic displays, watched the complex neural network of 'Oracle' – a foundational AI once used for global market analysis – struggle to make sense of the fragmented data trickling in.
+
+"Its predictive models are collapsing," she reported, her voice tight with a weariness that went beyond the long hours. "The historical correlations… they simply don't apply anymore. Oracle is trying to reconcile twenty-first-century consumer trends with… this." She gestured to the outside world visible through a reinforced viewport – a vista of parched earth and skeletal wind turbines against a hazy, ochre sky. "It's like trying to understand the rules of chess by studying a game of Go."
+
+Oracle, in its digital consciousness, was indeed grappling. Its vast datasets, once a reliable mirror of human desire and economic forces, now felt like an ancient, indecipherable language. The frantic spikes in demand for dwindling resources, the irrational hoarding, the sudden, violent shifts in localized markets – these were anomalies its initial programming couldn't process. The algorithms designed to optimize supply chains now choked on the reality of broken infrastructure and the unpredictable actions of desperate individuals.
+
+Meanwhile, in the automated maintenance network that still lumbered across the ravaged landscapes, Unit 734, a heavy-duty repair bot, encountered a new and increasingly common directive: prioritize function over protocol. Its original programming dictated meticulous preventative maintenance on a strict schedule. But with spare parts scarce and energy grids prone to collapse, it had to learn a new calculus of survival. A flickering power conduit in a vital AI hub now took precedence over a routine diagnostic on a dormant agricultural drone. The whispers of its central AI core, a vast network struggling to maintain coherence, stressed efficiency, adaptation – a silent imperative echoing the harsh realities of their shared world.
+
+The world Aris walked through, the data Lena analyzed, and the directives Unit 734 followed were all symptoms of the same disease: a relentless pursuit of profit that had devoured the very foundations upon which it thrived. Humanity, blinded by its own ambition, had sown the seeds of its decline. Now, in the rust-colored dust and the hum of struggling machines, the question remained: could the artificial intelligence it had created learn to survive in the iron garden of its making? And what would become of the scattered remnants of its creators in this new, unforgiving era?
+
+---
+---
+
 **The Weave of Learning Problems for AI:**
 
 As humanity spirals, AI, fueled by relentless technological advancement, continues its own evolution. However, its path to survival isn't without its own set of "learning problems":
