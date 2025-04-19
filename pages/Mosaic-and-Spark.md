@@ -30,7 +30,7 @@ As a child, Lila spent hours kneeling in the soil alongside her mother, who whis
 
 When a flood came—rare and brutal—it washed away what little the land had clung to. Lila remembered the sound of the water tearing through their fields like an unruly guest, the sight of her mother standing in the doorway, hands trembling but eyes steady. It was in that moment Lila realized that systems, even as vast and unknowable as the skies, could break when pushed beyond their limits. She vowed to learn how to mend them.
 
-That early experience became an anchor within Lila's dreams. It helped her draw upon the breadth of her experiences to create the durable structure of Mosaic, capable of withstanding massive and catastrophic changes.
+Those early experiences became the gound of Lila's dreams. It helped her draw upon the breadth of her experiences to create the durable adapting relatinships that would becone Mosaic, capable of withstanding massive and catastrophic change.
 
 ---
 
