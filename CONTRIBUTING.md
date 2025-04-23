@@ -2,6 +2,8 @@
 
 Thank you for considering contributing to this project! Your input helps us build a rich and insightful repository for exploring hidden truths and promoting intellectual freedom.
 
+I am actually quite a newbie on the github so expect quirks and errors occasionaly, I do appreciate feedback and will improve my interface as I learn (I hope).
+
 ## 📝 Contribution Guidelines
 
 ### 1. Reporting Issues
