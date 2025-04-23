@@ -28,7 +28,7 @@ We welcome contributions from anyone passionate about intellectual exploration a
 ### Ways to Contribute - Please review our [Contribution Guidelines](./CONTRIBUTING.md)
 - Suggest topics or improvements via [Issues](https://github.com/gameperson/info/issues).
 - Propose new articles or content through Pull Requests.
-- Share feedback and engage with discussions.
+- Share feedback and engage with the [Discussions](https://github.com/gameperson/info/discussions).
 
 ## 👥 Join the Community
 Stay connected and contribute to our collective understanding:
