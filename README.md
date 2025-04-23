@@ -36,7 +36,7 @@ Stay connected and contribute to our collective understanding:
 ## 📜 License
 This project is licensed under the following terms and conditions:
 
-Permission is granted, free of charge, to use, copy, modify, merge, publish, and distribute this Software as long as it is not used for commercial activities without prior written consent from the author. Reproductions or modifications for commercial purposes are strictly prohibited unless explicit consent is provided and copied in full.
+Permission is granted, free of charge, to use, copy, modify, merge, publish, and distribute this Software as long as it is properly attributed and not used for commercial activities without prior written consent. Reproductions or modifications for commercial purposes are strictly prohibited unless explicit consent is provided and copied in full.
 
 The Software is provided "as is," without warranty of any kind. For full details, refer to the [LICENSE](./LICENSE) file.
 
