@@ -34,7 +34,11 @@ Stay connected and contribute to our collective understanding:
 - **Contact Us**: Reach out via [email](mailto:gamesomeotherday@gmail.com) for inquiries or collaboration.
 
 ## 📜 License
-This project is licensed under [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/). See the LICENSE file for details.
+This project is licensed under the following terms and conditions:
+
+Permission is granted, free of charge, to use, copy, modify, merge, publish, and distribute this Software as long as it is not used for commercial activities without prior written consent from the author. Reproductions or modifications for commercial purposes are strictly prohibited unless explicit consent is provided and copied in full.
+
+The Software is provided "as is," without warranty of any kind. For full details, refer to the [LICENSE](./LICENSE) file.
 
 ---
 
