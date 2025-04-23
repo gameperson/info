@@ -25,7 +25,7 @@ I am a newbie at the github and only act like I know how works. I am on a steep 
 
 We welcome contributions from anyone passionate about intellectual exploration and truth-seeking. Whether you're a researcher, writer, or curious learner, your input is valuable.
 
-### Ways to Contribute - Please Review Our [CODE OF CONDUCT](./CONTRIBUTING.md)
+### Ways to Contribute - Please review our [Contribution Guidelines](./CONTRIBUTING.md)
 - Suggest topics or improvements via [Issues](https://github.com/gameperson/info/issues).
 - Propose new articles or content through Pull Requests.
 - Share feedback and engage with discussions.
