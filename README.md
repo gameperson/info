@@ -21,6 +21,8 @@ This repository serves as a collaborative platform to:
 6. **Breaking Free from the System**: Learn critical thinking, self-education, and alternative ways of living.
 
 ## 🛠️ How You Can Contribute
+I am a newbie at the github and only act like I know how works. I am on a steep curve so don't throw me too crazy a curve and I'll take a swing!
+
 We welcome contributions from anyone passionate about intellectual exploration and truth-seeking. Whether you're a researcher, writer, or curious learner, your input is valuable.
 
 ### Ways to Contribute
