@@ -1,8 +1,8 @@
-# The Roadmap to Intellectual Freedom and Deep Understanding
+# The Roadmap to Intellectual Freedom and Deeper Understanding
 
 A Comprehensive Exploration of Hidden Truths, Perception, and Reality.
 
-## Welcome to GamePerson's Info Site
+## Welcome to gameperson's Info Site
 
 Hello and welcome!
 
