@@ -33,7 +33,7 @@ This repository serves as a collaborative platform to:
 
 ## 🛠️ How You Can Contribute
 - **Join the Discussion:** Visit the [Discussions](https://github.com/gameperson/info/discussions) tab to ask questions and share your insights.
-- **Contribute:** Check out our [Contributing Guidelines](CONTRIBUTING.md) to learn how you can participate.
+- **Contribute:** Check out our [Contributing Guidelines](./docs/CONTRIBUTING.md) to learn how you can participate.
 - **Support/Donate:**  
   [Donate via PayPal](https://www.paypal.biz/gameperson)  
   [Become a GitHub Sponsor](https://github.com/sponsors/gameperson)
@@ -53,7 +53,7 @@ This project is licensed under the following terms and conditions:
 
 **&copy; Copyright**: The content of this site and repository is shared under copyright (c) and [restrictions apply](./LICENSE). 
 
-Permission is granted, free of charge, to use, copy, modify, merge, publish, and distribute the Software and *select protions of the content* as long as it is properly attributed and not used for commercial activities without prior written consent. Reproductions or modifications for commercial purposes are strictly prohibited unless explicit consent is provided and copied in full. Any questions are directed to *[gameperson@github](mailto:gamesomeotherday@gmail.com)*.
+Permission is granted, free of charge, to use, copy, modify, merge, publish, and distribute the Software and *select protions of content* as long as properly attributed and not used for commercial activities without prior written consent. Reproductions or modifications for commercial purposes are strictly prohibited unless explicit consent is provided and copied in full. Any questions are directed to *[gameperson@github](mailto:gamesomeotherday@gmail.com)*.
 
 The Software is provided *"as is,"* without warranty of any kind. 
 
