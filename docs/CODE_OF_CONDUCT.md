@@ -30,10 +30,10 @@ This Code of Conduct applies to all interactions related to this project, includ
 - Any other mediums associated with the project.
 
 ## Reporting Issues
-If you encounter behavior that violates this Code of Conduct, please report it by contacting me via email at [gamesomeotherday@gmail.com](mailto:gamesomeotherday@gmail.com). I promise to address reports promptly and fairly.
+If you encounter behavior that violates this Code of Conduct, please report it [via email](mailto:gamesomeotherday@gmail.com). Issues wil be addressed fairly and promptly as possible.
 
-## Acknowledgment of Learning Curve
-As a new GitHub user, I am committed to learning and improving over time. I appreciate your patience and understanding as I navigate this process. If you have suggestions for improving this repository or its processes, please feel free to share them.
+## About gameperson
+A new GitHub user, gameperson is committed to learning and improving over time. Your patience and understanding is appreciated as I navigate this process. If you have suggestions for improving this repository, its processes, or its subject matter please feel free to share them. Your support of the project is appreciated, [click here to contribute](./CONTRIBUTE.md)
 
 ## Attribution
 This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org/), version 2.1, available at [https://www.contributor-covenant.org/version/2/1/code_of_conduct/](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
