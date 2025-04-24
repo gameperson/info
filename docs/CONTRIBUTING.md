@@ -1,18 +1,10 @@
 # Contributions:
 
-**Thank you for considering contributing to this project!** Your input helps us build a rich and insightful repository for exploring hidden truths and promoting intellectual freedom.
+**Thank you for contributing to the project!** Your input helps build rich and insightful content for exploring hidden truths and promoting intellectual freedom.
 
-I am still a newbie on the github so expect quirks and errors occasionaly, I do appreciate feedback and will improve my interface as I learn (I hope).
+I am still newbie on the github so expect quirks and errors occasionaly, I do appreciate feedback and will improve my interface as I learn (I hope).
 
 We welcome your input, whether it’s a code change, a new idea, or thoughtful feedback. 
-
-## How to Contribute
-1. **Fork the Repository:** Create your own version of the project.
-2. **Create a Branch:** Work on a new branch for your feature or fix.
-3. **Submit a Pull Request:**
-    - Provide a clear description of your changes.
-    - Reference any related issues, if applicable.
-    - Ensure your content is well-cited and factual.
 
 ## Collaboration and Support
 - **Ideas & Feedback:** Use the [Discussions](https://github.com/gameperson/info/discussions):
