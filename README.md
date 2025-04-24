@@ -53,9 +53,9 @@ This project is licensed under the following terms and conditions:
 
 **&copy; Copyright**: The content of this site and repository is shared under copyright (c) and [restrictions apply](./LICENSE). 
 
-Permission is granted, free of charge, to use, copy, modify, merge, publish, and distribute the Software as long as it is properly attributed and not used for commercial activities without prior written consent. Reproductions or modifications for commercial purposes are strictly prohibited unless explicit consent is provided and copied in full.
+Permission is granted, free of charge, to use, copy, modify, merge, publish, and distribute the Software and *select protions of the content* as long as it is properly attributed and not used for commercial activities without prior written consent. Reproductions or modifications for commercial purposes are strictly prohibited unless explicit consent is provided and copied in full. Any questions are directed to *[gameperson@github](mailto:gamesomeotherday@gmail.com)*.
 
-The Software is provided "as is," without warranty of any kind. 
+The Software is provided *"as is,"* without warranty of any kind. 
 
 For full details, refer to the [LICENSE](./LICENSE) file.
 
