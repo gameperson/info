@@ -6,7 +6,7 @@ A Comprehensive Exploration of Hidden Truths, Perception, and Reality.
 
 Hello and welcome!
 
-This site is a collection of in-depth analysis, research-driven content, and thoughtful commentary—crafted with both human insights and AI-assisted deep dives. Every piece is a work in progress, reflecting a passion for tackling complex questions and a commitment to continuous improvement.
+This site is a collection of in-depth analysis, research-driven content, and thoughtful commentary — crafted with both human insights and AI-assisted deep dives. Every piece is a work in progress, reflecting a passion for tackling complex questions and a commitment to continuous improvement.
 
 ## What We Offer
 - **Specialized Content:** Analysis and insights on challenging topics, with room for discussion and debate.
