@@ -48,9 +48,10 @@ Stay connected and contribute to our collective understanding:
 - **Contact Us**: *[Reach out via email](mailto:gamesomeotherday@gmail.com)* for inquiries about commissions, collaborations or anything else.
 
 ## 📜 License
+
 This project is licensed under the following terms and conditions:
 
-The content of this site and repository is shared under copyright &copy; (c) and [restrictions apply](./LICENSE). 
+**&copy; Copyright**: The content of this site and repository is shared under copyright (c) and [restrictions apply](./LICENSE). 
 
 Permission is granted, free of charge, to use, copy, modify, merge, publish, and distribute the Software as long as it is properly attributed and not used for commercial activities without prior written consent. Reproductions or modifications for commercial purposes are strictly prohibited unless explicit consent is provided and copied in full.
 
