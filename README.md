@@ -45,7 +45,7 @@ We welcome all contributions. Anyone passionate about intellectual exploration a
 ## 👥 Join the Community
 Stay connected and contribute to our collective understanding:
 - **Discussions**: [Join open conversations about content and ideas](https://github.com/gameperson/info/discussions).
-- You can also: *[Reach out via email](mailto:gamesomeotherday@gmail.com)* for inquiries about commissions, collaborations or anything else.
+- **Contact Us**: *[Reach out via email](mailto:gamesomeotherday@gmail.com)* for inquiries about commissions, collaborations or anything else.
 
 ## 📜 License
 This project is licensed under the following terms and conditions:
