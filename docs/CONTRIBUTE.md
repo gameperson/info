@@ -36,6 +36,6 @@ Our goal is to create an open and respectful environment for tackling difficult 
 ## 🤝 Code of Conduct
 Please adhere to our [Code of Conduct](./CODE_OF_CONDUCT.md). Respectful collaboration is key to our success.
 
----
+**Thank you for helping make this project a valuable resource for seekers of knowledge and truth!**
 
-Thank you for helping make this project a valuable resource for seekers of knowledge and truth!
+[Return to README](../README.md)
