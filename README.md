@@ -34,7 +34,7 @@ This repository serves as a collaborative platform to:
 ## 🛠️ How You Can Contribute <a id="cotribute"></a>
 - **Join the Discussion:** Visit the [Discussions](https://github.com/gameperson/info/discussions) tab to ask questions and share your insights.
 - **Contribute:** Check out our [Contributing Guidelines](./docs/CONTRIBUTE.md) to learn how you can participate.
-- **Donate to Support gameperson:**  
+- **Donate to Support gameperson:** [Donations help sustain the project](./DONATE.md)  
   [Donate via PayPal](https://www.paypal.biz/gameperson)  
   [Become a GitHub Sponsor](https://github.com/sponsors/gameperson)
 
