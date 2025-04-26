@@ -22,6 +22,8 @@ If you have suggestions for improving this repository, its processes, or its sub
 ## Attribution
 This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org/), version 2.1, available at [https://www.contributor-covenant.org/version/2/1/code_of_conduct/](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
 
+**Thank you for helping to create a welcoming and respectful community of explorative and briliant minds!**
+
 ---
 
-Thank you for helping to create a welcoming and respectful community of explorative and briliant minds!
+[Return to README](../README.md)
