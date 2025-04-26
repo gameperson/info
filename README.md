@@ -11,7 +11,7 @@ This site is a collection of in-depth analysis, research-driven content, and tho
 ## What We Offer
 - **Specialized Content:** Analysis and insights on challenging topics, with room for discussion and debate.
 - **Collaboration:** A welcoming space for contributing ideas, code, and thoughtful commentary.
-- **Support:** If you find our work valuable, consider supporting us! [Your contributions](./docs/CONTRIBUTING.md) help cover the costs, research time, and further development of quality content.
+- **Support:** If you find our work valuable, consider supporting us! [Your contributions](./docs/DONATE.md) help cover the costs, research time, and further development of quality content.
 
 Gameperson hopes to be a hub for deep dives into the nature of knowledge, perception, and the hidden forces shaping our reality. Our mission is to promote intellectual freedom by uncovering truths, challenging assumptions, and fostering critical thinking.
 
@@ -33,14 +33,14 @@ This repository serves as a collaborative platform to:
 
 ## 🛠️ How You Can Contribute <a id="cotribute"></a>
 - **Join the Discussion:** Visit the [Discussions](https://github.com/gameperson/info/discussions) tab to ask questions and share your insights.
-- **Contribute:** Check out our [Contributing Guidelines](./docs/CONTRIBUTING.md) to learn how you can participate.
-- **Support/Donate:**  
+- **Contribute:** Check out our [Contributing Guidelines](./docs/CONTRIBUTE.md) to learn how you can participate.
+- **Donate to Support gameperson:**  
   [Donate via PayPal](https://www.paypal.biz/gameperson)  
   [Become a GitHub Sponsor](https://github.com/sponsors/gameperson)
 
 Thank you in advance for your interest, your ideas, and your support!
 
-We welcome all contributions. Anyone passionate about intellectual exploration and truth-seeking, whether a patron, researcher, writer, seeker, browser, ocassional donor, or voracious learner, your input is valuable adn appreciated.
+We welcome all contributions. Anyone passionate about intellectual exploration and truth-seeking, whether a patron, researcher, writer, seeker, browser, ocassional donor, or voracious learner, your input is valuable and appreciated.
 
 ## 👥 Join the Community
 Stay connected and contribute to our collective understanding:
