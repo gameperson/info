@@ -1,6 +1,6 @@
 # The Roadmap to Intellectual Freedom and Deeper Understanding
 
-A Comprehensive Exploration of Hidden Truths, Perception, and Reality.
+[A Comprehensive Exploration of Hidden Truths, Perception, and Reality.](https://github.com/gameperson/info/index.html)
 
 ## Welcome to gameperson's Info Site
 
@@ -34,9 +34,9 @@ This repository serves as a collaborative platform to:
 ## 🛠️ How You Can Contribute 
 - **Join the Discussion:** Visit the [Discussions](https://github.com/gameperson/info/discussions) tab to ask questions and share your insights.
 - **Contribute:** Check out our [Contributing Guidelines](./docs/CONTRIBUTE.md) to learn how you can participate.
-- **Donate to Support gameperson:** [Donations help sustain the project](./docs/DONATE.md)  
-  [Donate via PayPal](https://www.paypal.biz/gameperson)  
-  [Become a GitHub Sponsor](https://github.com/sponsors/gameperson)
+- **Donate to Support gameperson:** [Your donations help sustain the project](./docs/DONATE.md). 
+    - [Donate via PayPal](https://www.paypal.biz/gameperson)  
+    - [Become a GitHub Sponsor](https://github.com/sponsors/gameperson)
 
 Thank you in advance for your interest, your ideas, and your support!
 
