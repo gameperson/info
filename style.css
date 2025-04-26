@@ -24,6 +24,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
     line-height: 1.7;
     padding: 1.25rem; /* 20px */
+    padding-bottom: 3rem; /* 60px */
     transition: background-color 0.3s ease; /* For smooth theme transitions */
 }
 
