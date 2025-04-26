@@ -17,7 +17,7 @@ As the repository owner, gameperson acknowledges still being a learniner of GitH
 If you experience or observe any behavior that violates these guidelines, please reach out to us at [gamesomeotherday@gmail.com](mailto:gamesomeotherday@gmail.com).
 
 ## Contibutions
-If you have suggestions for improving this repository, its processes, or its subject matter please feel free to share them. Your support of the project is appreciated, [click here to contribute](./CONTRIBUTE.md)
+If you have suggestions for improving this repository, its processes, or its subject matter please feel free to share them. [Your support of the project is appreciated.](./CONTRIBUTE.md)
 
 ## Attribution
 This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org/), version 2.1, available at [https://www.contributor-covenant.org/version/2/1/code_of_conduct/](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
