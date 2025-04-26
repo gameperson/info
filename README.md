@@ -11,7 +11,7 @@ This site is a collection of in-depth analysis, research-driven content, and tho
 ## What We Offer
 - **Specialized Content:** Analysis and insights on challenging topics, with room for discussion and debate.
 - **Collaboration:** A welcoming space for contributing ideas, code, and thoughtful commentary.
-- **Support:** If you find our work valuable, consider supporting us! [Your contributions](#🛠️-How-You-Can-Contribute) help cover the costs, research time, and further development of quality content.
+- **Support:** If you find our work valuable, consider supporting us! [Your contributions](#contribute) help cover the costs, research time, and further development of quality content.
 
 Gameperson hopes to be a hub for deep dives into the nature of knowledge, perception, and the hidden forces shaping our reality. Our mission is to promote intellectual freedom by uncovering truths, challenging assumptions, and fostering critical thinking.
 
@@ -31,7 +31,7 @@ This repository serves as a collaborative platform to:
 5. **The Future of Humanity and AI**: Analyze AI ethics, singularity, and technological control.
 6. **Breaking Free from the System**: Learn critical thinking, self-education, and alternative ways of living.
 
-## 🛠️ How You Can Contribute
+## 🛠️ How You Can Contribute <a id="cotribute"></a>
 - **Join the Discussion:** Visit the [Discussions](https://github.com/gameperson/info/discussions) tab to ask questions and share your insights.
 - **Contribute:** Check out our [Contributing Guidelines](./docs/CONTRIBUTING.md) to learn how you can participate.
 - **Support/Donate:**  
