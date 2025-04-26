@@ -39,5 +39,3 @@ Please adhere to our [Code of Conduct](./CODE_OF_CONDUCT.md). Respectful collabo
 **Thank you for helping make this project a valuable resource for seekers of knowledge and truth!**
 
 [Return to README](../README.md)
-
-[Return to README](../README.md)
