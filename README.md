@@ -1,6 +1,7 @@
 # The Roadmap to Intellectual Freedom and Deeper Understanding
 
-[A Comprehensive Exploration of Hidden Truths, Perception, and Reality.](https://github.com/gameperson/info/index.html)
+[AI Deep Dives into Today's Topics](https://gameperson.github.io/info/index.html)
+*AI-powered research, human-edited content.*
 
 ## Welcome to gameperson's Info Site
 
