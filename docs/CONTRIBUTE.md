@@ -21,7 +21,7 @@ We welcome your input, whether it’s a typo, code changes, a new idea, or thoug
     - Broken links or outdated references.
     - Missing or underexplored topics.
     - Label your issue appropriately (e.g., "content suggestion," "bug," "enhancement").
-- **Monetary Support:** [Donations help sustain the project](./DONATE). Even a small contribution can make a big difference.
+- **Monetary Support:** [Donations help sustain the project](./DONATE.md). Even a small contribution can make a big difference.
     - [Donate via PayPal](https://www.paypal.biz/gameperson)  
     - [Become a GitHub Sponsor](https://github.com/sponsors/gameperson)
 
