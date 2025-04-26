@@ -31,10 +31,10 @@ This repository serves as a collaborative platform to:
 5. **The Future of Humanity and AI**: Analyze AI ethics, singularity, and technological control.
 6. **Breaking Free from the System**: Learn critical thinking, self-education, and alternative ways of living.
 
-## 🛠️ How You Can Contribute <a id="cotribute"></a>
+## 🛠️ How You Can Contribute 
 - **Join the Discussion:** Visit the [Discussions](https://github.com/gameperson/info/discussions) tab to ask questions and share your insights.
 - **Contribute:** Check out our [Contributing Guidelines](./docs/CONTRIBUTE.md) to learn how you can participate.
-- **Donate to Support gameperson:** [Donations help sustain the project](./DONATE.md)  
+- **Donate to Support gameperson:** [Donations help sustain the project](./docs/DONATE.md)  
   [Donate via PayPal](https://www.paypal.biz/gameperson)  
   [Become a GitHub Sponsor](https://github.com/sponsors/gameperson)
 
