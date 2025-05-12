@@ -10,6 +10,7 @@ This paper examines America's Gilded Age (1870s-1900), a period often glorified 
 * Brief explanation of why this historical analysis matters for contemporary society
 
 ## I. Introduction
+include image of robberbarrons Guilded-Age-Wealthy.jpeg
 
 America's first Golden Age, now known as the Gilded Age, spanned roughly from 1870 to 1900. This Guilded Age represents one of the most transformative yet contradictory periods in the nation's history. Following the turmoil of the Civil War, the United States experienced unprecedented industrial growth, technological innovation, and economic expansion that fundamentally reshaped American society. Railroad networks expanded from approximately 35,000 miles in 1865 to over 193,000 miles by 1900, while steel production soared from 77,000 tons to over 11 million tons during the same period (Cashman, 1984). On the surface, this era appeared to herald America's arrival as a modern industrial powerhouse.
 
