@@ -41,8 +41,10 @@ body {
     --color-text-primary: #e0e0e0;
     --color-text-secondary: #cccccc;
     --color-text-muted: #999;
-    --color-link-primary: #bbb;
-    --color-link-hover: #fff;
+/*    --color-link-primary: #bbb; */
+/*    --color-link-hover: #fff; */
+    --color-link-primary: #444c56;
+    --color-link-hover: #6b7280;
     --color-border-primary: #444;
 }
 
