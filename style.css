@@ -57,6 +57,7 @@ body {
     --color-link-primary: #386870;
     --color-link-hover: #3a4750;
     --color-border-primary: #c0c3c6; 
+}
    
 /*  --color-background-light: #f2f4f7; */ 
 /*  --color-background-medium: #e4e7eb; */ 
@@ -68,8 +69,6 @@ body {
 /*  --color-link-primary: #006580; */ 
 /*  --color-link-hover: #003d4d; */ 
 /*  --color-border-primary: #cbd5e0; */
-}
-
 
 /* Apply Background and Text Colors based on theme */
 body {
