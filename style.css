@@ -825,12 +825,14 @@ section {
     h2 {
         font-size: 1.5em;
     }
+}
 
-     .image-right-inline {
-      float: none; /* Remove float to make it full width */
-      display: block; /* Ensure it takes full width */
-      margin: 1rem auto; /* Center the image with top/bottom margin */
-      max-width: 100%; /* Occupy full width on small screens */
+@media (max-width: 380px) {
+    .image-right-inline {
+       float: none; /* Remove float to make it full width */
+       display: block; /* Ensure it takes full width */
+       margin: 1rem auto; /* Center the image with top/bottom margin */
+       max-width: 100%; /* Occupy full width on small screens */
     }
 }
 
