@@ -78,42 +78,19 @@ The ultimate legacy of the Gilded Age may be its demonstration that democratic s
 As we face our own gilded facades and growing disparities, this historical perspective reminds us that prosperity without equity ultimately undermines both economic and democratic institutions. The question before us is whether we will learn from the past—addressing systemic imbalances before they reach crisis points—or allow history to repeat itself, with all the social upheaval that entails. The brilliance of gilded surfaces has always depended on what lies beneath; sustainable prosperity requires that the foundation be as solid as the facade is shining.
 
 ## References and Further Reading
-- Addams, J. (1910). Twenty Years at Hull-House. Macmillan.
-- Brands, H.W. (2010). *American Colossus: The Triumph of Capitalism, 1865-1900.* Doubleday.
-- Calhoun, C.W. (2017). *The Gilded Age: Perspectives on the Origins of Modern America.* Rowman & Littlefield.
-- Cashman, S.D. (1984). *America in the Gilded Age: From the Death of Lincoln to the Rise of Theodore Roosevelt*. New York University Press.
-- Chernow, R. (1998). *Titan: The Life of John D. Rockefeller, Sr.* Random House. 
-- Dubofsky, M. (1994). Industrialism and the American Worker, 1865-1920. Harlan Davidson.
-- Fink, L. (2015). *The Long Gilded Age: American Capitalism and the Lessons of a New World Order.* University of Pennsylvania Press.
-- Goodwyn, L. (1978). *The Populist Moment: A Short History of the Agrarian Revolt in America.* Oxford University Press.
-- Gordon, J.S. (2016). *An Empire of Wealth: The Epic History of American Economic Power*. Harper Perennial.
-- Gould, L.L. (2001). *America in the Progressive Era, 1890-1914.* Routledge.
-- Grossman, J. (1994). *The Supreme Court in United States History: The Reconstruction and Gilded Age, 1864-1900.* Macmillan.
-- Hacker, J.S., & Pierson, P. (2010). Winner-Take-All Politics: How Washington Made the Rich Richer—and Turned Its Back on the Middle Class. Simon & Schuster.
-- Hofstadter, R. (1955). *The Age of Reform: From Bryan to F.D.R.* Knopf.
-- Josephson, M. (1962). *The Robber Barons: The Great American Capitalists, 1861-1901.* Harcourt, Brace & World.
-- Kessler-Harris, A. (2003). Out to Work: A History of Wage-Earning Women in the United States. Oxford University Press.
-- Krause, P. (1992). *The Battle for Homestead, 1880-1892: Politics, Culture, and Steel.* University of Pittsburgh Press.
-- Lamoreaux, N.R. (1985). *The Great Merger Movement in American Business, 1895-1904.* Cambridge University Press.
-- McGerr, M. (2003). *A Fierce Discontent: The Rise and Fall of the Progressive Movement in America, 1870-1920.* Free Press.
-- Montgomery, D. (1987). The Fall of the House of Labor: The Workplace, the State, and American Labor Activism, 1865-1925. Cambridge University Press.
-- Painter, N.I. (2008). *Standing at Armageddon: A Grassroots History of the Progressive Era.* W.W. Norton & Company.
-- Piketty, T. (2014). Capital in the Twenty-First Century. Harvard University Press.
-- Reich, R.B. (2015). Saving Capitalism: For the Many, Not the Few. Knopf.
-- Riis, J.A. (1890). *How the Other Half Lives: Studies Among the Tenements of New York.* Charles Scribner's Sons.
-- Rodgers, D.T. (1998). Atlantic Crossings: Social Politics in a Progressive Age. Harvard University Press.
-- Rydell, R.W. (1984). *All the World's a Fair: Visions of Empire at American International Expositions, 1876-1916*. University of Chicago Press.
-- Schlereth, T.J. (1991). *Victorian America: Transformations in Everyday Life, 1876-1915*. HarperCollins.
-- Sinclair, U. (1906). The Jungle. Doubleday, Jabber & Company.
-- Sklar, K.K. (1995). Florence Kelley and the Nation's Work: The Rise of Women's Political Culture, 1830-1900. Yale University Press.
-- Stiglitz, J.E. (2012). The Price of Inequality: How Today's Divided Society Endangers Our Future. W.W. Norton & Company.
-- Strouse, J. (1999). *Morgan: American Financier.* Random House.
-- Summers, M.W. (1993). *The Era of Good Stealings.* Oxford University Press.
-- Trachtenberg, A. (2007). *The Incorporation of America: Culture and Society in the Gilded Age.* Hill and Wang.
-- Veblen, T. (1899). *The Theory of the Leisure Class: An Economic Study of Institutions*. Macmillan.
-- White, R. (2011). *Railroaded: The Transcontinentals and the Making of Modern America*. W.W. Norton & Company.
-- Wiebe, R.H. (1967). The Search for Order, 1877-1920. Hill and Wang.
-- Williamson, J.G., & Lindert, P.H. (1980). *American Inequality: A Macroeconomic History*. Academic Press.
-- Wu, T. (2018). The Curse of Bigness: Antitrust in the New Gilded Age. Columbia Global Reports.
-- Zinn, H. (2005). *A People's History of the United States*. Harper Perennial Modern Classics.
-- Zuboff, S. (2019). The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power. Public Affairs.
+- Addams, J. (1910). Twenty Years at Hull-House. Macmillan. (Further Reading: Provides firsthand insight into the social consequences of industrialization and reform efforts.)
+- Brands, H.W. (2010). American Colossus: The Triumph of Capitalism, 1865-1900. Doubleday. (Cited: Offers a broad narrative of the era, including economic growth and labor unrest.)
+- Cashman, S.D. (1984). America in the Gilded Age: From the Death of Lincoln to the Rise of Theodore Roosevelt. New York University Press. (Cited: Provides a solid overview and is directly referenced in your text.)
+- Chernow, R. (1998). Titan: The Life of John D. Rockefeller, Sr. Random House. (Further Reading: A comprehensive biography of a key figure in the era's economic transformation and concentration of wealth.)
+- Fink, L. (2015). The Long Gilded Age: American Capitalism and the Lessons of a New World Order. University of Pennsylvania Press. (Further Reading: Offers a perspective connecting the historical Gilded Age to contemporary capitalism.)
+- Gordon, J.S. (2016). An Empire of Wealth: The Epic History of American Economic Power. Harper Perennial. (Cited: Used for data on GNP growth.)
+- Hacker, J.S., & Pierson, P. (2010). Winner-Take-All Politics: How Washington Made the Rich Richer—and Turned Its Back on the Middle Class. Simon & Schuster. (Further Reading: While not directly cited on a specific historical event, it strongly supports your parallels between the Gilded Age and modern political influence.)   
+- Josephson, M. (1962). The Robber Barons: The Great American Capitalists, 1861-1901. Harcourt, Brace & World. (Further Reading: A classic, albeit somewhat critical, account of the major industrialists and their impact.)
+- Piketty, T. (2014). Capital in the Twenty-First Century. Harvard University Press. (Cited: Supports your analysis of wealth concentration and "patrimonial capitalism.")
+- Riis, J.A. (1890). How the Other Half Lives: Studies Among the Tenements of New York. Charles Scribner's Sons. (Cited: A crucial primary source illustrating social conditions.)
+- Rydell, R.W. (1984). All the World's a Fair: Visions of Empire at American International Expositions, 1876-1916. University of Chicago Press. (Cited: Used in the context of showcasing American progress.)   
+- Veblen, T. (1899). The Theory of the Leisure Class: An Economic Study of Institutions. Macmillan. (Cited: Key for understanding "conspicuous consumption.")
+- White, R. (2011). Railroaded: The Transcontinentals and the Making of Modern America. W.W. Norton & Company. (Cited: Provides details on railroad practices and land grants.)
+- Williamson, J.G., & Lindert, P.H. (1980). American Inequality: A Macroeconomic History. Academic Press. (Cited: Essential for the wealth disparity statistics.)
+- Wu, T. (2018). The Curse of Bigness: Antitrust in the New Gilded Age. Columbia Global Reports. (Further Reading: Offers a contemporary perspective on monopolies, relevant to the historical context of trusts.)
+- Zinn, H. (2005). A People's History of the United States. Harper Perennial Modern Classics. (Cited: Provides a view on the experiences of the working class.)
