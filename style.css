@@ -844,24 +844,7 @@ section {
     h2 {
         font-size: 1.5em;
     }
-
-/*    .image-left-inline {
-/*         float: none; /* Don't float on smaller screens */
-/*         display: block; /* Make it take up a full line */
-/*         margin: 1rem auto; /* Center the image with some top/bottom margin */
-/*         width: 100%; /* Make it responsive within its container */
-/*         max-width: 100%; /* Make it responsive within its container */
-/*    }
-/*   
-/*    .image-right-inline {
-/*         float: none; /* Don't float on smaller screens */
-/*         display: block; /* Make it take up a full line */
-/*         margin: 1rem auto; /* Center the image with some top/bottom margin */
-/*         width: 100%; /* Make it responsive within its container */
-/*         max-width: 100%; /* Make it responsive within its container */
-/*    }
-/*}
-*/
+}
 
 /* ============================================================
    13. END OF STYLESHEET
