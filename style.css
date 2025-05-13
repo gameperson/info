@@ -235,12 +235,12 @@ img {
     margin: var(--margin-base);
 }
 
-.image-right {
+.image-right-inline {
     display: inline-block; /* Allows setting width and height, and respects margins */
     float: right;
     margin-left: 1rem;
     vertical-align: middle; /* Adjust vertical alignment as needed */
-    max-width: 320px; /* Optional: Set a maximum width for the image */
+    max-width: 50%; /* Optional: Set a maximum width for the image */
     height: auto;
   }
 
@@ -776,7 +776,7 @@ section {
     .image-right {
          float: none; /* Don't float on smaller screens */
          display: block; /* Make it take up a full line */
-         margin: 10px auto; /* Center the image with some top/bottom margin */
+         margin: 1rem auto; /* Center the image with some top/bottom margin */
          max-width: 100%; /* Make it responsive within its container */
     }
 
@@ -823,6 +823,13 @@ section {
 
     h2 {
         font-size: 1.5em;
+    }
+
+     .image-right-inline {
+      float: none; /* Remove float to make it full width */
+      display: block; /* Ensure it takes full width */
+      margin: 1rem auto; /* Center the image with top/bottom margin */
+      max-width: 100%; /* Occupy full width on small screens */
     }
 }
 
