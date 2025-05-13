@@ -275,6 +275,10 @@ figcaption {
 .center { text-align: center; text-align-kast: center; }
 .justify { text-align: justify; text-align-last: justify; }
 
+.text-muted {
+  color: var(--color-text-muted);
+}
+
 .mb-16 { margin-bottom: 1rem; }
 .p-16 { padding: 1rem; }
 
@@ -313,7 +317,8 @@ figcaption {
    ============================================================ */
 
 .btn, .button-link { /* Combined .btn and .button-link */
-    background-color: var(--color-background-dark);
+/*    background-color: var(--color-background-dark); */
+    background-color: var(--color-link-primary);
     color: var(--color-text-primary);
     display: block;
     margin: var(--margin-base) auto;
@@ -329,7 +334,9 @@ figcaption {
 }
 
 .btn:hover, .button-link:hover { /* Combined .btn:hover and .button-link:hover */
-    background: var(--color-background-darker);
+/*    background: var(--color-background-darker); */
+    background-color: var(--color-link-hover);
+    color: #fff;
 }
 
 /* Smaller nav Buttons */
@@ -418,6 +425,23 @@ nav {
     margin: 0 auto;
 }
 
+/* Forms */
+input,
+textarea {
+  background-color: var(--color-background-light);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border-primary);
+  padding: 0.5rem;
+  border-radius: 4px;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-link-primary);
+}
+
 footer {
     margin-top: 2em;
     border-top: 2px solid var(--color-border-primary);
@@ -502,6 +526,7 @@ footer .site-nav li a {
     padding: 2em 1em;
     border-top: 2px solid var(--color-border-primary);
     border-bottom: 2px solid var(--color-border-primary);
+    border-left: 4px solid var(--color-link-primary);
     font-size: 1em;
     text-align: justify;
     text-align-last: left;
