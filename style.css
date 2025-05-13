@@ -785,11 +785,19 @@ section {
         padding: 10px;
     }
 
-    .image-right {
+    .image-left-inline {
          float: none; /* Don't float on smaller screens */
          display: block; /* Make it take up a full line */
          margin: 1rem auto; /* Center the image with some top/bottom margin */
-         width: 100%; /* Make it responsive within its container */
+         width: 90%; /* Make it responsive within its container */
+         max-width: 100%; /* Make it responsive within its container */
+    }
+   
+    .image-right-inline {
+         float: none; /* Don't float on smaller screens */
+         display: block; /* Make it take up a full line */
+         margin: 1rem auto; /* Center the image with some top/bottom margin */
+         width: 90%; /* Make it responsive within its container */
          max-width: 100%; /* Make it responsive within its container */
     }
 
@@ -844,7 +852,15 @@ section {
        float: none; /* Remove float to make it full width */
        display: block; /* Ensure it takes full width */
        margin: 1rem auto; /* Center the image with top/bottom margin */
-       width: 100%; /* Occupy full width on small screens */
+       width: 90%; /* Occupy full width on small screens */
+       max-width: 100%; /* Occupy full width on small screens */
+    }
+   
+    .image-right-inline {
+       float: none; /* Remove float to make it full width */
+       display: block; /* Ensure it takes full width */
+       margin: 1rem auto; /* Center the image with top/bottom margin */
+       width: 90%; /* Occupy full width on small screens */
        max-width: 100%; /* Occupy full width on small screens */
     }
 }
