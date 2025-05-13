@@ -316,6 +316,7 @@ figcaption {
     border-radius: var(--border-radius-base);
     padding: var(--padding-large);
     text-decoration: none;
+    font-size: var(--font-size-large);
     font-weight: var(--font-weight-normal);
     text-align: center;
     text-align-last: center;
