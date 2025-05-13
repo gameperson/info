@@ -235,6 +235,15 @@ img {
     margin: var(--margin-base);
 }
 
+.image-right {
+    display: inline-block; /* Allows setting width and height, and respects margins */
+    float: right;
+    margin-left: 1rem;
+    vertical-align: middle; /* Adjust vertical alignment as needed */
+    max-width: 320px; /* Optional: Set a maximum width for the image */
+    height: auto;
+  }
+
 figcaption {
     margin-top: 0.5em;
     font-style: italic;
@@ -762,6 +771,13 @@ section {
 @media (max-width: 768px) {
     body {
         padding: 10px;
+    }
+
+    .image-right {
+         float: none; /* Don't float on smaller screens */
+         display: block; /* Make it take up a full line */
+         margin: 10px auto; /* Center the image with some top/bottom margin */
+         max-width: 100%; /* Make it responsive within its container */
     }
 
     .container {
