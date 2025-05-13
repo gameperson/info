@@ -240,6 +240,7 @@ img {
     float: right;
     margin-left: 1rem;
     vertical-align: middle; /* Adjust vertical alignment as needed */
+    width: 50%; 
     max-width: 50%; /* Optional: Set a maximum width for the image */
     height: auto;
   }
