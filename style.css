@@ -46,17 +46,33 @@ body {
 }
 
 .light-theme {
-    /* LIGHT THEME */
-    --color-background-light: #b0b8bf;
-    --color-background-medium: #a8b0b8;
-    --color-background-dark: #98a0a8;
-    --color-background-darker: #889098;
-    --color-text-primary: #3a4750;
-    --color-text-secondary: #5a6770;
-    --color-text-muted: #8a97a0;
-    --color-link-primary: #386870;
-    --color-link-hover: #3a4750;
-    --color-border-primary: #c0c3c6;
+    /* OG LIGHT THEME */
+/*    --color-background-light: #b0b8bf;*/ 
+/*    --color-background-medium: #a8b0b8;*/ 
+/*    --color-background-dark: #98a0a8;*/ 
+/*    --color-background-darker: #889098;*/ 
+/*    --color-text-primary: #3a4750;*/ 
+/*    --color-text-secondary: #5a6770;*/ 
+/*    --color-text-muted: #8a97a0;*/ 
+/*    --color-link-primary: #386870;*/ 
+/*    --color-link-hover: #3a4750;*/ 
+/*    --color-border-primary: #c0c3c6; */
+
+  --color-background-light: #f2f4f7;
+  --color-background-medium: #e4e7eb;
+  --color-background-dark: #d0d4d9;
+  --color-background-darker: #c1c6cc;
+
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #444c56;
+  --color-text-muted: #6b7280;
+
+  --color-link-primary: #006580;
+  --color-link-hover: #003d4d;
+
+  --color-border-primary: #cbd5e0;
+}
+
 }
 
 /* Apply Background and Text Colors based on theme */
@@ -844,191 +860,7 @@ section {
     h2 {
         font-size: 1.5em;
     }
-
-/*    .image-left-inline {
-/*         float: none; /* Don't float on smaller screens */
-/*         display: block; /* Make it take up a full line */
-/*         margin: 1rem auto; /* Center the image with some top/bottom margin */
-/*         width: 100%; /* Make it responsive within its container */
-/*         max-width: 100%; /* Make it responsive within its container */
-/*    }
-/*   
-/*    .image-right-inline {
-/*         float: none; /* Don't float on smaller screens */
-/*         display: block; /* Make it take up a full line */
-/*         margin: 1rem auto; /* Center the image with some top/bottom margin */
-/*         width: 100%; /* Make it responsive within its container */
-/*         max-width: 100%; /* Make it responsive within its container */
-/*    }
-/*}
-*/
-
+}
 /* ============================================================
    13. END OF STYLESHEET
    ============================================================ */
-
-
-/*    <style>
-        /* Base Styles */
-/*
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        /* Headers */
-/*
-        h1, h2, h3, h4 {
-            color: #2c3e50;
-        }
-        
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-}
-        
-        h2 {
-            font-size: 2em;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            margin-top: 30px;
-        }
-        
-        h3 {
-            font-size: 1.5em;
-            margin-top: 25px;
-        }
-        
-        /* Content Sections */
-/*
-        .content-section {
-            margin: 30px 0;
-            padding: 15px;
-            background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .center {
-            text-align: center;
-        }
-        
-        /* Table of Contents */
-/*
-        .index-list {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 8px 15px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        
-        .btn:hover {
-            background-color: #2980b9;
-        }
-        
-        /* Essay/Content Blocks */
-/*
-        .essay {
-            background: #fff;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .p-16 {
-            padding: 16px;
-        }
-        
-        /* Paragraphs */
-/*
-        .content-paragraph {
-            margin-bottom: 15px;
-        }
-        
-        /* Lists */
-/*
-        ul, ol {
-            margin-bottom: 20px;
-        }
-        
-        li {
-            margin-bottom: 8px;
-        }
-        
-        /* Return Links */
-/*
-        .return-link {
-            margin: 20px 0;
-            text-align: center;
-        }
-        
-        /* Divider */
-/*
-        .divider {
-            margin: 20px 0;
-            border: 0;
-            height: 1px;
-            background: #e0e0e0;
-        }
-        
-        /* Glossary */
-/*
-        #glossary strong {
-            color: #3498db;
-        }
-        
-        /* References */
-/*
-        .references-section {
-            background: #fff;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .references-section a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        
-        .references-section a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Checklist */
-/*
-        input[type="checkbox"] {
-            margin-right: 8px;
-        }
-        
-        /* Bottom Line Emphasis */
-/*
-         .bottom-line {
-            border-left: 4px solid #3498db;
-            padding-left: 15px;
-        } 
-/* */
