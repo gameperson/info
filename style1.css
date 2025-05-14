@@ -135,6 +135,7 @@ body {
     --padding-none: 0;
 
     /* Borders and Line Heights */
+    --border-left-highlight: 4px;
     --border-radius: 5px;
     --border-radius-small: 4px;
     --line-height: 1.75;
@@ -311,7 +312,7 @@ figcaption {
 .section-divider {
     padding: 2px;
     border-top: 2px solid var(--color-border);
-    border-left: 4px solid var(--color-border-highlighted);
+    border-left: var(--border-left-highlight) solid var(--color-border-highlighted);
 /*    border-left: 1px solid var(--color-border); */
     border-right: 1px solid var(--color-border);
     margin: 2em 0;
@@ -329,7 +330,7 @@ figcaption {
     margin: var(--margin) auto;
     border: 1px solid var(--color-border);
    
-    border-left: 4px solid var(--color-border-highlighted);
+    border-left: var(--border-left-highlight) solid var(--color-border-highlighted);
     border-radius: var(--border-radius);
     padding: var(--padding-large);
     text-decoration: none;
@@ -418,7 +419,7 @@ header, .site-header {
     font-size: 1.6em;
     border-bottom: 2px solid var(--color-border);
 
-    border-left: 4px solid var(--color-border-highlighted);
+    border-left: var(--border-left-highlight) solid var(--color-border-highlighted);
 }
 
 header #header, .site-header, .header-content,  .header-text, 
@@ -442,7 +443,7 @@ textarea {
   color: var(--color-text);
   border: 1px solid var(--color-border);
 
-  border-left: 4px solid var(--color-border-highlighted);
+  border-left: var(--border-left-highlight) solid var(--color-border-highlighted);
   padding: 0.5rem;
   border-radius: 4px;
   width: 100%;
@@ -458,7 +459,7 @@ footer {
     margin-top: 2em;
     border-top: 2px solid var(--color-border);
     
-    border-left: 4px solid var(--color-border-highlighted);
+    border-left: var(--border-left-highlight) solid var(--color-border-highlighted);
     border-bottom: none;
 /*    padding: 1em; */
 }
@@ -541,7 +542,7 @@ footer .site-nav li a {
     border-top: 2px solid var(--color-border);
     border-bottom: 2px solid var(--color-border);
 
-    border-left: 4px solid var(--color-border-highlighted);
+    border-left: var(--border-left-highlight) solid var(--color-border-highlighted);
     font-size: 1em;
     text-align: justify;
     text-align-last: left;
@@ -589,7 +590,7 @@ footer .site-nav li a {
     padding: 0.7em;
     border: 1px solid var(--color-border);
 
-    border-left: 4px solid var(--color-border-highlighted);
+    border-left: var(--border-left-highlight) solid var(--color-border-highlighted);
     border-radius: 4px;
 }
 
@@ -736,7 +737,7 @@ section {
     margin: var(--margin);
     padding: 0.7em;
    
-    border-left: 4px solid var(--color-border-highlighted);
+    border-left: var(--border-left-highlight) solid var(--color-border-highlighted);
     border-radius: 5px;
     padding: 0.8em 1.2em;
     transition: background-color 0.3s ease;
@@ -799,7 +800,7 @@ section {
     display: inline-block;
     border: 1px solid var(--color-border);
 
-    border-left: 4px solid var(--color-border-highlighted);
+    border-left: var(--border-left-highlight) solid var(--color-border-highlighted);
     border-radius: var(--border-radius);
     padding: var(--padding);
 }
