@@ -72,11 +72,12 @@ body {
 }
 
 /* Light Theme Color Accents */
+/*
 .light-theme h1, .light-theme h2, .light-theme h3,
 .light-theme h4, .light-theme h5, .light-theme h6,
 .light-theme a {
     color: var(--color-link); /* Teal Headers and links */
-}
+/*}
 
 .light-theme a:hover {
     color: var(--color-link-hover);
@@ -84,13 +85,13 @@ body {
 
 .light-theme .highlighted-section {
     background-color: #d0d8dd; /* Darker background for contrast */
-    border-color: var(--color-link); /* Teal border */
-}
+/*    border-color: var(--color-link); /* Teal border */
+/*}
 
 .light-theme .highlighted-section a.button-link,
 .button-link {
     /* Button Styles, applies to both themes */
-    display: block;
+/*    display: block;
     padding: 0.8em 1.2em;
     background-color: var(--color-background-medium);
     color: var(--color-text);
@@ -104,6 +105,7 @@ body {
 .button-link:hover {
     background-color: var(--color-background-dark);
 }
+*/
 
 /* ============================================================
    3. TYPOGRAPHY TOKENS (CSS Variables)
