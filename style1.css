@@ -36,14 +36,15 @@ body {
 :root {
     /* DARK THEME (Default) */
     --color-background-light: #121212;
-    --color-background-medium: #1e1e1e;
+    --color-background: #1e1e1e;
     --color-background-dark: #333;
-    --color-text-primary: #e0e0e0;
-    --color-text-secondary: #cccccc;
+    --color-text: #e0e0e0;
+    --color-text-light: #cccccc;
     --color-text-muted: #999;
-    --color-link-primary: #a33; 
+    --color-link: #a33; 
     --color-link-hover: #b66; 
-    --color-border-primary: #444;
+    --color-border: #444;
+    --color-border-highlighted: #a33;
 }
 
 /* LIGHT THEME OVERRIDES */
@@ -53,28 +54,28 @@ body {
   --color-background-medium: #e4e7eb;
   --color-background-dark: #d0d4d9;
 
-  --color-text-primary: #1a1a1a;
+  --color-text: #1a1a1a;
   --color-text-secondary: #444c56;
   --color-text-muted: #6b7280;
 
-  --color-link-primary: #006580;
+  --color-link: #006580;
   --color-link-hover: #003d4d;
 
-  --color-border-primary: #cbd5e0;
+  --color-border: #cbd5e0;
 }
 
 /* Apply Background and Text Colors based on theme */
 body {
-    background-color: var(--color-background-light);
-    color: var(--color-text-primary);
-    border-color: var(--color-border-primary);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    border-color: var(--color-border);
 }
 
 /* Light Theme Color Accents */
 .light-theme h1, .light-theme h2, .light-theme h3,
 .light-theme h4, .light-theme h5, .light-theme h6,
 .light-theme a {
-    color: var(--color-link-primary); /* Teal Headers and links */
+    color: var(--color-link); /* Teal Headers and links */
 }
 
 .light-theme a:hover {
@@ -83,7 +84,7 @@ body {
 
 .light-theme .highlighted-section {
     background-color: #d0d8dd; /* Darker background for contrast */
-    border-color: var(--color-link-primary); /* Teal border */
+    border-color: var(--color-link); /* Teal border */
 }
 
 .light-theme .highlighted-section a.button-link,
@@ -92,10 +93,10 @@ body {
     display: block;
     padding: 0.8em 1.2em;
     background-color: var(--color-background-medium);
-    color: var(--color-text-primary);
+    color: var(--color-text);
     text-align: center;
     border-radius: 5px;
-    border: 1px solid var(--color-border-primary);
+    border: 1px solid var(--color-border);
     transition: background-color 0.3s ease;
 }
 
@@ -111,7 +112,7 @@ body {
 :root {
     /* Font Families and Sizes */
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
-    --font-size-base: 1rem;
+    --font-size: 1rem;
     --font-size-small: 0.875rem;
     --font-size-large: 1.25rem;
 
@@ -121,20 +122,20 @@ body {
     --font-weight-bold: 700;
 
     /* Spacing (Margins, Padding) */
-    --margin-base: 1em;
+    --margin: 1em;
     --margin-small: 0.5em;
     --margin-large: 1.5em;
     --margin-larger: 2em;
-    --padding-base: 1em;
+    --padding: 1em;
     --padding-small: 0.75em;
     --padding-smaller: 0.5em;
     --padding-large: 1.5em;
     --padding-none: 0;
 
     /* Borders and Line Heights */
-    --border-radius-base: 5px;
+    --border-radius: 5px;
     --border-radius-small: 4px;
-    --line-height-base: 1.75;
+    --line-height: 1.75;
     --line-height-small: 1.5;
     --line-height-smaller: 1.2;
 }
@@ -145,20 +146,20 @@ body {
 
 body {
     font-family: var(--font-family);
-    font-size: var(--font-size-base);
+    font-size: var(--font-size);
     font-weight: var(--font-weight-normal);
-    margin: var(--margin-base);
-    border-radius: var(--border-radius-base);
-    padding: var(--padding-base);
-    line-height: var(--line-height-base);
+    margin: var(--margin);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    line-height: var(--line-height);
     text-align: left;
     text-align-last: left;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-    color: var(--color-text-primary);
-    margin: var(--margin-base);
+    color: var(--color-text);
+    margin: var(--margin);
     padding: var(--padding-none);
     line-height: var(--line-height-smaller);
     font-weight: var(--font-weight-semibold);
@@ -183,7 +184,7 @@ p { margin-bottom: 1em; }
 ul, ol {
    list-style: none; 
    padding-left: var(--padding-smaller); 
-   margin: var(--margin-base) 0; 
+   margin: var(--margin) 0; 
 }
 
 ul li, ol li { margin-bottom: var(--margin-small); }
@@ -194,7 +195,7 @@ ul li, ol li { margin-bottom: var(--margin-small); }
 
 /* Links */
 a {
-    color: var(--color-link-primary);
+    color: var(--color-link);
     text-decoration: none;
     font-weight: normal;
     transition: color 0.3s;
@@ -209,14 +210,14 @@ table {
     background-color: var(--color-background-medium);
     width: 100%;
     margin: var(--margin-large) auto;
-    border: 1px solid var(--color-border-primary);
-    border-radius: var(--border-radius-base);
-    padding: var(--padding-base);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
 }
 
 table th, table td {
     background: var(--color-background-medium);
-    border: 1px solid var(--color-border-primary);
+    border: 1px solid var(--color-border);
     padding: var(--padding-small);
     text-align: left;
     text-align-last: left;
@@ -225,18 +226,18 @@ table th, table td {
 /* Code Blocks */
 pre, code {
     background: var(--color-background-medium); /* Changed from --bg-alt */
-    padding: var(--padding-base);
+    padding: var(--padding);
     display: block;
     overflow-x: auto;
     font-family: monospace;
-    margin-bottom: var(--margin-base);
+    margin-bottom: var(--margin);
 }
 
 /* Images */
 img {
     max-width: 100px;
     height: auto;
-    margin: var(--margin-base);
+    margin: var(--margin);
 }
 
 .image-left-inline {
@@ -283,7 +284,8 @@ figcaption {
 .p-16 { padding: 1rem; }
 
 .container {
-    max-width: 800px;
+/*    max-width: 800px; */
+    max-width: 1200px;
     margin: 0 auto;
     padding: var(--padding-smaller);
 }
@@ -301,14 +303,15 @@ figcaption {
     max-width: 600px;
     margin: 1.2em auto;
     padding: 1px;
-    border-top: 2px solid var(--color-border-primary);
+    border-top: 2px solid var(--color-border);
 }
 
 .section-divider {
     padding: 2px;
-    border-top: 2px solid var(--color-border-primary);
-    border-left: 1px solid var(--color-border-primary);
-    border-right: 1px solid var(--color-border-primary);
+    border-top: 2px solid var(--color-border);
+    border-left: 4px solid var(--color-border-highlighted);
+/*    border-left: 1px solid var(--color-border); */
+    border-right: 1px solid var(--color-border);
     margin: 2em 0;
 }
 
@@ -318,12 +321,14 @@ figcaption {
 
 .btn, .button-link { /* Combined .btn and .button-link */
 /*    background-color: var(--color-background-dark); */
-    background-color: var(--color-link-primary);
-    color: var(--color-text-primary);
+    background-color: var(--color-link);
+    color: var(--color-text);
     display: block;
-    margin: var(--margin-base) auto;
-    border: 1px solid var(--color-border-primary);
-    border-radius: var(--border-radius-base);
+    margin: var(--margin) auto;
+    border: 1px solid var(--color-border);
+   
+    border-left: 4px solid var(--color-border-highlighted);
+    border-radius: var(--border-radius);
     padding: var(--padding-large);
     text-decoration: none;
     font-size: var(--font-size-large);
@@ -349,9 +354,9 @@ figcaption {
 
 /* Large Button */
 .btn.large, .button-link.large { /* Combined .btn.large and .button-link.large */
-    font-size: var(--font-size-base);
+    font-size: var(--font-size);
     margin: var(--margin-large) auto;
-    padding: var(--padding-base);
+    padding: var(--padding);
     text-align: justify;
     text-align-last: center;
 }
@@ -384,7 +389,7 @@ figcaption {
 .button-link.large.full-block-button span {
 /*    margin: 0.5em 0;
 */
-   color: var(--color-text-primary);
+   color: var(--color-text);
 }
 
 /* Ensure button hover styles still apply */
@@ -399,16 +404,19 @@ figcaption {
 header, nav, footer, .site-header {
     background-color: var(--color-background-medium);
     color: var(--color-text-secondary);
-    padding: var(--padding-smaller) var(--padding-base) var(--padding-base); 
-    margin: var(--margin-base) auto;
-    margin-bottom: var(--margin-base);
+    padding: var(--padding-smaller) var(--padding) var(--padding); 
+    margin: var(--margin) auto;
+    margin-bottom: var(--margin);
     text-align: center;
     text-align-last: center;
+   
 }
 
 header, .site-header {
     font-size: 1.6em;
-    border-bottom: 2px solid var(--color-border-primary);
+    border-bottom: 2px solid var(--color-border);
+
+    border-left: 4px solid var(--color-border-highlighted);
 }
 
 header #header, .site-header, .header-content,  .header-text, 
@@ -429,8 +437,10 @@ nav {
 input,
 textarea {
   background-color: var(--color-background-light);
-  color: var(--color-text-primary);
-  border: 1px solid var(--color-border-primary);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+
+  border-left: 4px solid var(--color-border-highlighted);
   padding: 0.5rem;
   border-radius: 4px;
   width: 100%;
@@ -439,14 +449,16 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: var(--color-link-primary);
+  border-color: var(--color-link);
 }
 
 footer {
     margin-top: 2em;
-    border-top: 2px solid var(--color-border-primary);
+    border-top: 2px solid var(--color-border);
+    
+    border-left: 4px solid var(--color-border-highlighted);
     border-bottom: none;
-    padding: 1em;
+/*    padding: 1em; */
 }
 
 footer nav {
@@ -524,9 +536,10 @@ footer .site-nav li a {
     color: var(--color-text-secondary);
     margin: 1em 0 0.5em;
     padding: 2em 1em;
-    border-top: 2px solid var(--color-border-primary);
-    border-bottom: 2px solid var(--color-border-primary);
-    border-left: 4px solid var(--color-link-primary);
+    border-top: 2px solid var(--color-border);
+    border-bottom: 2px solid var(--color-border);
+
+    border-left: 4px solid var(--color-border-highlighted);
     font-size: 1em;
     text-align: justify;
     text-align-last: left;
@@ -540,10 +553,10 @@ footer .site-nav li a {
 
 .highlighted-section a {
     background-color: var(--color-background-dark);
-    color: var(--color-text-primary);
+    color: var(--color-text);
     display: block;
     margin: 0.5em 1em;
-    border: 2px solid var(--color-border-primary);
+    border: 2px solid var(--color-border);
     border-radius: 5px;
     padding: 0.8em 1.2em;
     transition: background-color 0.3s ease;
@@ -572,7 +585,9 @@ footer .site-nav li a {
     display: inline-block;
     margin: 0.3em;
     padding: 0.7em;
-    border: 1px solid var(--color-border-primary);
+    border: 1px solid var(--color-border);
+
+    border-left: 4px solid var(--color-border-highlighted);
     border-radius: 4px;
 }
 
@@ -641,9 +656,9 @@ section {
     background: var(--color-background-light);
     font-weight: var(--font-weight-semibold); 
     margin: var(--margin-large);
-    margin-top: var(--margin-base);
-    border-radius: var(--border-radius-base);
-    padding: var(--padding-base);
+    margin-top: var(--margin);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
     text-align: justify;
     text-align-last: left;
 }
@@ -703,11 +718,11 @@ section {
 /* Index Page Layout */
 .index-page, .index-list, .index-list li {
     background-color: var(--color-background-light);
-    color: var(--color-text-primary);
+    color: var(--color-text);
     max-width: 600px;
-    margin: var(--margin-base) auto;
-    border: 1px solid var(--color-border-primary);
-    border-radius: var(--border-radius-base);
+    margin: var(--margin) auto;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
     padding: 0.5em 1.2em 0em 1.2em;
     font-size: var(--font-size-small);
     text-align: center;
@@ -716,15 +731,17 @@ section {
 
 .index-list li {
     display: block;
-    margin: var(--margin-base);
+    margin: var(--margin);
     padding: 0.7em;
+   
+    border-left: 4px solid var(--color-border-highlighted);
     border-radius: 5px;
     padding: 0.8em 1.2em;
     transition: background-color 0.3s ease;
 }
 
 .index-list li a {
-    border-radius: var(--border-radius-base);
+    border-radius: var(--border-radius);
 }
 
 .index-list li a:hover {
@@ -734,11 +751,11 @@ section {
 /* Disclaimer Page Layout */
 .disclaimer-page {
     background-color: var(--color-background-light);
-    color: var(--color-text-primary);
+    color: var(--color-text);
     max-width: 800px;
     margin: 0 auto;
     border-radius: 4px;
-    border: 1px solid var(--color-text-primary);
+    border: 1px solid var(--color-text);
     padding: 1em;
     font-size: 1.1em;
     text-align: justify;
@@ -748,10 +765,10 @@ section {
 /* Article Layouts */
 .article-white-paper, .article-essay, .article-guide {
     background-color: var(--color-background-light);
-    color: var(--color-text-primary);
+    color: var(--color-text);
     max-width: 800px;
     margin: 0 auto;
-    border: 1px solid var(--color-text-primary);
+    border: 1px solid var(--color-text);
     border-radius: var(--border-radius-small);
     padding: 1em;
     font-size: 1.1em;
@@ -759,7 +776,7 @@ section {
 
 .article-white-paper {
     padding: 2em;
-    border-radius: var(--border-radius-base);
+    border-radius: var(--border-radius);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: justify;
     text-align-last: left;
@@ -778,9 +795,11 @@ section {
     display: inline-block;
     max-width: 100%;
     display: inline-block;
-    border: 1px solid var(--color-border-primary);
-    border-radius: var(--border-radius-base);
-    padding: var(--padding-base);
+    border: 1px solid var(--color-border);
+
+    border-left: 4px solid var(--color-border-highlighted);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
 }
 
 #image-example img {
