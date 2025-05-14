@@ -312,8 +312,8 @@ figcaption {
 .section-divider {
     padding: 2px;
     border-top: 2px solid var(--color-border);
+
     border-left: var(--border-left-highlight) solid var(--color-border-highlighted);
-/*    border-left: 1px solid var(--color-border); */
     border-right: 1px solid var(--color-border);
     margin: 2em 0;
 }
@@ -323,8 +323,7 @@ figcaption {
    ============================================================ */
 
 .btn, .button-link { /* Combined .btn and .button-link */
-/*    background-color: var(--color-background-dark); */
-    background-color: var(--color-link);
+    background-color: var(--color-background-dark); 
     color: var(--color-text);
     display: block;
     margin: var(--margin) auto;
@@ -342,8 +341,7 @@ figcaption {
 }
 
 .btn:hover, .button-link:hover {
-/*    background: var(--color-background-darker); */
-    background-color: var(--color-link);
+    background: var(--color-background-darker); 
     color: #fff;
 }
 
@@ -383,7 +381,7 @@ figcaption {
     padding: 2em 1em;
     margin: var(--margin-large) auto;
 }
-*/
+
 
 .btn.large.full-block-button h3,
 .btn.large.full-block-button p,
@@ -393,8 +391,9 @@ figcaption {
 .button-link.large.full-block-button span {
 /*    margin: 0.5em 0;
 */
-   color: var(--color-text);
+/*   color: var(--color-text);
 }
+*/
 
 /* Ensure button hover styles still apply */
 /*.btn.large.full-block-button:hover, .button-link.large.full-block-button:hover {
@@ -422,7 +421,7 @@ header, .site-header {
     border-bottom: 2px solid var(--color-border);
 
     border-left: var(--border-left-highlight) solid var(--color-border-highlighted);
-    border-bottom: var(--border-left-highlight) solid var(--color-border-highlighted);
+    border-top: var(--border-left-highlight) solid var(--color-border-highlighted);
 }
 
 header #header, .site-header, .header-content,  .header-text, 
