@@ -39,6 +39,10 @@
 </head>
 <!-- ------------------- // ------------------- -->
 
+<!--  - (U+002D: HYPHEN)  – (U+2013: EN DASH)  — (U+2014: EM DASH)  ‒ (U+2012: FIGURE DASH)  -->
+<!--  • (U+2022: BULLET)  ◦ (U+25E6: WHITE BULLET)  ▪ (U+25AA: BLACK SQUARE)  □ (U+25A1: WHITE SQUARE)  ‣ (U+2023: TRIANGULAR BULLET)  -->
+<!--  <input type="checkbox" checked>  1️⃣  2️⃣  3️⃣  4️⃣  5️⃣  -->
+
 <body>
         <!-- Site Header -->
     <header class="site-header">
@@ -82,7 +86,7 @@
         </nav>
         <br>
         <div class="center theme-toggle">
-                <!-- href="../" --> 
+                <!-- check href="../" --> 
             <img id="theme-icon-nav" src="../images/bulb_white.png" 
                 alt="Theme Icon" 
                 style="width: 40px; cursor: pointer;" 
@@ -90,27 +94,33 @@
                 aria-label="Toggle Theme (Header)">
         </div>
     </header>
-
-    <br class="divider">
 <!-- ------------------- // ------------------- -->
 
-        <!-- Main Article Body -->
-    <main class="container article-essay" id="content-main">
+    <main class="container" id="article-top">
+        <section id="total-data-breach">
+            <h2>TITLE</h2>
+            <br class="divider">
+        </section>
 
-    <!-- Table of Contents [Button] -- for List CHaNGEs below-->
-        <aside class="toc-container center" id="toc">
-                <!-- list CHANGE: class="toc-container left" (removed: class="content-section") -->
-            <nav aria-label="Table of Contents">
-                <h3>Table of Contents</h3>
+<!-- TOC - Table of Contents-->
+        <section class="content-section" id="toc">
+            <h3>Table of Contents</h3>
                 <ul class="index-list"> 
                         <!-- list CHANGE: class="toc-list" REMOVE: class="toc-btn" -->
+                    <li><a href="#intro" class="btn">Introduction</a></li>
+                    <li><a href="#section-1" class="btn" aria-label="FIRST SECTION">FIRST SECTION</a></li>
+                    <li><a href="#section-2" class="btn" aria-label="SECOND SECTION">SECOND SECTION</a></li>
+                    <li><a href="#section-3" class="btn" aria-label="THIRD SECTION">THIRD SECTION</a></li>
+                    <li><a href="#conclusion" class="btn" aria-label="conclusion">Conclusions</a></li>
+                    <li><a href="#references" class="btn" aria-label="References and Further Reading">References and Further Reading</a></li>
+
+ <!--               <hr class="divider">
                     <li><a href="#guide" class="btn-link" aria-label="Guide">Guide</a></li>
                     <li><a href="#overview" class="btn-link" aria-label="Overview">Overview</a></li>
-                    <li><a href="#introduction" class="btn-link" aria-label="Introduction">Introduction</a></li>
-                    
+
                     <li><a href="#article-top" class="btn" aria-label="Article Top">Article Top</a>
                     <li><a href="#content-main" class="btn" aria-label="Content Top">Content Top</a></li>
-                    <li><a href="#section" class="btn" aria-label=" Scpecial Section Section" >Special "Section" Section</a></li>
+                    <li><a href="#section" class="btn" aria-label="SECTION" >SECTION</a></li>
                     <li><a href="#callout" class="btn" aria-label="Callout">Callout</a></li>
                                         
                     <li><a href="#quote" class="btn" aria-label="Quote">Quote</a></li>
@@ -125,14 +135,13 @@
                     <li><a href="#glossary" class="btn" aria-label="Glossary">Glossary</a></li>
                     <li><a href="#further-reading" class="btn" aria-label="Further Reading">Further Reading</a></li>
                     <li><a href="#references" class="btn" aria-label="References">References</a></li>
+-->
                 </ul>
             </nav>
         </aside>
-
-        <hr class="divider">
 <!-- ------------------- // ------------------- -->
 
-        <!-- Main Article Content -->
+<!-- Main Article Content -->
         <article class="content-body" id="article-top">
             <section>
                 <h2>Main Article Content</h2>
