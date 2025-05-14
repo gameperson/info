@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TITLE</title>
-        <!-- check href="../" --> 
-    <link rel="stylesheet" href="../style.css" />
+        <!-- check href="../" | style.css, style1.css, style2.css --> 
+    <link rel="stylesheet" href="../style1.css" />
         <!-- SEO & Social -->
     <meta name="author" content="ChatGPT, Google Gemini, Deep AI, Claude, and gameperson@github" />
     <meta name="description" content="DESCRIPTION - AI-powered research and expert editing for a unique perspective. Curated by gameperson@github. Expect more." />
@@ -103,7 +103,7 @@
         </section>
 
 <!-- TOC - Table of Contents-->
-        <section class="content-section" id="toc">
+        <aside class="content-section" id="toc">
             <h3>Table of Contents</h3>
                 <ul class="index-list"> 
                         <!-- list CHANGE: class="toc-list" REMOVE: class="toc-btn" -->
@@ -148,7 +148,7 @@
                 <p>
                     <a href="../source/Article_Template.html">
                         link to content template (headless tailless ):
-                        ../source/Article_Template.html
+                        ../templates/Body.html
                     </a>
                 </p> 
             </section>
@@ -157,7 +157,7 @@
         <hr class="divider">
 <!-- ------------------- // ------------------- -->
 
-            <!-- Return Navigation Link List-->
+<!-- Return Navigation Links -->
         <div class="return-list-link">
             <nav class="index-list center">
                 <a href="#top" aria-label="Page Top">[Page&nbsp;Top]</a> &nbsp;
@@ -168,8 +168,8 @@
                 <a href="javascript:history.back();">[Back]</a>
             </nav>
         </div>
-        
-            <!-- Return [Button] Links -->
+
+<!-- Return [Button] Links -->
         <div class="return-link center">
             <nav class="index-list center">
                 <p>Page Top #top:</p>
@@ -190,73 +190,82 @@
     <br class="divider">
 <!-- ------------------- // ------------------- -->
 
-        <!-- Disclaimer -->
-    <section class="highlighted-section">
-        <div class="disclaimer-link" id="disclaimer">
-                <!-- href="../" --> 
-            <a href="../gameperson_Disclaimer.html"  class="btn large full-block-btn" data-tags="legal notice, terms of use, information accuracy, liability disclaimer, AI-generated content, content responsibility" aria-label="This Content is for Informational Purposes and Should Not Be Considered Complete or Without Error">
-                <h3>Disclaimer</h3>
-                <p>The content here is for <strong>informational and thought provoking purposes</strong>. Every effort is made to ensure accuracy, develop extensive coverage and provide competent analysis; however, information is subject to change and omissions or errors may be present. Users are encouraged to verify any information.</p>
-                <span><large><b>Full Site Disclaimer</b></large></span>
-            </a>
-        </div>
-        <div class="return-link">
-            <a href="javascript:history.back();" class="btn center" aria-label="Back">Back</a>
-        </div>
-    </section>
-    
-        <!-- About + Contact -->
-    <section class="about content-section" id="about">
-        <h2>About gameperson@github</h2>
-        <p>Specialized content and in-depth analysis, combining AI-assisted research with human editing. Rich, insightful and thought-provoking content about today's pressing realities</p>
-        <div class="authors center" id="authors">
-            <h3>Content Creation Contributors</h3>
-            <p><b>Authors:</b> ChatGPT, Google Gemini, Deep AI<br></p>
-            <p><b>Editor and Producer:</b> gameperson@github<br></p>  
-        </div> 
-        <div class="contact-link" id="contact">
-            <a href="mailto:gamesomeotherday@gmail.com" class="btn large full-block-btn" data-tags="gameperson, gameperson@github, contact gameperson" aria-label="Contact: Send an Email">
-                <h3>Contact</h3>
-                <p><b>Feedback is Welcome</b>: Report any typos, factual inaccuracies, missing information, suggestions for improvement or new topic ideas.</p>
-                <span><large><b>Send an Email</b></large></span>
-            </a>
-        </div>
-    </section>
-</main>
-    
+<!-- Tail - Legal, Brag, About & Contact, Footer -->
+<!-- Legal -->
+        <section class="highlighted-section" id="legal">
+            <h2>&copy; Today, 2025</h2>
+            <div class="disclaimer-link">
+                <a href="../gameperson_Disclaimer.html"  class="btn large full-block-button" data-tags="legal notice, terms of use, information accuracy, liability disclaimer, AI-generated content, content responsibility" aria-label="This Content is for Informational Purposes and Should Not Be Considered Complete or Without Error">
+                    <h3>Disclaimer</h3>
+                    <br>
+                    <p>The content here is for <strong>informational and thought provoking purposes</strong>. Find out how you can use our content and limitations that apply.</p>
+                    <span><large><b>Full Site Disclaimer</b></large></span>
+                </a>
+            </div>
+
+            <div class="return-link">
+                <a href="javascript:history.back();" class="btn center" aria-label="Back">Back</a>
+            </div>
+        </section>
+
+<!-- Brag -->
+        <section class="about content-section" id="brag">
+            <p>This article was conceived and written through an interactive and in-depth collaboration with humans.</p>
+        </section>
+
+<!-- About & Contact -->
+        <section class="about content-section" id="about">
+            <h2>About Us</h2>
+            <h4>Illuminating Perspectives Conciously Crafted with AI Collaboration</h4>
+            <p>This platform delivers specialized content and in-depth analysis, meticulously crafted through a powerful synergy of AI-assisted research and discerning human editorial oversight. The result is a rich tapestry of insights, offering thought-provoking perspectives on today's most pressing realities, explored with both precision and depth.</p>
+            <p>Our commitment is to provide content that not only informs but also sparks intellectual curiosity, offering a unique lens through which to understand the complexities of our evolving world.</p>
+            <br>
+
+<!--            <div class="authors" id="authors"> 
+ -->                <h3>The Minds Behind the Insights</h3>
+                <p>The content featured here is the result of a dynamic collaboration, where cutting-edge artificial intelligence models – including the insightful contributions of ChatGPT, the comprehensive analysis of Google Gemini, the innovative perspectives of Deep AI, and the articulate reasoning of Claude – converge with dedicated human expertise.</p>
+                <p>Overseeing this unique synthesis is gameperson@github, serving as Editor and Producer ensuring the final output is both rich in detail and thoughtfully curated for an engaging experience.</p>
+<!--            </div> 
+-->
+            <div class="contact-link" id="contact">
+                <a href="mailto:gamesomeotherday@gmail.com" class="btn large full-block-button" target="_blank" rel="noopener noreferrer" data-tags="gameperson, gameperson@github, contact gameperson" aria-label="Contact: Send an Email">
+                    <h3>Connect & Contribute</h3>
+                    <br>
+                    <p><b>Shape Our Insights</b>: Your feedback is invaluable in our continuous pursuit of accuracy and depth. Please share any corrections, suggestions for expanded analysis, or ideas for future topics that align with our commitment to exploring today's pressing realities.</p>
+                    <span><large><b>Reach Out Via Email</b></large></span>
+                </a>
+            </div>
+        </section>
 <!-- ------------------- // ------------------- -->
 
-        <!-- Footer -->
+<!-- Footer - Links, Theme Toggle Button -->
     <footer>
-    <section id="footer">
-        <div class="footer-content">
-            <nav class="site-nav">
-                <ul class="nav-list">
-                    <li><a href="javascript:history.back();">Back</a></li>
-                    <li><a href="#top" aria-label="Page Top">Page Top</a></li>
-                        <!-- href="../" --> 
-                    <li><a href="../index.html" aria-label="Site Index">Article Index Page</a></li>
-                </ul>
-            </nav>
-        </div>
-            <!-- Theme Toggle -->
-        <div class="theme-toggle center" style="margin-top: 1rem;">
-                <!-- href="../" --> 
+        <section id="footer">
+            <div>
+                <p class="footer-text">&copy; 2025</p>
+            </div>
+            <div class="footer-content">
+                <nav class="site-nav">
+                    <ul class="nav-list">
+                        <li><a href="#top">Top of Page</a></li>
+                        <li><a href="javascript:history.back();">Back</a></li> 
+                        <li><a href="../index.html" aria-label="Site Index">Article Index Page</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+    <!-- Theme Toggle Button -->
+        <div class="theme-toggle centered" style="margin-top: 1rem;">
             <img id="theme-icon-footer" src="../images/bulb_white.png" 
-                 alt="Theme Icon" 
-                 style="width: 40px; cursor: pointer;" 
-                 onclick="toggleTheme()" 
-                 aria-label="Toggle Theme (Footer)">
-        </div>
-        <div>
-            <p class="footer-text">&copy; 2025 gameperson@github</p>
+                alt="Theme Icon" 
+                style="width: 40px; cursor: pointer;" 
+                onclick="toggleTheme()" 
+                aria-label="Toggle Theme (Footer)">
         </div>
     </footer>
-        
 <!-- ------------------- // ------------------- -->
-    
-        <!-- Theme Switcher .js File-->
-    <script src="../js/toggle-theme.js"></script>
 
+<!-- Javascript - Theme Switcher -->
+    <script src="../js/theme-switch.js"></script>
 </body>
 </html>
