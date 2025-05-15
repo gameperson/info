@@ -38,12 +38,15 @@ body {
     --color-background-light: #121212;
     --color-background: #1e1e1e;
     --color-background-dark: #333;
+    --color-background-highlighted: #302020;
     --color-text: #e0e0e0;
     --color-text-light: #cccccc;
     --color-text-muted: #999;
+    --color-text-highlighted: #a33;
     --color-link: #a33; 
     --color-link-hover: #b66; 
     --color-border: #444;
+    --color-border-light: #666;
     --color-border-highlighted: #a33;
 }
 
@@ -284,8 +287,12 @@ figcaption {
 .center { text-align: center; text-align-kast: center; }
 .justify { text-align: justify; text-align-last: justify; }
 */
-.text-muted {
+.text-muted .muted {
   color: var(--color-text-muted);
+}
+
+.text-highlighted .highlighted {
+  color: var(--color-text-highlighted);
 }
 
 .mb-16 { margin-bottom: 1rem; }
@@ -311,7 +318,7 @@ figcaption {
 hr {
     width: 100%;
     border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
-    border-botom: var(--border-bottom-highlight-width) solid var(--color-border);
+    border-botom: var(--border-bottom-highlight-width) solid var(--color-border-highlighted);
     border-radius: var(--border-radius);
 }
 
@@ -325,7 +332,7 @@ hr {
 .section-divider {
     width: 100%;
     border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
-    border-botom: 1px solid var(--color-border);
+    border-botom: var(--border-bottom-highlight-width) solid var(--color-border-highlighted);
     border-radius: var(--border-radius);
     padding: var(--padding);
 }
@@ -354,7 +361,7 @@ hr {
 
 .btn:hover, .button-link:hover {
     background: var(--color-background-darker); 
-    color: #fff;
+/*    color: #fff; */
 }
 
 /* Smaller nav Buttons */
@@ -430,8 +437,7 @@ header, nav, footer, .site-header {
 
 header, .site-header {
     font-size: 1.6em;
-    border-bottom: 2px solid var(--color-border);
-
+    border-bottom: 1px solid var(--color-border);
     border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
     border-top: var(--border-top-highlight-width) solid var(--color-border-highlighted);
 }
@@ -455,7 +461,7 @@ input,
 textarea {
   background-color: var(--color-background-light);
   color: var(--color-text);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-border-light);
 
   border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
   padding: 0.5rem;
@@ -466,12 +472,12 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: var(--color-link);
+  border-color: var(--color-border-light);
 }
 
 footer {
     margin-top: 2em;
-    border-top: 2px solid var(--color-border);
+    border-top: 1px solid var(--color-border);
     
     border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
     border-bottom: var(--border-bottom-highlight-width) solid var(--color-border-highlighted);
@@ -669,7 +675,7 @@ footer .site-nav li a {
    ============================================================ */
 
 section {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 /* Ahout & Authors */
