@@ -276,6 +276,15 @@ img {
     height: auto;
   }
 
+ img.theme-toggle {
+    width: 5em;
+    height: auto;
+    margin: 0.5em auto;
+    border: none;
+}
+
+
+
 figcaption {
     margin-top: 0.5em; 
 /*    font-style: italic; */
