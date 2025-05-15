@@ -282,18 +282,14 @@ figcaption {
    5. LAYOUT & CONTAINERS 
    ========================================================= */
 
+/* Text */
 .left { text-align: left; text-align-last: left; }
 .right { text-align: right; text-align-last: right; }
 .center { text-align: center; text-align-last: center; }
 .justify { text-align: justify; text-align-last: justify; }
 
-.text-muted .muted {
-  color: var(--color-text-muted);
-}
-
-.text-highlighted .highlighted {
-  color: var(--color-text-highlighted);
-}
+.muted { color: var(--color-text-muted); }
+.highlighted { color: var(--color-text-highlighted); }
 
 .mb-16 { margin-bottom: 1rem; }
 .p-16 { padding: 1rem; }
