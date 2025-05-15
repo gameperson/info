@@ -253,6 +253,7 @@ img {
     max-width: 420px;
     height: auto;
     margin: var(--margin);
+    border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
 }
 
 .image-left-inline {
@@ -276,10 +277,15 @@ img {
   }
 
 figcaption {
-    margin-top: 0.5em;
-    font-style: italic;
+    margin-top: 0.5em; 
+/*    font-style: italic; */
     text-align: center;
     text-align-last: center;
+}
+
+figcaption b {
+   color: var(--color-text-highlighted);
+   font-weight: var(--font-weight-semibold);
 }
 
 /* ========================================================= 
