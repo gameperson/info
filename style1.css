@@ -305,20 +305,29 @@ figcaption {
     margin-bottom: 1em;
 }
 
+/* Dividers */
+hr {
+    width: 100%;
+    border-left: var(--border-left-highlight) solid var(--color-border-highlighted);
+    border-botom: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+}
+
 .divider {
-    max-width: 600px;
-    margin: 1.2em auto;
-    padding: 1px;
-    border-top: 2px solid var(--color-border);
+    width: 100%;
+    border-left: var(--border-left-highlight) solid var(--color-border-highlighted);
+    border-botom: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
 }
 
 .section-divider {
-    padding: 2px;
-    border-top: 2px solid var(--color-border);
-
+    width: 100%;
     border-left: var(--border-left-highlight) solid var(--color-border-highlighted);
-    border-right: 1px solid var(--color-border);
-    margin: 2em 0;
+    border-botom: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
 }
 
 /* ============================================================
