@@ -249,7 +249,8 @@ pre, code {
 
 /* Images */
 img {
-    max-width: 100px;
+    width: 80%;
+    max-width: 420px;
     height: auto;
     margin: var(--margin);
 }
