@@ -39,13 +39,16 @@ body {
     --color-background: #1e1e1e;
     --color-background-dark: #333;
     --color-background-highlighted: #302020;
+
     --color-text: #e0e0e0;
     --color-text-light: #cccccc;
     --color-text-muted: #999;
     --color-text-highlighted: #a33;
+    
     --color-link: #a33; 
-    --color-link-hover: #b66; 
+    --color-link-hover: #b44; 
     --color-border: #444;
+    
     --color-border-light: #666;
     --color-border-highlighted: #a33;
 }
@@ -288,8 +291,8 @@ figcaption {
 .center { text-align: center; text-align-last: center; }
 .justify { text-align: justify; text-align-last: justify; }
 
-.muted { color: var(--color-text-muted); }
 .highlighted { color: var(--color-text-highlighted); }
+.muted { color: var(--color-text-muted); }
 
 .mb-16 { margin-bottom: 1rem; }
 .p-16 { padding: 1rem; }
