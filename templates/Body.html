@@ -90,8 +90,8 @@
         </nav>
         <br>
         <div class="center theme-toggle">
-                <!-- check href="../" --> 
-            <img id="theme-icon-nav" src="../images/bulb_white.png" 
+<!-- check href="../" --> 
+            <img class="theme-toggle" id="theme-icon-nav" src="../images/bulb_white.png" 
                 alt="Theme Icon" 
                 style="width: 40px; cursor: pointer;" 
                 onclick="toggleTheme()" 
@@ -241,18 +241,20 @@
                 Another section with anchor "#secton".
                 explanation, associated research, analysis, 
                 deep dive, research findings, case study, etc.
-                subsections to organize detailed information
-                
+                subsections to organize detailed information.
             </p>
         </section>
             
+    <hr class="divider">
+        <div class="retutn-link">
+             <a href="#toc" class="btn" aria-label="Cntents">Table of Contents</a>
+        </div>
     <br class="divider">
 <!-- ------------------- // ------------------- -->
 
 <!-- Callout -->
-<!--        <section class="highlighted-section callout" id="callout">
--->
-        <aside class="highlighted-section callout" id="callout">
+        <!-- <aside class="highlighted-section callout" id="callout"> -->
+        <section class="highlighted-section callout" id="callout"> 
             <h3>Callout Section</h3>
             <p>
                 callouts, learning goals, warnings, key messages, 
@@ -261,10 +263,9 @@
             </p>
             <p><strong>Example:</strong> "Pro Tip: Always validate AI model results 
                 using real-world test cases before deployment."</p>
-        </aside>
+        </section>    <!-- </aside> -->
 
     <br class="divider">
-<!-- ------------------- // ------------------- -->
 
 <!-- Quote -->
         <blockquote id="quote">
@@ -273,7 +274,7 @@
             <span class="highlighted">— Tech Thought Leader</span>
         </blockquote>
 
-            <!-- lists -->
+<!-- lists -->
         <section class="list" id="list">
             <h2>Lists</h2>
             <p>
@@ -281,7 +282,7 @@
                 workflow, methodology, step-by-step, etc.
             </p>
 
-            <!-- numbered list -->
+    <!-- numbered list -->
             <h3 class="numbered-list" id="numbered-list">Numbered List Example</h3>
             <ol>
                 <li><strong>Example:</strong> "Gather data and preprocess it for analysis."</li>
@@ -289,14 +290,14 @@
                 <li><strong>Example:</strong> "Draw conclusions and formulate recommendations."</li>
             </ol>
 
-            <!-- ordered list -->
+    <!-- ordered list -->
             <h3 class="ordered-list" id="ordered-list">Ordered List Example</h3>
             <ul>
                 <li><strong>Example:</strong> "Analyze economic trends"</li>
                 <li><strong>Example:</strong> "Assess political data"</li>
             </ul>
 
-            <!-- bulleted list -->
+    <!-- bulleted list -->
             <h3 class="bulleted-list" id="bulleted-list">Bulleted List Example</h3>
             <ul>
                 <li><strong>Example:</strong> "Analyze economic trends"</li>
@@ -304,7 +305,14 @@
             </ul>
         </section>
 
-            <!-- Image with Caption -->
+        <div class="retutn-link">
+            <hr class="divider">
+                <a href="#toc" class="btn" aria-label="Cntents">Table of Contents</a>
+            <br class="divider">
+        </div>
+<!-- ------------------- // ------------------- -->
+          
+<!-- Image with Caption -->
         <section id="image">
             <h2>Image with Caption</h2>
             <p>
@@ -318,7 +326,7 @@
             </figure>
         </section>
         
-            <!-- Table -->
+<!-- Table -->
         <section id="table">
             <h2>Simple Table Example</h2>
             <p>
@@ -346,7 +354,7 @@
             </table>
         </section>
 
-            <!-- Code -->
+<!-- Code -->
         <section id="code">
             <h2>Code Example</h2>
             <p>
@@ -366,7 +374,7 @@
     <hr class="divider">
 <!-- ------------------- // ------------------- -->
 
-            <!-- Insights -->
+<!-- Insights -->
         <section id="insights">
             <h2>Insights</h2>
             <p>
@@ -380,7 +388,7 @@
             </ul>
         </section>
 
-            <!-- Summary -->
+<!-- Summary -->
         <section id="summary">
             <h2>Summary</h2>
             <p>
@@ -390,7 +398,7 @@
             <p><strong>Example:</strong> "AI is revolutionizing industries, but ethical and regulatory frameworks must evolve alongside it."</p>
         </section>
 
-            <!-- Conclusion -->
+<!-- Conclusion -->
         <section id="conclusion">
             <h2>Conclusion</h2>
             <p>
@@ -401,8 +409,14 @@
             <p><strong>Example:</strong> "The future of AI depends on responsible innovation and ethical implementation."</p>
         </section>
 
+        <div class="retutn-link">
+            <hr class="divider">
+                <a href="#toc" class="btn" aria-label="Cntents">Table of Contents</a>
+            <br class="divider">
+        </div>
+<!-- ------------------- // ------------------- -->
 
-            <!-- Glossary -->    
+<!-- Glossary -->    
         <section id="glossary">
             <h2>Glossary</h2>
             <dl>
@@ -413,7 +427,7 @@
             </dl>
         </section>
 
-            <!-- Further Reading -->    
+<!-- Further Reading -->    
         <section id="further-reading">
             <h2>Further Reading</h2>
             <ul>
@@ -422,7 +436,7 @@
             </ul>
         </section>
 
-            <!-- References -->
+<!-- References -->
         <section id="references">
             <h2>References</h2>
             <ul>
@@ -431,12 +445,13 @@
             </ul>
         </section>
     </article>
-<!-- END OF BODY --> 
 
+<!-- END OF BODY --> 
+    <br>
     <hr class="divider">
+
 <!-- ------------------- // ------------------- -->
 <!-- Return Navigation Link List-->
-<!--    <div class="return-link"> -->
     <nav class="rlist-link">
         <a href="#top" aria-label="Page Top">[Page Top]</a> &nbsp;
         <a href="#nav" aria-label="Quick-Links">[Quick Links]</a> &nbsp;
@@ -445,9 +460,8 @@
         <a href="#content-main" aria-label="Content Top">[Content Top]</a> &nbsp; 
         <a href="javascript:history.back();">[Back]</a>
     </nav>
-<!--    </div> -->
         
-        <!-- Return [Button] Links -->
+<!-- Return [Button] Links -->
     <div class="return-link ">
         <p>
             Return Link #top:<br>
