@@ -436,7 +436,6 @@ header, nav, footer, .site-header {
     margin-bottom: var(--margin);
     text-align: center;
     text-align-last: center;
-   
 }
 
 header, .site-header {
@@ -454,29 +453,15 @@ header #header, .site-header, .header-content,  .header-text,
     flex-direction: column;
 }
 
+.theme-toggle img {
+    margin: 0.5em auto;
+}
+
 nav {
     font-size: 0.7em;
+    color: var(--color-text);
     padding: 0 auto;
     margin: 0 auto;
-}
-
-/* Forms */
-input,
-textarea {
-  background-color: var(--color-background-light);
-  color: var(--color-text);
-  border: 1px solid var(--color-border-light);
-
-  border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
-  padding: 0.5rem;
-  border-radius: 4px;
-  width: 100%;
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
-  border-color: var(--color-border-light);
 }
 
 footer {
@@ -509,10 +494,6 @@ footer #footer, .footer-content, footer p.footer-text {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.theme-toggle img {
-    margin: 0.5em auto;
 }
 
 /* Ensure any buttons inside footer nav are also centered */
@@ -681,6 +662,26 @@ footer .site-nav li a {
 section {
     margin-bottom: 1em;
 }
+
+/* Forms */
+input,
+textarea {
+  background-color: var(--color-background-light);
+  color: var(--color-text);
+  border: 1px solid var(--color-border-light);
+
+  border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
+  padding: 0.5rem;
+  border-radius: 4px;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-border-light);
+}
+
 
 /* Ahout & Authors */
 /*.about, .authors {
@@ -934,29 +935,28 @@ section {
         font-size: 1.5em;
     }
 
-/*    .image-left-inline {
-/*         float: none; /* Don't float on smaller screens */
-/*         display: block; /* Make it take up a full line */
-/*         margin: 1rem auto; /* Center the image with some top/bottom margin */
-/*         width: 100%; /* Make it responsive within its container */
-/*         max-width: 100%; /* Make it responsive within its container */
-/*    }
-/*   
-/*    .image-right-inline {
-/*         float: none; /* Don't float on smaller screens */
-/*         display: block; /* Make it take up a full line */
-/*         margin: 1rem auto; /* Center the image with some top/bottom margin */
-/*         width: 100%; /* Make it responsive within its container */
-/*         max-width: 100%; /* Make it responsive within its container */
-/*    }
-/*}
-*/
+    .image-left-inline {
+         float: none; /* Don't float on smaller screens */
+         display: block; /* Make it take up a full line */
+         margin: 1rem auto; /* Center the image with some top/bottom margin */
+         width: 100%; /* Make it responsive within its container */
+         max-width: 100%; /* Make it responsive within its container */
+    }
+   
+    .image-right-inline {
+         float: none; /* Don't float on smaller screens */
+         display: block; /* Make it take up a full line */
+         margin: 1rem auto; /* Center the image with some top/bottom margin */
+         width: 100%; /* Make it responsive within its container */
+         max-width: 100%; /* Make it responsive within its container */
+    }
+}
 
 /* ============================================================
-   13. END OF STYLESHEET
+   13. END OF STYLESHEET 
    ============================================================ */
 
-
+/* another style sheet form ago */
 /*    <style>
         /* Base Styles */
 /*
