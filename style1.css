@@ -313,7 +313,6 @@ hr {
     border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
     border-botom: var(--border-bottom-highlight-width) solid var(--color-border);
     border-radius: var(--border-radius);
-    padding: var(--padding);
 }
 
 .divider {
@@ -321,7 +320,6 @@ hr {
     border-left: var(--border-left-highlight-width) solid var(--color-border-left-highlighted);
     border-botom: var(--border-bottom-highlight-width) solid var(--color-border-highlighted);
     border-radius: var(--border-radius);
-    padding: var(--padding);
 }
 
 .section-divider {
