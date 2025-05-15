@@ -282,11 +282,11 @@ figcaption {
    5. LAYOUT & CONTAINERS 
    ========================================================= */
 
-/*.left { text-align: left; text-align-last: left; }
+.left { text-align: left; text-align-last: left; }
 .right { text-align: right; text-align-last: right; }
-.center { text-align: center; text-align-kast: center; }
+.center { text-align: center; text-align-last: center; }
 .justify { text-align: justify; text-align-last: justify; }
-*/
+
 .text-muted .muted {
   color: var(--color-text-muted);
 }
@@ -543,9 +543,9 @@ footer .site-nav li a {
     background-color: var(--color-background-medium);
     color: var(--color-text-secondary);
     margin: 1em 0 0.5em;
-    padding: 2em 1em;
-    border-top: 2px solid var(--color-border);
-    border-bottom: 2px solid var(--color-border);
+    padding: 1em;
+    border: 2px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
 
     border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
     font-size: 1em;
