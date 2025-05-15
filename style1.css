@@ -324,6 +324,7 @@ hr {
 
 .divider {
     width: 100%;
+    border: none;
     border-left: var(--border-left-highlight-width) solid var(--color-border-left-highlighted);
     border-botom: var(--border-bottom-highlight-width) solid var(--color-border-highlighted);
     border-radius: var(--border-radius);
@@ -331,6 +332,7 @@ hr {
 
 .section-divider {
     width: 100%;
+    border: none;
     border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
     border-botom: var(--border-bottom-highlight-width) solid var(--color-border-highlighted);
     border-radius: var(--border-radius);
@@ -367,6 +369,7 @@ hr {
 /* Smaller nav Buttons */
 .nav .btn, .nav .button-link {
     font-size: var(--font-size-small);
+    color: var(--color-text);
     display: inline-block;
     padding: var(--padding-smaller);
     margin: var(--margin-smaller);
@@ -375,6 +378,7 @@ hr {
 /* Large Button */
 .btn.large, .button-link.large { /* Combined .btn.large and .button-link.large */
     font-size: var(--font-size);
+    color: var(--color-text);
     margin: var(--margin-large) auto;
     padding: var(--padding);
     text-align: justify;
@@ -437,7 +441,7 @@ header, nav, footer, .site-header {
 
 header, .site-header {
     font-size: 1.6em;
-    border-bottom: 1px solid var(--color-border);
+    border: 1px solid var(--color-border);
     border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
     border-top: var(--border-top-highlight-width) solid var(--color-border-highlighted);
 }
@@ -477,7 +481,7 @@ textarea:focus {
 
 footer {
     margin-top: 2em;
-    border-top: 1px solid var(--color-border);
+    borderp: 1px solid var(--color-border);
     
     border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
     border-bottom: var(--border-bottom-highlight-width) solid var(--color-border-highlighted);
