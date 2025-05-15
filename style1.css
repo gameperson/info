@@ -347,7 +347,7 @@ hr {
     background-color: var(--color-background-dark); 
     color: var(--color-text);
     display: block;
-    margin: var(--margin) auto;
+    margin: var(--margin) auto; 
     border: 1px solid var(--color-border);
    
     border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
@@ -363,11 +363,12 @@ hr {
 
 .btn:hover, .button-link:hover {
     background: var(--color-background-darker); 
-/*    color: #fff; */
+/*    color: var(--color-text); */
 }
 
 /* Smaller nav Buttons */
 .nav .btn, .nav .button-link {
+    outline: none;
     font-size: var(--font-size-small);
     color: var(--color-text);
     display: inline-block;
@@ -466,7 +467,7 @@ nav {
 
 footer {
     margin-top: 2em;
-    borderp: 1px solid var(--color-border);
+    border: 1px solid var(--color-border);
     
     border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
     border-bottom: var(--border-bottom-highlight-width) solid var(--color-border-highlighted);
@@ -474,6 +475,7 @@ footer {
 }
 
 footer nav {
+    outline: none;
     font-size: 0.7em;
     padding: 0 auto;
     margin: 0 auto;
@@ -511,6 +513,7 @@ footer .site-nav li a {
 }
 
 .site-nav li a, .footer-content li a {
+    color: var(--color-text);
     display: inline-block;
     text-align: center;
     text-align-last: center;
@@ -593,6 +596,7 @@ footer .site-nav li a {
 
 .site-nav li {
     display: inline-block;
+    color: var(--color-text);
     margin: 0.3em;
     padding: 0.7em;
     border: 1px solid var(--color-border);
@@ -775,7 +779,7 @@ textarea:focus {
 }
 
 .index-list li a {
-   
+    color: var(--color-text);
     border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
     border-radius: var(--border-radius);
 }
