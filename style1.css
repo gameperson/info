@@ -575,6 +575,10 @@ footer .site-nav li a {
     background-color: var(--color-background-darker);
 }
 
+.highlighted-section.return-link a:hover {
+    color: var(--color-text);
+}
+
 /* ========================================================= 
    9. NAVIGATION 
    ========================================================= */
