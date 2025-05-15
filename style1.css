@@ -398,6 +398,10 @@ hr {
     padding: 0;
 }
 
+.btn.large a:hover, .button-link.large a:hover {
+    color: var(--color-text-highlighted);
+}
+
 /* Button Text Alignment */
 .btn.justify, .button-link.justify {
     text-align: center; /* !important; */
