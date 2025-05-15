@@ -38,19 +38,19 @@ body {
     --color-background-light: #121212;
     --color-background: #1e1e1e;
     --color-background-dark: #333;
-    --color-background-highlighted: #302020;
+    --color-background-accent: #302020;
 
     --color-text: #e0e0e0;
     --color-text-light: #cccccc;
     --color-text-muted: #999;
-    --color-text-highlighted: #b33;
+    --color-text-accent: #b33;
     
     --color-link: #a33; 
     --color-link-hover: #b44; 
     --color-border: #444;
     
     --color-border-light: #666;
-    --color-border-highlighted: #a33;
+    --color-border-accent: #a33;
 }
 
 /* LIGHT THEME OVERRIDES */
@@ -89,12 +89,12 @@ body {
     color: var(--color-link-hover);
 }
 
-.light-theme .highlighted-section {
+.light-theme .accent-section {
     background-color: #d0d8dd; /* Darker background for contrast */
 /*    border-color: var(--color-link); /* Teal border */
 /*}
 
-.light-theme .highlighted-section a.button-link,
+.light-theme .accent-section a.button-link,
 .button-link {
     /* Button Styles, applies to both themes */
 /*    display: block;
@@ -107,7 +107,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.light-theme .highlighted-section a.button-link:hover,
+.light-theme .accent-section a.button-link:hover,
 .button-link:hover {
     background-color: var(--color-background-dark);
 }
@@ -141,10 +141,10 @@ body {
     --padding-none: 0;
 
     /* Borders and Line Heights */
-    --border-top-highlight-width: 1px;
-    --border-bottom-highlight-width: 1px;
-    --border-left-highlight-width: 4px;
-    --border-botto-highlight-width: 4px;
+    --border-top-accent-width: 1px;
+    --border-bottom-accent-width: 1px;
+    --border-left-accent-width: 4px;
+    --border-botto-accent-width: 4px;
     --border-radius: 5px;
     --border-radius-small: 4px;
     --line-height: 1.75;
@@ -224,7 +224,7 @@ table {
     margin: var(--margin-large) auto;
     border: 1px solid var(--color-border);
 
-    border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
+    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
     border-radius: var(--border-radius);
     padding: var(--padding);
 }
@@ -257,9 +257,9 @@ img {
     padding: 0.75em;
 }
 
-img.highlited {
-    border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
-)
+img.accent {
+    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+}
 
 .image-left-inline {
     display: inline-block; /* Allows setting width and height, and respects margins */
@@ -296,7 +296,7 @@ figcaption {
 }
 
 figcaption b {
-   color: var(--color-text-highlighted);
+   color: var(--color-text-accent);
    font-weight: var(--font-weight-semibold);
 }
 
@@ -310,7 +310,7 @@ figcaption b {
 .center { text-align: center; text-align-last: center; }
 .justify { text-align: justify; text-align-last: justify; }
 
-.highlighted { color: var(--color-text-highlighted); }
+.accent { color: var(--color-text-accent); }
 .muted { color: var(--color-text-muted); }
 
 .mb-16 { margin-bottom: 1rem; }
@@ -335,22 +335,22 @@ figcaption b {
 /* Dividers */
 hr {
     width: 100%;
-    border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
-    border-botom: var(--border-left-highlight-width) solid var(--color-border-highlighted);
+    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+    border-botom: var(--border-left-accent-width) solid var(--color-border-accent);
     border-radius: var(--border-radius);
 }
 
 hr.divider, .divider, .section-divider {
     width: 100%;
     border: none;
-    border-left: var(--border-left-highlight-width) solid var(--color-border-left-highlighted);
-    border-botom: var(--border-left-highlight-width) solid var(--color-border-highlighted);
+    border-left: var(--border-left-accent-width) solid var(--color-border-left-accent);
+    border-botom: var(--border-left-accent-width) solid var(--color-border-accent);
     border-radius: var(--border-radius);
 }
 
 .section-divider {
-    border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
-    border-botom: var(--border-bottom-highlight-width) solid var(--color-border-highlighted);
+    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+    border-botom: var(--border-bottom-accent-width) solid var(--color-border-accent);
     padding: var(--padding);
 }
 
@@ -365,7 +365,7 @@ hr.divider, .divider, .section-divider {
     margin: var(--margin) auto; 
     border: 1px solid var(--color-border);
    
-    border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
+    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
     border-radius: var(--border-radius);
     padding: var(--padding-large);
     text-decoration: none;
@@ -408,7 +408,7 @@ hr.divider, .divider, .section-divider {
 }
 
 .btn.large a:hover, .button-link.large a:hover {
-    color: var(--color-text-highlighted);
+    color: var(--color-text-accent);
 }
 
 /* Button Text Alignment */
@@ -461,8 +461,8 @@ header, nav, footer, .site-header {
 header, .site-header {
     font-size: 1.6em;
     border: 1px solid var(--color-border);
-    border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
-    border-top: var(--border-top-highlight-width) solid var(--color-border-highlighted);
+    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+    border-top: var(--border-top-accent-width) solid var(--color-border-accent);
 }
 
 header #header, .site-header, .header-content,  .header-text, 
@@ -491,8 +491,8 @@ footer {
     margin-top: 2em;
     border: 1px solid var(--color-border);
     
-    border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
-    border-bottom: var(--border-bottom-highlight-width) solid var(--color-border-highlighted);
+    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+    border-bottom: var(--border-bottom-accent-width) solid var(--color-border-accent);
 /*    padding: 1em; */
 }
 
@@ -561,10 +561,10 @@ footer .site-nav li a {
 }
 
 /* ========================================================= 
-   8. HIGHLIGHTED SECTION 
+   8. accent SECTION 
    ========================================================= */
 
-.highlighted-section {
+.accent-section {
     background-color: var(--color-background-medium);
     color: var(--color-text-secondary);
     margin: 1em 0 0.5em;
@@ -572,36 +572,36 @@ footer .site-nav li a {
     border: 2px solid var(--color-border);
     border-right: 1px solid var(--color-border);
 
-    border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
+    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
     font-size: 1em;
     text-align: justify;
     text-align-last: left;
 }
 
-.highlighted-section h3 {
+.accent-section h3 {
     line-height: 1.3;
     margin: 0;
     padding: 0;
 }
 
-.highlighted-section a {
+.accent-section a {
     background-color: var(--color-background-dark);
     color: var(--color-text);
     display: block;
     margin: 0.5em 1em;
     border: 2px solid var(--color-border);
 
-    border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
+    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
     border-radius: 5px;
     padding: 0.8em 1.2em;
     transition: background-color 0.3s ease;
 }
 
-.highlighted-section a:hover {
+.accent-section a:hover {
     background-color: var(--color-background-darker);
 }
 
-.highlighted-section.return-link a:hover {
+.accent-section.return-link a:hover {
     color: var(--color-text);
 }
 
@@ -634,7 +634,7 @@ footer .site-nav li a {
     display: inline-block;
     padding: 0.8em 1.2em;
 
-    border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
+    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -700,7 +700,7 @@ textarea {
   color: var(--color-text);
   border: 1px solid var(--color-border-light);
 
-  border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
+  border-left: var(--border-left-accent-width) solid var(--color-border-accent);
   padding: 0.5rem;
   border-radius: 4px;
   width: 100%;
@@ -806,7 +806,7 @@ textarea:focus {
 
 .index-list li a {
     color: var(--color-text);
-    border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
+    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
     border-radius: var(--border-radius);
 }
 
@@ -866,7 +866,7 @@ textarea:focus {
     display: inline-block;
     border: 1px solid var(--color-border);
 
-    border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
+    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
     border-radius: var(--border-radius);
     padding: var(--padding);
 }
