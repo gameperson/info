@@ -465,7 +465,10 @@ header #header, .site-header, .header-content,  .header-text,
 }
 
 .theme-toggle img {
+    width: 5em;
+    height: auto;
     margin: 0.5em auto;
+    border: none;
 }
 
 nav {
