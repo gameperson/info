@@ -144,6 +144,7 @@ body {
     --border-top-highlight-width: 1px;
     --border-bottom-highlight-width: 1px;
     --border-left-highlight-width: 4px;
+    --border-botto-highlight-width: 4px;
     --border-radius: 5px;
     --border-radius-small: 4px;
     --line-height: 1.75;
@@ -287,8 +288,6 @@ img.highlited {
     border: none;
 }
 
-
-
 figcaption {
     margin-top: 0.5em; 
 /*    font-style: italic; */
@@ -337,24 +336,21 @@ figcaption b {
 hr {
     width: 100%;
     border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
-    border-botom: var(--border-bottom-highlight-width) solid var(--color-border-highlighted);
+    border-botom: var(--border-left-highlight-width) solid var(--color-border-highlighted);
     border-radius: var(--border-radius);
 }
 
-.divider {
+hr.divider, .divider, .section-divider {
     width: 100%;
     border: none;
     border-left: var(--border-left-highlight-width) solid var(--color-border-left-highlighted);
-    border-botom: var(--border-bottom-highlight-width) solid var(--color-border-highlighted);
+    border-botom: var(--border-left-highlight-width) solid var(--color-border-highlighted);
     border-radius: var(--border-radius);
 }
 
 .section-divider {
-    width: 100%;
-    border: none;
     border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
     border-botom: var(--border-bottom-highlight-width) solid var(--color-border-highlighted);
-    border-radius: var(--border-radius);
     padding: var(--padding);
 }
 
