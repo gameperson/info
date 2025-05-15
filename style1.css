@@ -253,8 +253,12 @@ img {
     max-width: 420px;
     height: auto;
     margin: var(--margin);
-    border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
+    padding: 0.75em;
 }
+
+img.highlited {
+    border-left: var(--border-left-highlight-width) solid var(--color-border-highlighted);
+)
 
 .image-left-inline {
     display: inline-block; /* Allows setting width and height, and respects margins */
