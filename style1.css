@@ -323,6 +323,25 @@ figcaption b {
     padding: var(--padding-smaller);
 }
 
+.accent-container {
+    position: relative;
+    display: inline-block; /* or block, as needed */
+    /* Optional: add padding if needed */
+}
+
+/* Pseudo-element for accent bar */
+.accent-container::before {
+    content: "";
+    position: absolute;
+    top: 0; /* offset from the top by, e.g., 1em */
+    top: 1em; /* left offset: 1-2em from the image's edge */
+    left: 1em; 
+    width: 4px; /* or your --border-left-accent-width equivalent */
+    height: calc(100% - 2em); /* adjust as needed for full height minus offsets */
+    background-color: var(--color-border-accent); /* your accent color */
+    /* Optional: add border-radius, etc. */
+}
+
 .center-content {
     text-align: center;
     margin-top: 1em;
