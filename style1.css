@@ -254,16 +254,16 @@ pre, code {
 /* Images */
 img {
     width: 80%;
-    max-width: 420px;
+/*    max-width: 420px; */
     height: auto;
     margin: var(--margin);
-    padding: 0.75em;
+    padding: var(--padding);
 }
 
 img.accent {
     border-left: var(--border-left-accent-width) solid var(--color-border-accent);
-    margin-left: 2em;
-    padding: var(--padding-larger)
+    margin: var(--margin-large);
+    padding: var(--padding-larger);
     display: inline-block;
 }
 
@@ -295,12 +295,12 @@ img.theme-toggle {
 }
 
 figcaption {
-    margin-right: var(--margin:); 
-    margin-left: var(--margin-large); 
-/*    font-style: oblique; */
     padding: var(--padding-larger);
+    margin-left: var(--margin-large); 
+    margin-right: var(--margin); 
     text-align: left;
     text-align-last: left;
+/*    font-style: oblique; */
 }
 
 figcaption b {
