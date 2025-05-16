@@ -295,7 +295,7 @@ img.theme-toggle {
 }
 
 figcaption {
-    margin: var(--margin:); 
+    margin-right: var(--margin:); 
     margin-left: var(--margin-large); 
 /*    font-style: oblique; */
     padding: var(--padding-larger);
