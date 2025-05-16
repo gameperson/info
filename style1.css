@@ -139,6 +139,7 @@ body {
     --padding-small: 0.75em;
     --padding-smaller: 0.5em;
     --padding-large: 1.5em;
+    --padding-larger: 2.5em;
     --padding-none: 0;
 
     /* Borders and Line Heights */
@@ -260,9 +261,10 @@ img {
 }
 
 img.accent {
-  border-left: var(--border-left-accent-width) solid var(--color-border-accent);
-  margin-left: 2em;
-  display: inline-block;
+    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+    margin-left: 2em;
+    padding: var(--padding-larger)
+    display: inline-block;
 }
 
 .image-left-inline {
@@ -296,6 +298,7 @@ figcaption {
     margin: var(--margin:); 
     margin-left: var(--margin-large); 
 /*    font-style: oblique; */
+    padding: var(--padding-larger);
     text-align: left;
     text-align-last: left;
 }
