@@ -134,6 +134,7 @@ body {
     --margin-small: 0.5em;
     --margin-large: 1.5em;
     --margin-larger: 2em;
+   
     --padding: 1em;
     --padding-small: 0.75em;
     --padding-smaller: 0.5em;
@@ -147,6 +148,7 @@ body {
     --border-botto-accent-width: 4px;
     --border-radius: 5px;
     --border-radius-small: 4px;
+   
     --line-height: 1.75;
     --line-height-small: 1.5;
     --line-height-smaller: 1.2;
@@ -281,20 +283,21 @@ img.accent {
     width: 50%; 
     max-width: 50%; /* Optional: Set a maximum width for the image */
     height: auto;
-  }
+}
 
- img.theme-toggle {
-    width: 5em;
+img.theme-toggle {
+    width: 13em;
     height: auto;
     margin: 0.5em auto;
     border: none;
 }
 
 figcaption {
-    margin-top: 0.5em; 
-/*    font-style: italic; */
-    text-align: center;
-    text-align-last: center;
+    margin: var(--margin:); 
+    margin-left: var(--margin-large); 
+    font-style: oblique;
+    text-align: left;
+    text-align-last: left;
 }
 
 figcaption b {
