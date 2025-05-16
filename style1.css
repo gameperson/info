@@ -258,7 +258,9 @@ img {
 }
 
 img.accent {
-    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+  border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+  margin-left: 2em;
+  display: inline-block;
 }
 
 .image-left-inline {
