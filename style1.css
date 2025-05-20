@@ -288,7 +288,7 @@ img.accent {
 }
 
 img.theme-toggle {
-    width: 35em;
+/*    width: 35em; */
     height: auto;
     margin: 0.5em auto;
     border: none;
@@ -492,8 +492,8 @@ header, .site-header {
     border-top: var(--border-top-accent-width) solid var(--color-border-accent);
 }
 
-header #header, .site-header, .header-content,  .header-text, 
-.theme-toggle, {
+header #header, .site-header, .header-content,
+.header-text, {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -504,7 +504,8 @@ header #header, .site-header, .header-content,  .header-text,
     display: block;
     justify-content: center;
     align-items: center;
-    width: 40px;
+/*    width: 40px; */
+/*    cursor: pointer; */
     height: auto;
     margin: 0.5em auto;
     border: none;
