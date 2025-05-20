@@ -289,7 +289,7 @@ img.accent {
     max-width: 50%; /* Optional: Set a maximum width for the image */
     height: auto;
 }
-.theme-toggle-img, img.theme-toggle, .theme-toggle img {
+.theme-toggle-img, .theme-toggle img {       /* img.theme-toggle, */
     width: 6vw;         /* or width: 6%; for parent-relative */
     min-width: 30px;
     max-width: 60px;
@@ -301,9 +301,6 @@ img.accent {
     border: none;
     cursor: pointer;
 }
-
-/*img.theme-toggle { width: 35em; } 
-*/
 
 figcaption {
     padding: var(--padding-larger);
@@ -725,7 +722,7 @@ section {
 }
 
 /* Forms */
-input,
+/*input,
 textarea {
   background-color: var(--color-background-light);
   color: var(--color-text);
@@ -742,7 +739,7 @@ textarea:focus {
   outline: none;
   border-color: var(--color-border-light);
 }
-
+*/
 
 /* Ahout & Authors */
 /*.about, .authors {
@@ -807,6 +804,13 @@ textarea:focus {
     margin: 0 0 1em 1em;
 }
 */
+
+/* Center these specific sections */
+#toc, #overview, #conclusion, /* #image-example, */
+.image-example, img, figure, figcaption {
+    text-align: center;
+    text-align-last: center;
+}
 
 /* ============================================================
    11. PAGE TYPES
@@ -881,13 +885,6 @@ textarea:focus {
     text-align-last: left;
 }
 */
-
-/* Center these specific sections */
-#toc, #overview, #conclusion, /* #image-example, */
-.image-example, img, figure, figcaption {
-    text-align: center;
-    text-align-last: center;
-}
 
 /* Border and padding similar to table styling */
 /*#image-example figure {
