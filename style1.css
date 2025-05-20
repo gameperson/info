@@ -501,7 +501,10 @@ header #header, .site-header, .header-content,  .header-text,
 }
 
 .theme-toggle img {
-    width: 5em;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
     height: auto;
     margin: 0.5em auto;
     border: none;
