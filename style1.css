@@ -253,12 +253,15 @@ pre, code {
 
 /* Images */
 img {
-    width: 80%;
-    max-width: 720px;
-    height: auto;
     display: inline-block;
     margin: var(--margin);
     padding: var(--padding);
+}
+
+img.figure {
+    width: 80%;
+    max-width: 720px;
+    height: auto;
 }
 
 img.accent {
@@ -287,7 +290,7 @@ img.accent {
     height: auto;
 }
 .theme-toggle-img, img.theme-toggle, .theme-toggle img {
-    width: 4vw;         /* or width: 4%; for parent-relative */
+    width: 6vw;         /* or width: 6%; for parent-relative */
     min-width: 30px;
     max-width: 60px;
     height: auto;
