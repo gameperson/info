@@ -49,99 +49,100 @@
         <h1 class="site-title" id="top">Head and Tail Template</h1>
         <h3 class="site-subtitle">noBody.html</h3>
         <nav class="site-nav"> 
-            <ul class="nav" id="nav"> 
-                <li><a href="#toc" class="btn" aria-label="Table of Contents">Table of Contents</a></li>
-                <li><a href="#legal" class="btn" aria-label="Disclaimer and Legal Information">Legal</a></li>
-                <li><a href="#about" class="btn" aria-label="About gameperson@github">About</a></li>
-                <li><a href="#contact" class="btn" aria-label="Contact gameperson@github">Contact</a></li>
-                <li><a href="../index.html#index" class="btn" aria-label="More Articles">More Articles from gameperson@github</a></li>                    
-                <li><a href="javascript:history.back();" class="btn" aria-label="back">Back</a></li>
+            <ul class="header-nav" id="header-nav"> 
+                <li><a href="#toc" class="header-btn" aria-label="Table of Contents">Table of Contents</a></li>
+                <li><a href="#legal" class="header-btn" aria-label="Disclaimer and Legal Information">Legal</a></li>
+                <li><a href="#about" class="header-btn" aria-label="About gameperson@github">About</a></li>
+                <li><a href="#contact" class="header-btn" aria-label="Contact gameperson@github">Contact</a></li>
+                <li><a href="../index.html#index" class="header-btn" aria-label="More Articles">More Articles from gameperson@github</a></li>                    
+                <li><a href="javascript:history.back();" class="header-btn" aria-label="back">Back</a></li>
 <!-- more -- check href="../" --> 
-<!--                <li><a href="#abstract" class="btn" aria-label="Guide">Guide</a></li>
-                <li><a href="#guide" class="btn" aria-label="Guide">Guide</a></li>
-                <li><a href="#overview" class="btn" aria-label="Overview">Overview</a></li>
-                <li><a href="#ex-summary" class="btn" aria-label="Introduction">Introduction</a></li>
-                <li><a href="#content-main" class="btn" aria-label="Main Article">Main Article</a></li>
-                <li><a href="#section" class="btn" aria-label="Section">Section</a></li>
-                <li><a href="#conclusion" class="btn" aria-label="Conclusions">Conclusion</a></li>
-                <li><a href="#summary" class="btn" aria-label="Introduction">Introduction</a></li>
-                <li><a href="#insights" class="btn" aria-label="Key Takeaways">Takeaways</a></li>
-                <li><a href="../index.html" class="btn" aria-label="Site Index">Article Index Page</a></li>
-                <li><a href="../gameperson_Disclaimer.html" class="btn" data-tags="legal notice, terms of use, information accuracy, liability disclaimer, AI-generated content, content responsibility" aria-label="Full Dilaimer Page">Full Disclaimer Page</a></li>
-                <li><a href="mailto:gamesomeotherday@gmail.com" class="btn" data-tags="feedback, report, contact, gameperson, gameperson@github, contact gameperson, contact gameperson@github" aria-label="Email Feedback">Feedback is Welcome <b>Send an Email</b></a></li>
+<!--                <li><a href="#abstract" class="header-btn" aria-label="Guide">Guide</a></li>
+                <li><a href="#guide" class="header-btn" aria-label="Guide">Guide</a></li>
+                <li><a href="#overview" class="header-btn" aria-label="Overview">Overview</a></li>
+                <li><a href="#ex-summary" class="header-btn" aria-label="Introduction">Introduction</a></li>
+                <li><a href="#content-main" class="header-btn" aria-label="Main Article">Main Article</a></li>
+                <li><a href="#section" class="header-btn" aria-label="Section">Section</a></li>
+                <li><a href="#conclusion" class="header-btn" aria-label="Conclusions">Conclusion</a></li>
+                <li><a href="#summary" class="header-btn" aria-label="Introduction">Introduction</a></li>
+                <li><a href="#insights" class="header-btn" aria-label="Key Takeaways">Takeaways</a></li>
+                <li><a href="../index.html" class="header-btn" aria-label="Site Index">Article Index Page</a></li>
+                <li><a href="../gameperson_Disclaimer.html" class="header-btn" data-tags="legal notice, terms of use, information accuracy, liability disclaimer, AI-generated content, content responsibility" aria-label="Full Dilaimer Page">Full Disclaimer Page</a></li>
+                <li><a href="mailto:gamesomeotherday@gmail.com" class="header-btn" data-tags="feedback, report, contact, gameperson, gameperson@github, contact gameperson, contact gameperson@github" aria-label="Email Feedback">Feedback is Welcome <b>Send an Email</b></a></li>
 -->
             </ul>
         </nav>
         <br>
         <div class="center theme-toggle">
 <!-- check href="../" --> 
-            <img id="theme-icon-nav" src="../images/bulb_white.png" 
-                alt="Theme Icon"
-                class="theme-toggle-img"
+            <img id="theme-toggle-img" src="../images/bulb_white.png" 
+                alt="Theme Icon" 
+                class="theme-toggle-img" 
                 onclick="toggleTheme()" 
                 aria-label="Toggle Theme (Header)">
         </div>
     </header>
 <!-- ------------------- // ------------------- -->
 
-    <main class="container" id="article-top">
-        <section id="title">
+    <main class="main-body" id="article-top">
+        <section class="content-section left" id="title">
             <h2>TITLE</h2>
-            <p class="left"><a href="../templates/Body.html" class="center">
+            <p><a href="../templates/Body.html">
                 link to Body.html template (../templates/Body.html)
             </a>
     <br class="divider">
         </section>
 
 <!-- TOC - Table of Contents-->
-        <aside class="content-section" id="toc">
+        <aside class="toc-content" id="toc">
             <h3>Table of Contents</h3>
-<!-- list CHANGE: class="toc-list" REMOVE: class="toc-btn" -->
-                <ul class="toc-list"> 
-                    <li><a href="#intro" class="btn">Introduction</a></li>
-                    <li><a href="#section-1" class="btn" aria-label="FIRST SECTION">FIRST SECTION</a></li>
-                    <li><a href="#section-2" class="btn" aria-label="SECOND SECTION">SECOND SECTION</a></li>
-                    <li><a href="#section-3" class="btn" aria-label="THIRD SECTION">THIRD SECTION</a></li>
-                    <li><a href="#conclusion" class="btn" aria-label="Conclusion">Conclusion</a></li>
-                    <li><a href="#glossary" class="btn" aria-label="Glossary">Glossary</a></li>
-                    <li><a href="#references" class="btn" aria-label="References and Further Reading">References and Further Reading</a></li>
+            <nav class="toc-nav" aria-label="Table of Contents"> -->
+<!-- list CHANGE: class="toc-btn-list toc-btn" TO: class="toc-link-list toc-link" -->
+                <ul class="toc-btn-list"> 
+                    <li><a href="#intro" class="toc-btn">Introduction</a></li>
+                    <li><a href="#section-1" class="toc-btn" aria-label="FIRST SECTION">FIRST SECTION</a></li>
+                    <li><a href="#section-2" class="toc-btn" aria-label="SECOND SECTION">SECOND SECTION</a></li>
+                    <li><a href="#section-3" class="toc-btn" aria-label="THIRD SECTION">THIRD SECTION</a></li>
+                    <li><a href="#conclusion" class="toc-btn" aria-label="Conclusion">Conclusion</a></li>
+                    <li><a href="#glossary" class="toc-btn" aria-label="Glossary">Glossary</a></li>
+                    <li><a href="#references" class="toc-btn" aria-label="References and Further Reading">References and Further Reading</a></li>
                 <hr class="divider">
 <!-- More Navigation Links--> 
 <!-- Body Head 
-                    <li><a href="#abstract" class="btn" aria-label="Guide">Abstract</a></li>
-                    <li><a href="#guide" class="btn" aria-label="Guide">Guide</a></li>
-                    <li><a href="#overview" class="btn" aria-label="Overview">Overview</a></li>
-                    <li><a href="#ex-summary" class="btn" aria-label="Executive Summary">Executive Summary</a></li>
-                    <li><a href="#intro" class="btn" aria-label="Introduction">Introduction</a></li>
+                    <li><a href="#abstract" class="toc-btn" aria-label="Guide">Abstract</a></li>
+                    <li><a href="#guide" class="toc-btn" aria-label="Guide">Guide</a></li>
+                    <li><a href="#overview" class="toc-btn" aria-label="Overview">Overview</a></li>
+                    <li><a href="#ex-summary" class="toc-btn" aria-label="Executive Summary">Executive Summary</a></li>
+                    <li><a href="#intro" class="toc-btn" aria-label="Introduction">Introduction</a></li>
 <!-- Body 
-                    <li><a href="#section" class="btn" aria-label="Section" >Section</a></li>
-                    <li><a href="#section-1" class="btn" aria-label="FIRST SECTION">FIRST SECTION</a></li>
-                    <li><a href="#section-2" class="btn" aria-label="SECOND SECTION">SECOND SECTION</a></li>
-                    <li><a href="#section-3" class="btn" aria-label="THIRD SECTION">THIRD SECTION</a></li>
-                    <li><a href="#callout" class="btn" aria-label="Callout">Callout</a></li>
-                    <li><a href="#quote" class="btn" aria-label="Quote">Quote</a></li>
-                    <li><a href="#list" class="btn" aria-label="Lists">Lists</a></li>
-                    <li><a href="#image" class="btn" aria-label="Image">Image</a></li>
-                    <li><a href="#table" class="btn" aria-label="Table">Table</a></li>
-                    <li><a href="#code" class="btn" aria-label="Code">Code</a></li>
+                    <li><a href="#section" class="toc-btn" aria-label="Section" >Section</a></li>
+                    <li><a href="#section-1" class="toc-btn" aria-label="FIRST SECTION">FIRST SECTION</a></li>
+                    <li><a href="#section-2" class="toc-btn" aria-label="SECOND SECTION">SECOND SECTION</a></li>
+                    <li><a href="#section-3" class="toc-btn" aria-label="THIRD SECTION">THIRD SECTION</a></li>
+                    <li><a href="#callout" class="toc-btn" aria-label="Callout">Callout</a></li>
+                    <li><a href="#quote" class="toc-btn" aria-label="Quote">Quote</a></li>
+                    <li><a href="#list" class="toc-btn" aria-label="Lists">Lists</a></li>
+                    <li><a href="#image" class="toc-btn" aria-label="Image">Image</a></li>
+                    <li><a href="#table" class="toc-btn" aria-label="Table">Table</a></li>
+                    <li><a href="#code" class="toc-btn" aria-label="Code">Code</a></li>
 <!-- Body Tail 
-                    <li><a href="#conclusion" class="btn" aria-label="Conclusion">Conclusion</a></li>
-                    <li><a href="#summary" class="btn" aria-label="Summary">Summary</a></li>
-                    <li><a href="#insights" class="btn" aria-label="Insights">Insights</a></li>
-                    <li><a href="#glossary" class="btn" aria-label="Glossary">Glossary</a></li>
-                    <li><a href="#further-reading" class="btn" aria-label="Further Reading">Further Reading</a></li>
-                    <li><a href="#references" class="btn" aria-label="References">References</a></li>
+                    <li><a href="#conclusion" class="toc-btn" aria-label="Conclusion">Conclusion</a></li>
+                    <li><a href="#summary" class="toc-btn" aria-label="Summary">Summary</a></li>
+                    <li><a href="#insights" class="toc-btn" aria-label="Insights">Insights</a></li>
+                    <li><a href="#glossary" class="toc-btn" aria-label="Glossary">Glossary</a></li>
+                    <li><a href="#further-reading" class="toc-btn" aria-label="Further Reading">Further Reading</a></li>
+                    <li><a href="#references" class="toc-btn" aria-label="References">References</a></li>
 <!-- Article Navigation 
-                    <li><a href="#article-top" class="btn" aria-label="Article Top">Article Top</a>
-                    <li><a href="#content-main" class="btn" aria-label="Content Top">Content Top</a></li>
-                    <li><a href="#top" class="btn" aria-label="Top of Page">Top of Page</a></li>
-                    <li><a href="#nav" class="btn" aria-label="Quick Links">Quick Links</a></li>
-                    <li><a href="javascript:history.back();" class="btn" aria-label="back">Back</a></li>
+                    <li><a href="#article-top" class="toc-btn" aria-label="Article Top">Article Top</a>
+                    <li><a href="#content-main" class="toc-btn" aria-label="Content Top">Content Top</a></li>
+                    <li><a href="#top" class="toc-btn" aria-label="Top of Page">Top of Page</a></li>
+                    <li><a href="#nav" class="toc-btn" aria-label="Quick Links">Quick Links</a></li>
+                    <li><a href="javascript:history.back();" class="toc-btn" aria-label="back">Back</a></li>
 <!-- External Links -- check href="../" 
-                    <li><a href="../gameperson_Disclaimer.html" class="btn" data-tags="legal notice, terms of use, information accuracy, liability disclaimer, AI-generated content, content responsibility" aria-label="Full Dilaimer Page">Full Disclaimer Page</a></li> 
-                    <li><a href="mailto:gamesomeotherday@gmail.com" class="btn" data-tags="feedback, report, contact, gameperson, gameperson@github, contact gameperson, contact gameperson@github" aria-label="Email Feedback">Feedback is Welcome <b>Send an Email</b></a></li> 
-                    <li><a href="../index.html" class="btn" aria-label="Site Index">Article Index Page</a></li> 
-                    <li><a href="../index.html#index" class="btn" aria-label="More Articles">More Articles from gameperson@github</a></li> 
+                    <li><a href="../gameperson_Disclaimer.html" class="toc-btn" data-tags="legal notice, terms of use, information accuracy, liability disclaimer, AI-generated content, content responsibility" aria-label="Full Dilaimer Page">Full Disclaimer Page</a></li> 
+                    <li><a href="mailto:gamesomeotherday@gmail.com" class="toc-btn" data-tags="feedback, report, contact, gameperson, gameperson@github, contact gameperson, contact gameperson@github" aria-label="Email Feedback">Feedback is Welcome <b>Send an Email</b></a></li> 
+                    <li><a href="../index.html" class="toc-btn" aria-label="Site Index">Article Index Page</a></li> 
+                    <li><a href="../index.html#index" class="toc-btn" aria-label="More Articles">More Articles from gameperson@github</a></li> 
 -->
                 </ul>
             </nav>
@@ -164,8 +165,8 @@
 <!-- ------------------- // ------------------- -->
 
 <!-- Return Navigation Links -->
-        <div class="return-list-link">
-            <nav class="index-list center">
+        <section <div class="nav-list">
+            <ul class="index-list center">
                 <a href="#top" aria-label="Page Top">[Page&nbsp;Top]</a> &nbsp;
                 <a href="#nav" aria-label="Quick-Links">[Quick&nbsp;Links]</a> &nbsp;
                 <a href="#toc" aria-label="Contents">[Table&nbsp;of&nbsp;Contents]</a> &nbsp;
