@@ -1,6 +1,5 @@
 /* ============================================================
-   Global Stylesheet for Gameperson Web-Test (v1.2)
-   Implroved Light Theme
+   Global Stylesheet for Gameperson /Info/  (v2.0)
    Purpose: Modular, easy-to-theme, and responsive
    =========================================================== */
 
@@ -8,15 +7,13 @@
    1. RESET & BASE STYLES
    ============================================================ */
 
-/* Reset Box Model and Margins */
-* {
+* {         /* Reset Box Model and Margins */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Base HTML and Body Styles */
-html {
+html {      /* Base HTML and Body Styles */
     font-size: 16px; /* 1rem = 16px */
     scroll-behavior: smooth; /* Smooth scrolling */
 }
@@ -70,7 +67,7 @@ body {
   --color-border: #cbd5e0;
 }
 
-/* Apply Background and Text Colors based on theme */
+/* Apply Theme Background and Text Colors */
 body {
     background-color: var(--color-background);
     color: var(--color-text);
@@ -120,6 +117,8 @@ body {
 :root {
     /* Font Families and Sizes */
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+    --font-family-code: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, monospace;
+
     --font-size: 1rem;
     --font-size-small: 0.875rem;
     --font-size-large: 1.25rem;
@@ -153,6 +152,11 @@ body {
     --line-height: 1.75;
     --line-height-small: 1.5;
     --line-height-smaller: 1.2;
+
+    --text-align: justify;
+    --text-align-last: left;
+    --text-align-header: center;
+    --text-align-table: left;
 }
 
 /* ============================================================
@@ -167,8 +171,8 @@ body {
     border-radius: var(--border-radius);
     padding: var(--padding);
     line-height: var(--line-height);
-    text-align: left;
-    text-align-last: left;
+    text-align: var(--text-align);
+    text-align-last: var(--text-align-last);
 }
 
 /* Headings */
@@ -178,23 +182,24 @@ h1, h2, h3, h4, h5, h6 {
     padding: var(--padding-none);
     line-height: var(--line-height-smaller);
     font-weight: var(--font-weight-semibold);
-    text-align: center;
-    text-align-last: center;
+    text-align: var(--text-align-header);
+    text-align-last: var(--text-align-header);
 }
 
 h1 { font-size: 2.5rem; font-weight: var(--font-weight-bold); margin: var(--margin-small); }
-h2 { font-size: 2.0em; font-weight: var(--font-weight-bold); margin-bottom: 0.5em; }
-h3 { font-size: 1.5em; font-weight: var(--font-weight-semibold); margin-bottom: 0.5em; }
-h4, h5 { font-size: 1.4em; font-weight: var(--font-weight-semibold); margin: var(--margin-small); }
+h2 { font-size: 2.0em; font-weight: var(--font-weight-bold); margin-bottom: var(--margin-small); }
+h3 { font-size: 1.5em; font-weight: var(--font-weight-semibold); margin-bottom: var(--margin-small); }
+h4 { font-size: 1.4em; font-weight: var(--font-weight-semibold); margin: var(--margin-small); }
+h5 { font-size: 1.4em; font-weight: var(--font-weight-bold); margin: var(--margin-small); }
 h6 { font-size: 1.25em; font-weight: var(--font-weight-semibold); margin: var(--margin-small); }
 
 /* Paragraphs and Lists */
 p, ul, ol, li, table, dl { 
-      text-align: justify; 
-      text-align-last: left; 
+    text-align: var(--text-align);
+    text-align-last: var(--text-align-last);
 }
 
-p { margin-bottom: 1em; }
+p { margin-bottom: var(--margin); }
 
 ul, ol {
    list-style: none; 
@@ -204,6 +209,8 @@ ul, ol {
 
 ul li, ol li { margin-bottom: var(--margin-small); }
 
+/* --- list bullets, numbers, etc.. --- */
+
 /* ============================================================
    4. PAGE TYPOGRAPHY (Continued)
    ============================================================ */
@@ -212,7 +219,7 @@ ul li, ol li { margin-bottom: var(--margin-small); }
 a {
     color: var(--color-link);
     text-decoration: none;
-    font-weight: normal;
+    font-weight: var(--font-weight-normal);
     transition: color 0.3s;
 }
 
@@ -236,19 +243,20 @@ table th, table td {
     background: var(--color-background-medium);
     border: 1px solid var(--color-border);
     padding: var(--padding-small);
-    text-align: left;
-    text-align-last: left;
+    text-align: var(--text-align-table);
+    text-align-last: var(--text-align-table);
 
 }
 
 /* Code Blocks */
-pre, code {
+code {
     background: var(--color-background-medium); /* Changed from --bg-alt */
-    padding: var(--padding);
+    padding: var(--padding-smaller);
     display: block;
     overflow-x: auto;
-    font-family: monospace;
-    margin-bottom: var(--margin);
+    font-family: var(--font-family-code);
+    margin-bottom: var(--margin-small);
+    margin-left: var(--margin);
 }
 
 /* Images */
