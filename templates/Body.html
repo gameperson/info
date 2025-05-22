@@ -175,40 +175,36 @@
                 </ul>
             </nav>
         </aside>
-    </main>
     
     <hr class="divider">
 <!-- ------------------- // ------------------- -->
 
-    <hr class="divider">
-<!-- ------------------- // ------------------- -->
-
 <!-- Article Content -->
-    <article class="content-body" id="article-top">
-        <section>
-            <h2>Main Article Content</h2>
-            <a href="../templates/Body.html">
-                <p>link to noBody.html template:<br>
-                    <b>../templates/nBody.html</b>
-                </p>
-            </a>
-             
+        <article class="content-body" id="article-top">
+            <section class="content-title" >
+                <h2>Main Article Content</h2>
+                <a href="../templates/Body.html">
+                    <p>link to noBody.html template:<br>
+                        <b>../templates/nBody.html</b>
+                    </p>
+                </a>
             </section>
+            
 <!-- Guide -->
-        <section class="content-section" id="guide">
-            <h2>Guide</h2>
-            <p>
-                structured guide or walkthrough, process explanation
-                instructional, procedural, tutorial, how-to, checklist, 
-                instructions, etc.
-            </p>
-            <p><strong>Example:</strong> "Follow these steps to train 
-                your first AI model using Python and TensorFlow."
-            </p>
-        </section>
+            <section class="content-section" id="guide">
+                <h2>Guide</h2>
+                <p>
+                    structured guide or walkthrough, process explanation
+                    instructional, procedural, tutorial, how-to, checklist, 
+                    instructions, etc.
+                </p>
+                <p><strong>Example:</strong> "Follow these steps to train 
+                    your first AI model using Python and TensorFlow."
+                </p>
+            </section>
 
 <!-- Overview -->
-        <section class="content-section" id="overview">
+            <section class="content-section" id="overview">
             <h2>Overview</h2>
             <p>
                 high-level summary, before diving into details.
@@ -257,7 +253,7 @@
 <!-- ------------------- // ------------------- -->
 
 <!-- Main Content -->
-      <section id="content-main">
+      <section id="main-content">
         <h2>Main Content</h2>
 
         <section class="content-section" id="section-1">
@@ -294,14 +290,14 @@
             
     <hr class="divider">
         <div class="retutn-link">
-             <a href="#toc" class="btn" aria-label="Cntents">Table of Contents</a>
+             <a href="#toc" class="return-btn" aria-label="Cntents">Table of Contents</a>
         </div>
     <br class="divider">
 <!-- ------------------- // ------------------- -->
 
 <!-- Callout -->
         <!-- <aside class="accent-section callout" id="callout"> -->
-        <section class="accent-section callout" id="callout"> 
+        <section class="accent-section" id="callout"> 
             <h3>Callout Section</h3>
             <p>
                 callouts, learning goals, warnings, key messages, 
@@ -322,7 +318,7 @@
         </blockquote>
 
 <!-- lists -->
-        <section class="list" id="list">
+        <section class="content-section list" id="list">
             <h2>Lists</h2>
             <p>
                 Useful for processes, ranking, structured steps,
@@ -330,7 +326,7 @@
             </p>
 
     <!-- numbered list -->
-            <h3 class="numbered-list" id="numbered-list">Numbered List Example</h3>
+            <h3 class="content-section numbered-list" id="numbered-list">Numbered List Example</h3>
             <ol>
                 <li><strong>Example:</strong> "Gather data and preprocess it for analysis."</li>
                 <li><strong>Example:</strong> "Identify key patterns and correlations."</li>
@@ -338,14 +334,14 @@
             </ol>
 
     <!-- ordered list -->
-            <h3 class="ordered-list" id="ordered-list">Ordered List Example</h3>
+            <h3 class="content-section ordered-list" id="ordered-list">Ordered List Example</h3>
             <ul>
                 <li><strong>Example:</strong> "Analyze economic trends"</li>
                 <li><strong>Example:</strong> "Assess political data"</li>
             </ul>
 
     <!-- bulleted list -->
-            <h3 class="bulleted-list" id="bulleted-list">Bulleted List Example</h3>
+            <h3 class="content-section bulleted-list" id="bulleted-list">Bulleted List Example</h3>
             <ul>
                 <li><strong>Example:</strong> "Analyze economic trends"</li>
                 <li><strong>Example:</strong> "Assess political data"</li>
@@ -354,28 +350,28 @@
 
         <div class="retutn-link">
             <hr class="divider">
-                <a href="#toc" class="btn" aria-label="Cntents">Table of Contents</a>
+                <a href="#toc" class="return-btn" aria-label="Cntents">Table of Contents</a>
             <br class="divider">
         </div>
 <!-- ------------------- // ------------------- -->
           
 <!-- Image with Caption -->
-        <section id="image">
+        <section class="content-section image" id="image">
             <h2>Image with Caption</h2>
             <p>
                 reinforcement of key points, charts, graphs, 
                 illustrations, infographics, visualization, 
                 diagrams, etc.
             </p>
-            <figure class="accent-container fig"> 
+            <figure class="accent-container"> 
                 <!-- use: class="accent" inside img to hilight the image only -->
-                <img src="../images/these-lands.jpg" alt="These Lands Are Belong to Us!">
-                <figcaption>Figure 1: The accuracy AI models improve over time.</figcaption>
+                <img src="../images/these-lands.jpg" class="figure" alt="These Lands Are Belong to Us!">
+                <figcaption class="figcaption">Figure 1: The accuracy AI models improve over time.</figcaption>
             </figure>    
         </section>
         
 <!-- Table -->
-        <section id="table">
+        <section class="content-section table" id="table">
             <h2>Simple Table Example</h2>
             <p>
                 comparing data, showing structured information,
@@ -403,7 +399,7 @@
         </section>
 
 <!-- Code -->
-        <section id="code">
+        <section class="content-section code" id="code">
             <h2>Code Example</h2>
             <p>
                 A dedicated section for code snippets, CLI commands,
@@ -427,7 +423,7 @@ function greet() {
 <!-- ------------------- // ------------------- -->
 
 <!-- Insights -->
-        <section id="insights">
+        <section class="content-section" id="insights">
             <h2>Insights</h2>
             <p>
                 points that reinforce key learnings, lessons, major findings,
@@ -441,7 +437,7 @@ function greet() {
         </section>
 
 <!-- Summary -->
-        <section id="summary">
+        <section class="content-section" id="summary">
             <h2>Summary</h2>
             <p>
                 A condensed version of the article, summary reference,
@@ -451,7 +447,7 @@ function greet() {
         </section>
 
 <!-- Conclusion -->
-        <section id="conclusion">
+        <section class="content-section" id="conclusion">
             <h2>Conclusion</h2>
             <p>
                 Wraps up the discussion, offering final thoughts, 
@@ -469,7 +465,7 @@ function greet() {
 <!-- ------------------- // ------------------- -->
 
 <!-- Glossary -->    
-        <section id="glossary">
+        <section class="content-section glossary" id="glossary">
             <h2>Glossary</h2>
             <dl>
                 <dt>Term 1</dt>
@@ -480,7 +476,7 @@ function greet() {
         </section>
 
 <!-- Further Reading -->    
-        <section id="further-reading">
+        <section class="content-section further-reading"id="further-reading">
             <h2>Further Reading</h2>
             <ul>
                 <li><a href="#">Recommended Article or Book 1</a></li>
@@ -489,7 +485,7 @@ function greet() {
         </section>
 
 <!-- References -->
-        <section id="references">
+        <section class="content-section references" id="references">
             <h2>References</h2>
             <ul>
                 <li>Author, A. (2024). <em>Title of Reference</em>. <a href="#">Link to Source</a></li>
@@ -503,15 +499,17 @@ function greet() {
     <hr class="divider">
 
 <!-- ------------------- // ------------------- -->
+
+    <section class="site-nav"> 
 <!-- Return Navigation Link List-->
-    <nav class="rlist-link">
-        <a href="#top" aria-label="Page Top">[Page Top]</a> &nbsp;
-        <a href="#nav" aria-label="Quick-Links">[Quick Links]</a> &nbsp;
-        <a href="#toc" aria-label="Contents">[Table of Contents]</a> &nbsp;
-        <a href="#article-top" aria-label="Article Top">[Article Top]</a> &nbsp; 
-        <a href="#content-main" aria-label="Content Top">[Content Top]</a> &nbsp; 
-        <a href="javascript:history.back();">[Back]</a>
-    </nav>
+        <nav class="nav-list">
+            <a href="#top" class="nav-link" aria-label="Page Top">[Page Top]</a> &nbsp;
+            <a href="#nav" class="nav-link" aria-label="Quick-Links">[Quick Links]</a> &nbsp;
+            <a href="#toc" class="nav-link" aria-label="Contents">[Table of Contents]</a> &nbsp;
+            <a href="#article-top" class="nav-link" aria-label="Article Top">[Article Top]</a> &nbsp; 
+            <a href="#content-main" class="nav-link" aria-label="Content Top">[Content Top]</a> &nbsp; 
+            <a href="javascript:history.back();" class="nav-link" aria-label="Back">[Back]</a>
+        </nav>
         
 <!-- Return [Button] Links -->
     <div class="return-link ">
