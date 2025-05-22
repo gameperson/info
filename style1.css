@@ -258,16 +258,16 @@ img {
     padding: var(--padding);
 }
 
-img.figure {
-    width: 80%;
-    max-width: 720px;
-    height: auto;
-}
-
 img.accent {
     border-left: var(--border-left-accent-width) solid var(--color-border-accent);
     margin: var(--margin-large);
     padding: var(--padding-larger);
+}
+
+figure, figure.img, img.figure, {
+    width: 80%;
+    max-width: 720px;
+    height: auto;
 }
 
 .image-left-inline {
@@ -289,6 +289,7 @@ img.accent {
     max-width: 50%; /* Optional: Set a maximum width for the image */
     height: auto;
 }
+
 .theme-toggle-img, .theme-toggle img {       /* img.theme-toggle, */
     width: 6vw;         /* or width: 6%; for parent-relative */
     min-width: 30px;
@@ -300,6 +301,10 @@ img.accent {
     margin: 0.5em auto;
     border: none;
     cursor: pointer;
+}
+
+fig {
+   width: 80%;
 }
 
 figcaption {
