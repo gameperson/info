@@ -25,76 +25,44 @@ body {
     padding-bottom: 3rem; /* 60px */
     transition: background-color 0.3s ease; /* For smooth theme transitions */
 }
-
-/* ============================================================
-   2. COLOR PALETTE TOKENS (CSS Variables)
-   ============================================================ */
-
-:root {
-    /* DARK THEME (Default) */
-    --color-background-light: #121212;
-    --color-background: #1e1e1e;
-    --color-background-dark: #333;
-    --color-background-accent: #302020;
-
-    --color-border: #444;
-    --color-border-light: #666;
-    --color-border-accent: #b33;
-
-    --color-text: #e0e0e0;
-    --color-text-light: #cccccc;
-    --color-text-muted: #999;
-    --color-text-accent: #a44;
-    
-    --color-link: #a33; 
-    --color-link-hover: #b44; 
-}
-
-/* LIGHT THEME OVERRIDES */
+/* -------------------------- // -------------------------- */
+/* LIGHT THEME OVERRIDES ---- // -------------------------- */
+/*
 .light-theme {
   --color-background: #f2f4f7;
   --color-background-light: #ffffff;
   --color-background-medium: #e4e7eb;
   --color-background-dark: #d0d4d9;
-
   --color-text: #1a1a1a;
   --color-text-secondary: #444c56;
   --color-text-muted: #6b7280;
-
   --color-link: #006580;
   --color-link-hover: #003d4d;
-
   --accent-color: #cbd5e0;
 }
-
-/* Apply Theme Background and Text Colors */
-body {
-    background-color: var(--color-background);
-    color: var(--color-text);
-    border-color: var(--color-border);
-}
-
-/* Light Theme Color Accents */
+*/
+/* LIGHT THEME OVERRIDES */
 /*
 .light-theme h1, .light-theme h2, .light-theme h3,
 .light-theme h4, .light-theme h5, .light-theme h6,
 .light-theme a {
-    color: var(--color-link); /* Teal Headers and links */
-/*}
-
+    color: var(--color-link); /* Teal Headers and links
+}
+*/
+/*
 .light-theme a:hover {
     color: var(--color-link-hover);
 }
-
 .light-theme .accent-section {
-    background-color: #d0d8dd; /* Darker background for contrast */
-/*    border-color: var(--color-link); /* Teal border */
-/*}
-
+    background-color: #d0d8dd;
+    border-color: var(--color-link);
+}
+*/
+/* Button Styles, applies to both themes */
+/*
 .light-theme .accent-section a.button-link,
 .button-link {
-    /* Button Styles, applies to both themes */
-/*    display: block;
+    display: block;
     padding: 0.8em 1.2em;
     background-color: var(--color-background-medium);
     color: var(--color-text);
@@ -103,12 +71,44 @@ body {
     border: 1px solid var(--color-border);
     transition: background-color 0.3s ease;
 }
-
+*/
+/*
 .light-theme .accent-section a.button-link:hover,
 .button-link:hover {
     background-color: var(--color-background-dark);
 }
 */
+/* -------------------------- // -------------------------- */
+/* ============================================================
+   2. COLOR PALETTE TOKENS (CSS Variables)
+   ============================================================ */
+
+:root {
+    /* DARK THEME (Default) */
+    --color-background: #1e1e1e;
+    --color-background-light: #121212;
+    --color-background-dark: #333;
+    --color-background-accent: #302020;
+
+    --color-border: #444;
+    --color-border-light: #666;
+    --color-border-accent: #b33;
+
+    --color-text: #eee;
+    --color-text-light: #fff;
+    --color-text-muted: #999;
+    --color-text-accent: #a44;
+    
+    --color-link: #a33; 
+    --color-link-hover: #b44; 
+}
+
+/* Apply Theme Background and Text Colors */
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    border-color: var(--color-border);
+}
 
 /* ============================================================
    3. TYPOGRAPHY TOKENS (CSS Variables)
@@ -120,11 +120,12 @@ body {
     --font-family-code: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, monospace;
 
     --font-size: 1rem;
-    --font-size-small: 0.875rem;
+    --font-size-small: 0.825rem;
     --font-size-large: 1.25rem;
 
     /* Font Weights */
-    --font-weight-normal: 400;
+    --font-weight: 450;
+    --font-weight-light: 350;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
 
@@ -146,16 +147,16 @@ body {
     --border-top-width: 1px;
     --border-right-width: none;
     --border-bottom-width: 1px;
-    --border-left-width: 2px; 
-*/
+    --border-left-width: 2px;
+    --border-radius: 5px;
+    --border-radius-small: 4px;
+   
     --border-accent-width: 4px;
     --border-top-accent-width: 2px;
     --border-right-accent-width: 1px;
     --border-bottom-accent-width: 2px;
     --border-left-accent-width: 4px;
-    --border-radius: 5px;
-    --border-radius-small: 4px;
-   
+    
     --line-height: 1.75;
     --line-height-small: 1.5;
     --line-height-smaller: 1.2;
@@ -165,11 +166,9 @@ body {
     --text-align-header: center;
     --text-align-table: left;
     --text-align-figcaption: left;
-
-    --container-max-width; 1200px;
    
-/*  WIDTHS: pixels: 0px; element: 0em; root-element: 0rem; parent-relative: 10%; page-relative-width: 10vw;    */
-/*    ALSO: lengths: 0cm; 0mm; 0in; points: 0pt; page-rlative-height: 0vh; page-relative-max/min; 0vmax 0vmin; */
+    --container-max-width; 1200px;
+    /* WIDTHS: 0px; element: 0em; root-element: 0rem; parent-relative: 10%; page-relative-width: 10vw; - ALSO: lengths: 0cm; 0mm; 0in; points: 0pt; page-rlative-height, max, min: 0vh, 0vmax, 0vmin; */
     --figure-width: 85%;
     --figure-max-width: 900px;
     --figure-min-width: 300px;
@@ -259,7 +258,7 @@ a:hover {
 /* Tables */
 table {
     background-color: var(--color-background-medium);
-    width: 100%;d
+    width: 100%;
     margin: var(--margin-large) auto;
     border: var(--border-width) solid var(--accent-color);
     border-left: var(--accent-border-left-width) solid var(--accent-color);
@@ -273,7 +272,6 @@ table th, table td {
     padding: var(--padding-small);
     text-align: var(--text-align-table);
     text-align-last: var(--text-align-table);
-
 }
 
 /* Code Blocks and Preformatted Text */
