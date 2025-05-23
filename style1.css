@@ -39,16 +39,15 @@ body {
 
     --color-border: #444;
     --color-border-light: #666;
+    --color-border-accent: #b33;
 
     --color-text: #e0e0e0;
     --color-text-light: #cccccc;
     --color-text-muted: #999;
-    --color-text-accent: #b33;
+    --color-text-accent: #a44;
     
     --color-link: #a33; 
     --color-link-hover: #b44; 
-   
-    --accent-color: #a33;
 }
 
 /* LIGHT THEME OVERRIDES */
@@ -144,10 +143,16 @@ body {
 
     /* Borders and Line Heights */
     --border-width: 1px;
-    --accent-border-top-width: 1px;
-    --accent-border-right-width: 1px;
-    --accent-border-left-width: 4px;
-    --accent-border-bottom-width: 1px;
+    --border-top-width: 1px;
+    --border-right-width: none;
+    --border-bottom-width: 1px;
+    --border-left-width: 2px; 
+*/
+    --border-accent-width: 4px;
+    --border-top-accent-width: 2px;
+    --border-right-accent-width: 1px;
+    --border-bottom-accent-width: 2px;
+    --border-left-accent-width: 4px;
     --border-radius: 5px;
     --border-radius-small: 4px;
    
@@ -161,14 +166,15 @@ body {
     --text-align-table: left;
     --text-align-figcaption: left;
 
-    --container-max-width); 1200px;
+    --container-max-width; 1200px;
    
+/*  WIDTHS: pixels: 0px; element: 0em; root-element: 0rem; parent-relative: 10%; page-relative-width: 10vw;    */
+/*    ALSO: lengths: 0cm; 0mm; 0in; points: 0pt; page-rlative-height: 0vh; page-relative-max/min; 0vmax 0vmin; */
     --figure-width: 85%;
-    --figure-max-width: 800px;
-    --figure-min-width: 400px;
+    --figure-max-width: 900px;
+    --figure-min-width: 300px;
 
     --theme-toggle-width: 20vw; 
-/*    --theme-toggle-width: page-relative: 10vw; parent-relative: 10%; */
     --theme-toggle-min-width: 80px; 
     --theme-toggle-max-width: 200px;   
 }
