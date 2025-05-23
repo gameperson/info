@@ -166,6 +166,7 @@ body {
     --text-align: justify;
     --text-align-last: left;
     --text-align-header: center;
+    --text-align-button: center;
     --text-align-table: left;
     --text-align-figcaption: left;
    
@@ -322,15 +323,15 @@ img.accent {
 
 /* Theme-Toggles */
 .theme-toggle-img, .theme-toggle img { /* img.theme-toggle, */
+    display: block;
     width: var(--theme-toggle-width);
     min-width: var(--theme-toggle-min-width);
     max-width: var(--theme-toggle-max-width);
     height: auto;
-    display: block;
-    justify-content: center; 
-    align-items: center; 
     margin: var(--margin-none); 
     border: var(--border-none);
+    justify-content: center; 
+    align-items: center; 
     cursor: pointer;
 }
 
@@ -371,8 +372,8 @@ figcaption b {
 }
 
 .accent-container {
+    display: inline-block;
     position: relative;
-    display: inline-block; /* or block, as needed */
     /* Optional: add padding if needed */
 }
 
@@ -426,9 +427,37 @@ hr.divider, .divider, .section-divider {
    6. BUTTON LINKS 
    ============================================================ */
 
-.btn, .button-link { /* Combined .btn and .button-link */
+.btn, .nav-btn, .large-btn, .box-btn {
+    display: block;
     background-color: var(--color-background-dark); 
-    color: var(--color-text);
+    margin: var(--margin-small) auto; 
+    border: var(--border-width) solid var(--color-border);
+    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+    border-radius: var(--border-radius);
+    padding: var(--padding-large);
+    color: var(--color-text-accent);
+    text-decoration: none;
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight);
+    text-align: var(--text-align-button);
+    text-align-last: var(--text-align-button);
+    transition: background 0.3s ease;
+}
+
+.header-btn, .footer-btn {
+    display: inline-block;
+    margin: var(--margin) auto; 
+    border-radius: var(--border-radius-small);
+    padding: var(--padding);
+    font-size: var(--font-size-small);   
+}
+
+.toc-btn { 
+    margin: var(--margin) auto; 
+    padding: var(--padding);
+    font-size: var(--font-size);
+}   
+    color: var(--color-text-accent);
     display: block;
     margin: var(--margin) auto; 
     border: 1px solid var(--color-border);
