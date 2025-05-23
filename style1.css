@@ -329,24 +329,28 @@ img.accent {
 }
 
 /* Figures and Figcaptions */
-figure, figure.img, img.figure, {
+.fig, figure.img, img.fig, {
+    margin: var(--margin);
+    margin-bottom: none; 
+    margin-left: var(--margin-large); 
     width: var(--figure-width);
-    max-width: var(--figure-max-width);
-    min-width: var(--figure-min-width);
+/*    max-width: var(--figure-max-width); */
+/*    min-width: var(--figure-min-width); */
     height: auto;
 }
 
 figcaption {
-    padding: var(--padding-larger);
+    margin: var(--margin);
+    margin-top: none; 
     margin-left: var(--margin-large); 
-    margin-right: var(--margin); 
+    padding: var(--padding-larger);
     text-align: var(--text-align-figcaption);
     text-align-last: var(--text-align-figcaption);
 /*    font-style: oblique; */
 }
 
 figcaption b {
-   color: var(--color-text-accent);
+   color: var(--accent-color);
    font-weight: var(--font-weight-semibold);
 }
 
@@ -373,8 +377,8 @@ figcaption b {
     position: absolute;
     top: 0; /* offset from the top by, e.g., 1em */
     top: 1em; /* left offset: 1-2em from the image's edge */
-    left: var(--border-left-width); 
-    width: var(--border-left-accent-width);
+    left: var(--border-width); 
+    width: var(--accent-border-left-width);
     height: calc(100% - 2em); /* adjust as needed for full height minus offsets */
     background-color: var(--accent-color); 
     /* Optional: add border-radius, etc. */
