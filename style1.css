@@ -164,13 +164,13 @@ body {
     --container-max-width); 1200px;
    
     --figure-width: 85%;
-    --figure-max-width: 700px;
+    --figure-max-width: 800px;
     --figure-min-width: 400px;
-    
-    --theme-toggle-width: 10vw; 
-/*    --theme-toggle-width: 10%; for parent-relative */
-    --theme-toggle-min-width: 40px; 
-    --theme-toggle-max-width: 80px;   
+
+    --theme-toggle-width: 20vw; 
+/*    --theme-toggle-width: page-relative: 10vw; parent-relative: 10%; */
+    --theme-toggle-min-width: 80px; 
+    --theme-toggle-max-width: 200px;   
 }
 
 /* ============================================================
