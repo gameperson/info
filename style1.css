@@ -37,6 +37,9 @@ body {
     --color-background-dark: #333;
     --color-background-accent: #302020;
 
+    --color-border: #444;
+    --color-border-light: #666;
+
     --color-text: #e0e0e0;
     --color-text-light: #cccccc;
     --color-text-muted: #999;
@@ -44,10 +47,8 @@ body {
     
     --color-link: #a33; 
     --color-link-hover: #b44; 
-    --color-border: #444;
-    
-    --color-border-light: #666;
-    --color-border-accent: #a33;
+   
+    --accent-color: #a33;
 }
 
 /* LIGHT THEME OVERRIDES */
@@ -64,7 +65,7 @@ body {
   --color-link: #006580;
   --color-link-hover: #003d4d;
 
-  --color-border: #cbd5e0;
+  --accent-color: #cbd5e0;
 }
 
 /* Apply Theme Background and Text Colors */
@@ -142,10 +143,11 @@ body {
     --padding-none: 0;
 
     /* Borders and Line Heights */
-    --border-top-accent-width: 1px;
-    --border-bottom-accent-width: 1px;
-    --border-left-accent-width: 4px;
-    --border-botto-accent-width: 4px;
+    --border-width: 1px;
+    --accent-border-top-width: 1px;
+    --accent-border-right-width: 1px;
+    --accent-border-left-width: 4px;
+    --accent-border-bottom-width: 1px;
     --border-radius: 5px;
     --border-radius-small: 4px;
    
@@ -157,6 +159,18 @@ body {
     --text-align-last: left;
     --text-align-header: center;
     --text-align-table: left;
+    --text-align-figcaption: left;
+
+    --container-max-width); 1200px;
+   
+    --figure-width: 85%;
+    --figure-max-width: 700px;
+    --figure-min-width: 400px;
+    
+    --theme-toggle-width: 10vw; 
+/*    --theme-toggle-width: 10%; for parent-relative */
+    --theme-toggle-min-width: 40px; 
+    --theme-toggle-max-width: 80px;   
 }
 
 /* ============================================================
@@ -209,12 +223,6 @@ ul, ol {
 
 ul li, ol li { margin-bottom: var(--margin-small); }
 
-/* --- list bullets, numbers, etc.. --- */
-
-/* ============================================================
-   4. PAGE TYPOGRAPHY (Continued)
-   ============================================================ */
-
 /* Links */
 a {
     color: var(--color-link);
@@ -227,14 +235,28 @@ a:hover {
     color: var(--color-link-hover);
 }
 
+/* ============================================================
+   4. PAGE TYPOGRAPHY (Continued)
+   ============================================================ */
+
+/* Text Styles */
+.left { text-align: left; text-align-last: left; }
+.right { text-align: right; text-align-last: right; }
+.center { text-align: center; text-align-last: center; }
+.justify { text-align: justify; text-align-last: justify; }
+
+.accent { color: var(--color-text-accent); }
+.muted { color: var(--color-text-muted); }
+
+/* --- Lists - ordered, numbered, bulleted, etc.. --- */
+
 /* Tables */
 table {
     background-color: var(--color-background-medium);
-    width: 100%;
+    width: 100%;d
     margin: var(--margin-large) auto;
-    border: 1px solid var(--color-border);
-
-    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+    border: var(--border-width) solid var(--accent-color);
+    border-left: var(--accent-border-left-width) solid var(--accent-color);
     border-radius: var(--border-radius);
     padding: var(--padding);
 }
@@ -248,8 +270,8 @@ table th, table td {
 
 }
 
-/* Code Blocks */
-code {
+/* Code Blocks and Preformatted Text */
+code, pre {
     background: var(--color-background-medium); /* Changed from --bg-alt */
     padding: var(--padding-smaller);
     display: block;
@@ -272,16 +294,10 @@ img.accent {
     padding: var(--padding-larger);
 }
 
-figure, figure.img, img.figure, {
-    width: 80%;
-    max-width: 720px;
-    height: auto;
-}
-
 .image-left-inline {
     display: inline-block; /* Allows setting width and height, and respects margins */
     float: left;
-    margin-right: 1rem;
+    margin-right: var(--margin);
     vertical-align: middle; /* Adjust vertical alignment as needed */
     width: 50%; 
     max-width: 50%; /* Optional: Set a maximum width for the image */
@@ -291,36 +307,41 @@ figure, figure.img, img.figure, {
 .image-right-inline {
     display: inline-block; /* Allows setting width and height, and respects margins */
     float: right;
-    margin-left: 1rem;
+    margin-left: var(--margin);
     vertical-align: middle; /* Adjust vertical alignment as needed */
     width: 50%; 
     max-width: 50%; /* Optional: Set a maximum width for the image */
     height: auto;
 }
 
+/* Theme-Toggles */
 .theme-toggle-img, .theme-toggle img {       /* img.theme-toggle, */
-    width: 6vw;         /* or width: 6%; for parent-relative */
-    min-width: 30px;
-    max-width: 60px;
+    width: var(--theme-toggle-width);
+    min-width: var(--theme-toggle-min-width);
+    max-width: var(--theme-toggle-max-width);
     height: auto;
     display: block;
-/*    justify-content: center; */
-/*    align-items: center; */
-    margin: 0.5em auto;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0; 
     border: none;
     cursor: pointer;
 }
 
-fig {
-   width: 80%;
+/* Figures and Figcaptions */
+figure, figure.img, img.figure, {
+    width: var(--figure-width);
+    max-width: var(--figure-max-width);
+    min-width: var(--figure-min-width);
+    height: auto;
 }
 
 figcaption {
     padding: var(--padding-larger);
     margin-left: var(--margin-large); 
     margin-right: var(--margin); 
-    text-align: left;
-    text-align-last: left;
+    text-align: var(--text-align-figcaption);
+    text-align-last: var(--text-align-figcaption);
 /*    font-style: oblique; */
 }
 
@@ -333,21 +354,9 @@ figcaption b {
    5. LAYOUT & CONTAINERS 
    ========================================================= */
 
-/* Text */
-.left { text-align: left; text-align-last: left; }
-.right { text-align: right; text-align-last: right; }
-.center { text-align: center; text-align-last: center; }
-.justify { text-align: justify; text-align-last: justify; }
-
-.accent { color: var(--color-text-accent); }
-.muted { color: var(--color-text-muted); }
-
-.mb-16 { margin-bottom: 1rem; }
-.p-16 { padding: 1rem; }
-
 .container {
 /*    max-width: 800px; */
-    max-width: 1200px;
+    max-width: var(--container-max-width);
     margin: 0 auto;
     padding: var(--padding-smaller);
 }
@@ -364,41 +373,44 @@ figcaption b {
     position: absolute;
     top: 0; /* offset from the top by, e.g., 1em */
     top: 1em; /* left offset: 1-2em from the image's edge */
-    left: 1em; 
-    width: 4px; /* or your --border-left-accent-width equivalent */
+    left: var(--border-left-width); 
+    width: var(--border-left-accent-width);
     height: calc(100% - 2em); /* adjust as needed for full height minus offsets */
-    background-color: var(--color-border-accent); /* your accent color */
+    background-color: var(--accent-color); 
     /* Optional: add border-radius, etc. */
 }
 
 .center-content {
     text-align: center;
-    margin-top: 1em;
+    margin-top: var(--margin);
 }
 
 .content-section {
-    margin-bottom: 1em;
+    margin-bottom: var(--margin);
 }
 
 /* Dividers */
 hr {
     width: 100%;
-    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
-    border-botom: var(--border-left-accent-width) solid var(--color-border-accent);
+    border-top: none;
+    border-right: none;
+    border-botom: var(--border-width) solid var(--color-border-light);
+    border-left: var(--border-width) solid var(--color-border);
     border-radius: var(--border-radius);
 }
 
 hr.divider, .divider, .section-divider {
     width: 100%;
-    border: none;
-    border-left: var(--border-left-accent-width) solid var(--color-border-left-accent);
-    border-botom: var(--border-left-accent-width) solid var(--color-border-accent);
+    border-top: none;
+    border-right: none;
+    border-botom: var(--accent-border-bottom-width) solid var(--accent-color);
+    border-left: var(--accent-border-left-width) solid var(--accent-color);
     border-radius: var(--border-radius);
 }
 
 .section-divider {
-    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
-    border-botom: var(--border-bottom-accent-width) solid var(--color-border-accent);
+    border-left: var(--border-left-accent-width) solid var(--accent-color);
+    border-botom: var(--border-bottom-accent-width) solid var(--accent-color);
     padding: var(--padding);
 }
 
