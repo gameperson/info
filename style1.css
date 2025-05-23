@@ -134,6 +134,7 @@ body {
     --margin-small: 0.5em;
     --margin-large: 1.5em;
     --margin-larger: 2em;
+    --margin-none: 0;
    
     --padding: 1em;
     --padding-small: 0.75em;
@@ -148,6 +149,7 @@ body {
     --border-right-width: none;
     --border-bottom-width: 1px;
     --border-left-width: 2px;
+    --border-none: 0;
     --border-radius: 5px;
     --border-radius-small: 4px;
    
@@ -185,7 +187,7 @@ body {
 body {
     font-family: var(--font-family);
     font-size: var(--font-size);
-    font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight);
     margin: var(--margin);
     border-radius: var(--border-radius);
     padding: var(--padding);
@@ -223,7 +225,7 @@ p { margin-bottom: var(--margin); }
 ul, ol {
    list-style: none; 
    padding-left: var(--padding-smaller); 
-   margin: var(--margin) 0; 
+   margin: var(--margin) var(--margin-none); 
 }
 
 ul li, ol li { margin-bottom: var(--margin-small); }
@@ -232,7 +234,7 @@ ul li, ol li { margin-bottom: var(--margin-small); }
 a {
     color: var(--color-link);
     text-decoration: none;
-    font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight);
     transition: color 0.3s;
 }
 
@@ -257,17 +259,17 @@ a:hover {
 
 /* Tables */
 table {
-    background-color: var(--color-background-medium);
+    background-color: var(--color-background);
     width: 100%;
     margin: var(--margin-large) auto;
-    border: var(--border-width) solid var(--accent-color);
-    border-left: var(--accent-border-left-width) solid var(--accent-color);
+    border: var(--border-width) solid var(--color-border-accent);
+    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
     border-radius: var(--border-radius);
     padding: var(--padding);
 }
 
 table th, table td {
-    background: var(--color-background-medium);
+    background: var(--color-background);
     border: 1px solid var(--color-border);
     padding: var(--padding-small);
     text-align: var(--text-align-table);
@@ -276,7 +278,7 @@ table th, table td {
 
 /* Code Blocks and Preformatted Text */
 code, pre {
-    background: var(--color-background-medium); /* Changed from --bg-alt */
+    background: var(--color-background); /* Changed from --bg-alt */
     padding: var(--padding-smaller);
     display: block;
     overflow-x: auto;
@@ -293,33 +295,33 @@ img {
 }
 
 img.accent {
-    border-left: var(--accent-border-left-width) solid var(--accent-color);
+    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
     margin: var(--margin-large);
-    padding: var(--padding-larger);
+    padding: var(--padding);
 }
 
 .image-left-inline {
-    display: inline-block; /* Allows setting width and height, and respects margins */
+    display: inline-block; /* width and height, respects margins */
     float: left;
     margin-right: var(--margin);
-    vertical-align: middle; /* Adjust vertical alignment as needed */
+    vertical-align: middle;
     width: 50%; 
-    max-width: 50%; /* Optional: Set a maximum width for the image */
+    max-width: 50%;
     height: auto;
   }
 
 .image-right-inline {
-    display: inline-block; /* Allows setting width and height, and respects margins */
+    display: inline-block;
     float: right;
     margin-left: var(--margin);
-    vertical-align: middle; /* Adjust vertical alignment as needed */
+    vertical-align: middle;
     width: 50%; 
-    max-width: 50%; /* Optional: Set a maximum width for the image */
+    max-width: 50%;
     height: auto;
 }
 
 /* Theme-Toggles */
-.theme-toggle-img, .theme-toggle img {       /* img.theme-toggle, */
+.theme-toggle-img, .theme-toggle img { /* img.theme-toggle, */
     width: var(--theme-toggle-width);
     min-width: var(--theme-toggle-min-width);
     max-width: var(--theme-toggle-max-width);
@@ -327,25 +329,25 @@ img.accent {
     display: block;
     justify-content: center; 
     align-items: center; 
-    margin: 0; 
-    border: none;
+    margin: var(--margin-none); 
+    border: var(--border-none);
     cursor: pointer;
 }
 
 /* Figures and Figcaptions */
 .fig, figure.img, img.fig, {
     margin: var(--margin);
-    margin-bottom: none; 
+    margin-bottom: var(--margin-none); 
     margin-left: var(--margin-large); 
     width: var(--figure-width);
-/*    max-width: var(--figure-max-width); */
-/*    min-width: var(--figure-min-width); */
+    max-width: var(--figure-max-width); 
+    min-width: var(--figure-min-width); 
     height: auto;
 }
 
 figcaption {
     margin: var(--margin);
-    margin-top: none; 
+    margin-top: var(--margin-none); 
     margin-left: var(--margin-large); 
     padding: var(--padding-larger);
     text-align: var(--text-align-figcaption);
@@ -354,7 +356,7 @@ figcaption {
 }
 
 figcaption b {
-   color: var(--accent-color);
+   color: var(--color-text-accent);
    font-weight: var(--font-weight-semibold);
 }
 
@@ -363,9 +365,8 @@ figcaption b {
    ========================================================= */
 
 .container {
-/*    max-width: 800px; */
     max-width: var(--container-max-width);
-    margin: 0 auto;
+    margin: var(--margin-none) auto;
     padding: var(--padding-smaller);
 }
 
@@ -379,11 +380,11 @@ figcaption b {
 .accent-container::before {
     content: "";
     position: absolute;
-    top: var(--border-width);  /* offset from the top by, e.g., 1em */
-    left: var(--border-width); /* left offset: 1-2em from the image's edge */ 
-    width: var(--accent-border-left-width);
-    height: calc(100% - 2em); /* adjust as needed for full height minus offsets */
-    background-color: var(--accent-color); 
+    top: var(--border-width);  /* top offset */
+    left: var(--border-width); /* left offset */ 
+    width: var(--border-left-accent-width);
+    height: calc(100% - 2em); /* full height minus offset */
+    background-color: var(--color-background-accent); 
     /* Optional: add border-radius, etc. */
 }
 
@@ -400,7 +401,7 @@ figcaption b {
 hr {
     width: 100%;
     border-top: none;
-    border-right: none;
+    border-right: var(--border-width);
     border-botom: var(--border-width) solid var(--color-border-light);
     border-left: var(--border-width) solid var(--color-border);
     border-radius: var(--border-radius);
@@ -408,8 +409,8 @@ hr {
 
 hr.divider, .divider, .section-divider {
     width: 100%;
-    border-top: none;
-    border-right: none;
+    border-top: var(--border-none);
+    border-right: var(--border-none);
     border-botom: var(--accent-border-bottom-width) solid var(--accent-color);
     border-left: var(--accent-border-left-width) solid var(--accent-color);
     border-radius: var(--border-radius);
