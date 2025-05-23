@@ -98,7 +98,9 @@ body {
     --color-text-light: #fff;
     --color-text-muted: #999;
     --color-text-accent: #a44;
-    
+
+    --color-btn-text: #a33;
+    --color-btn-hover: #b44;
     --color-link: #a33; 
     --color-link-hover: #b44; 
 }
@@ -428,7 +430,8 @@ hr.divider, .divider, .section-divider {
    ============================================================ */
 
 /* General Button Deffinitions */
-.btn, .nav-btn, .large-btn, .box-btn {
+.btn, .nav-btn, 
+.large-btn, .box-btn {
     display: block;
     outline: none;
     background-color: var(--color-background-dark); 
@@ -437,7 +440,7 @@ hr.divider, .divider, .section-divider {
     border-left: var(--border-left-accent-width) solid var(--color-border-accent);
     border-radius: var(--border-radius);
     padding: var(--padding-large);
-    color: var(--color-link);
+    color: var(--color-btn-text);
     font-size: var(--font-size-large);
     font-weight: var(--font-weight);
     text-align: var(--text-align-button);
@@ -446,20 +449,32 @@ hr.divider, .divider, .section-divider {
     transition: background 0.3s ease;
 }
 
-.btn:hover, .large-btn:hover, .box-btn:hover  {
+.btn:hover, 
+.large-btn:hover, .box-btn:hover  {
     background: var(--color-background-darker); 
 }
 
-.btn a:hover {
-    color: var(--color-link-hover);
+.btn:hover, .btn a:hover, 
+.large-btn:hover, .large-btn a:hover  {
+    color: var(--color-btn-hover);
 }
 
-.btn h3, .large-btn h3, .box-btn h3 {
+.btn h3, 
+.large-btn h3, .box-btn h3 {
     line-height: var(--line-height-smaller);
     font-weight: var(--font-weight-semibold);
     margin: var(--margin-none);
     padding: var(--padding-none);
 }
+
+/* Box Buttons */
+.box-btn, .box-btn:hover, 
+.box-btn a, .box-btn a:hover {
+    color: var(--color-text);
+}
+
+.box-btn h3 { color: var(--color-btn-text); }
+.box-btn h3:hover { color: var(--color-btn--hover); }
 
 /* Header and Footer Buttons */
 .header-btn, .footer-btn {
