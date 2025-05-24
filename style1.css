@@ -349,7 +349,7 @@ img.accent {
 figure, .figure, figure.img, img.figure, {
     margin: var(--margin);
     margin-bottom: var(--margin-none); 
-    margin-left: var(--margin-large); 
+    margin-left: var(--margin); 
     width: var(--figure-width);
     max-width: var(--figure-max-width); 
     min-width: var(--figure-min-width); 
@@ -359,8 +359,8 @@ figure, .figure, figure.img, img.figure, {
 figcaption, .figcaption {
     margin: var(--margin);
     margin-top: var(--margin-none); 
-    margin-left: var(--margin-large); 
-    padding: var(--padding-larger);
+    margin-left: var(--margin); 
+    padding: var(--padding);
     text-align: var(--text-align-figcaption);
     text-align-last: var(--text-align-figcaption);
 /*    font-style: oblique; */
