@@ -95,7 +95,7 @@ body {
     --color-border-accent: #b33;
 
     --color-text: #eee;
-    --color-text-light: #fff;
+    --color-text-bright: #fff;
     --color-text-muted: #999;
     --color-text-accent: #a44;
 
@@ -256,8 +256,9 @@ a:hover {
 .center { text-align: center; text-align-last: center; }
 .justify { text-align: justify; text-align-last: justify; }
 
-.accent { color: var(--color-text-accent); }
+.bright { color: var(--color-text-bright); }
 .muted { color: var(--color-text-muted); }
+.accent { color: var(--color-text-accent); }
 
 /* --- Lists - ordered, numbered, bulleted, etc.. --- */
 
