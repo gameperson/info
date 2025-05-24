@@ -146,20 +146,20 @@ body {
     --padding-none: 0;
 
     /* Borders and Line Heights */
-    --border-width: 1px;
-    --border-top-width: 1px;
-    --border-right-width: none;
-    --border-bottom-width: 1px;
-    --border-left-width: 2px;
-    --border-none: 0;
+    --border: 1px;
+    --border-top: 1px;
+    --border-right: none;
+    --border-bottom: 1px;
+    --border-left: 2px;
+    --border-none: 0; 
     --border-radius: 5px;
     --border-radius-small: 4px;
    
-    --border-accent-width: 4px;
-    --border-top-accent-width: 2px;
-    --border-right-accent-width: 1px;
-    --border-bottom-accent-width: 2px;
-    --border-left-accent-width: 4px;
+    --border-accent: 4px;
+    --border-top-accent: 2px;
+    --border-right-accent: 1px;
+    --border-bottom-accent: 2px;
+    --border-left-accent: 4px;
     
     --line-height: 1.75;
     --line-height-small: 1.5;
@@ -265,8 +265,8 @@ table {
     background-color: var(--color-background);
     width: 100%;
     margin: var(--margin-large) auto;
-    border: var(--border-width) solid var(--color-border-accent);
-    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+    border: var(--border) solid var(--color-border-accent);
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
     border-radius: var(--border-radius);
     padding: var(--padding);
 }
@@ -298,7 +298,7 @@ img {
 }
 
 img.accent {
-    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
     margin: var(--margin-large);
     padding: var(--padding);
 }
@@ -383,9 +383,9 @@ figcaption b {
 .accent-container::before {
     content: "";
     position: absolute;
-    top: var(--border-width);  /* top offset */
-    left: var(--border-width); /* left offset */ 
-    width: var(--border-left-accent-width);
+    top: var(--border);  /* top offset */
+    left: var(--border); /* left offset */ 
+    width: var(--border-left-accent);
     height: calc(100% - 2em); /* full height minus offset */
     background-color: var(--color-background-accent); 
     /* Optional: add border-radius, etc. */
@@ -404,9 +404,9 @@ figcaption b {
 hr {
     width: 100%;
     border-top: none;
-    border-right: var(--border-width);
-    border-botom: var(--border-width) solid var(--color-border-light);
-    border-left: var(--border-width) solid var(--color-border);
+    border-right: var(--border);
+    border-botom: var(--border) solid var(--color-border-light);
+    border-left: var(--border) solid var(--color-border);
     border-radius: var(--border-radius);
 }
 
@@ -420,8 +420,8 @@ hr.divider, .divider, .section-divider {
 }
 
 .section-divider {
-    border-left: var(--border-left-accent-width) solid var(--accent-color);
-    border-botom: var(--border-bottom-accent-width) solid var(--accent-color);
+    border-left: var(--border-left-accent) solid var(--accent-color);
+    border-botom: var(--border-bottom-accent) solid var(--accent-color);
     padding: var(--padding);
 }
 
@@ -436,8 +436,8 @@ hr.divider, .divider, .section-divider {
     outline: none;
     background-color: var(--color-background-dark); 
     margin: var(--margin-small) auto; 
-    border: var(--border-width) solid var(--color-border);
-    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+    border: var(--border) solid var(--color-border);
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
     border-radius: var(--border-radius);
     padding: var(--padding-large);
     color: var(--color-btn-text);
@@ -515,8 +515,8 @@ header, nav, footer, .site-header {
 header, .site-header {
     font-size: 1.6em;
     border: 1px solid var(--color-border);
-    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
-    border-top: var(--border-top-accent-width) solid var(--color-border-accent);
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
+    border-top: var(--border-top-accent) solid var(--color-border-accent);
 }
 
 header #header, .site-header, .header-content,
@@ -538,8 +538,8 @@ footer {
     margin-top: 2em;
     border: 1px solid var(--color-border);
     
-    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
-    border-bottom: var(--border-bottom-accent-width) solid var(--color-border-accent);
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
+    border-bottom: var(--border-bottom-accent) solid var(--color-border-accent);
 /*    padding: 1em; */
 }
 
@@ -619,7 +619,7 @@ footer .site-nav li a {
     border: 2px solid var(--color-border);
     border-right: 1px solid var(--color-border);
 
-    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
     font-size: 1em;
     text-align: justify;
     text-align-last: left;
@@ -638,7 +638,7 @@ footer .site-nav li a {
     margin: 0.5em 1em;
     border: 2px solid var(--color-border);
 
-    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
     border-radius: 5px;
     padding: 0.8em 1.2em;
     transition: background-color 0.3s ease;
@@ -681,7 +681,7 @@ footer .site-nav li a {
     display: inline-block;
     padding: 0.8em 1.2em;
 
-    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -747,7 +747,7 @@ textarea {
   color: var(--color-text);
   border: 1px solid var(--color-border-light);
 
-  border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+  border-left: var(--border-left-accent) solid var(--color-border-accent);
   padding: 0.5rem;
   border-radius: 4px;
   width: 100%;
@@ -860,7 +860,7 @@ textarea:focus {
 
 .index-list li a {
     color: var(--color-text);
-    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
     border-radius: var(--border-radius);
 }
 
@@ -913,7 +913,7 @@ textarea:focus {
     display: inline-block;
     border: 1px solid var(--color-border);
 
-    border-left: var(--border-left-accent-width) solid var(--color-border-accent);
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
     border-radius: var(--border-radius);
     padding: var(--padding);
 }
