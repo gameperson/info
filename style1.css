@@ -257,6 +257,10 @@ a:hover {
 .center { text-align: center; text-align-last: center; }
 .justify { text-align: justify; text-align-last: justify; }
 
+.bold { font-weight: var(--font-weight-bold); }
+.semibold { font-weight: var(--font-weight-semibold); }
+.light { font-weight: var(--font-weight-light); }
+
 .bright { color: var(--color-text-bright); }
 .muted { color: var(--color-text-muted); }
 .accent { color: var(--color-text-accent); }
