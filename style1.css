@@ -123,7 +123,8 @@ body {
 
     --font-size: 1rem;
     --font-size-small: 0.825rem;
-    --font-size-large: 1.25rem;
+    --font-size-large: 1.15rem;
+    --font-size-larger: 1.3rem;
 
     /* Font Weights */
     --font-weight: 450;
@@ -265,7 +266,7 @@ table {
     background-color: var(--color-background);
     width: 100%;
     margin: var(--margin-large) auto;
-    border: var(--border) solid var(--color-border-accent);
+    border: var(--border) solid var(--color-border);
     border-left: var(--border-left-accent) solid var(--color-border-accent);
     border-radius: var(--border-radius);
     padding: var(--padding);
@@ -286,6 +287,7 @@ code, pre {
     display: block;
     overflow-x: auto;
     font-family: var(--font-family-code);
+    font-size: var(--font-size-large);
     margin-bottom: var(--margin-small);
     margin-left: var(--margin);
 }
