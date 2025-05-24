@@ -289,7 +289,7 @@ code, pre {
     font-family: var(--font-family-code);
     font-size: var(--font-size-large);
     margin-bottom: var(--margin-small);
-    margin-left: var(--margin);
+    margin-left: var(--margin-large);
 }
 
 /* Images */
@@ -340,7 +340,7 @@ img.accent {
 }
 
 /* Figures and Figcaptions */
-.fig, figure.img, img.fig, {
+figure, .figudre, figure.img, img.figure, {
     margin: var(--margin);
     margin-bottom: var(--margin-none); 
     margin-left: var(--margin-large); 
@@ -350,7 +350,7 @@ img.accent {
     height: auto;
 }
 
-figcaption {
+figcaption, .figcaption {
     margin: var(--margin);
     margin-top: var(--margin-none); 
     margin-left: var(--margin-large); 
@@ -358,11 +358,6 @@ figcaption {
     text-align: var(--text-align-figcaption);
     text-align-last: var(--text-align-figcaption);
 /*    font-style: oblique; */
-}
-
-figcaption b {
-   color: var(--color-text-accent);
-   font-weight: var(--font-weight-semibold);
 }
 
 /* ========================================================= 
