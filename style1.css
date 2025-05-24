@@ -25,10 +25,12 @@ body {
     padding-bottom: 3rem; /* 60px */
     transition: background-color 0.3s ease; /* For smooth theme transitions */
 }
-/* -------------------------- // -------------------------- */
-/* LIGHT THEME OVERRIDES ---- // -------------------------- */
-/*
-.light-theme {
+
+/* ============================================================
+   3. LIGHT THEME OVERRIDES (CSS Variables)
+   ============================================================ */
+
+/*.light-theme {
   --color-background: #f2f4f7;
   --color-background-light: #ffffff;
   --color-background-medium: #e4e7eb;
@@ -40,27 +42,25 @@ body {
   --color-link-hover: #003d4d;
   --accent-color: #cbd5e0;
 }
-*/
+
 /* LIGHT THEME OVERRIDES */
-/*
-.light-theme h1, .light-theme h2, .light-theme h3,
+/*.light-theme h1, .light-theme h2, .light-theme h3,
 .light-theme h4, .light-theme h5, .light-theme h6,
 .light-theme a {
     color: var(--color-link); /* Teal Headers and links
 }
-*/
-/*
-.light-theme a:hover {
+
+/*.light-theme a:hover {
     color: var(--color-link-hover);
 }
-.light-theme .accent-section {
+
+/*.light-theme .accent-section {
     background-color: #d0d8dd;
     border-color: var(--color-link);
 }
-*/
+
 /* Button Styles, applies to both themes */
-/*
-.light-theme .accent-section a.button-link,
+/*.light-theme .accent-section a.button-link,
 .button-link {
     display: block;
     padding: 0.8em 1.2em;
@@ -71,16 +71,16 @@ body {
     border: 1px solid var(--color-border);
     transition: background-color 0.3s ease;
 }
-*/
-/*
-.light-theme .accent-section a.button-link:hover,
+
+/*.light-theme .accent-section a.button-link:hover,
 .button-link:hover {
     background-color: var(--color-background-dark);
 }
 */
 /* -------------------------- // -------------------------- */
+
 /* ============================================================
-   2. COLOR PALETTE TOKENS (CSS Variables)
+   2. THEME and TYPOGRAPHY TOKENS (Default CSS Variables)
    ============================================================ */
 
 :root {
@@ -104,17 +104,6 @@ body {
     --color-link: #a33; 
     --color-link-hover: #b44; 
 }
-
-/* Apply Theme Background and Text Colors */
-body {
-    background-color: var(--color-background);
-    color: var(--color-text);
-    border-color: var(--color-border);
-}
-
-/* ============================================================
-   3. TYPOGRAPHY TOKENS (CSS Variables)
-   ============================================================ */
 
 :root {
     /* Font Families and Sizes */
@@ -183,6 +172,18 @@ body {
     --theme-toggle-min-width: 80px; 
     --theme-toggle-max-width: 200px;   
 }
+
+/* -------------------------- // -------------------------- */
+/* Apply Theme Background and Text Colors */
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    border-color: var(--color-border);
+}
+/* -------------------------- // -------------------------- */
+
+/* -------------------------- // -------------------------- */
+/* 3. LIGHT THEME OVERRIDES - // -------------------------- */
 
 /* ============================================================
    4. PAGE TYPOGRAPHY
@@ -371,24 +372,6 @@ figcaption, .figcaption {
     padding: var(--padding-smaller);
 }
 
-.accent-container {
-    display: inline-block;
-    position: relative;
-    /* Optional: add padding if needed */
-}
-
-/* Pseudo-element for accent bar */
-.accent-container::before {
-    content: "";
-    position: absolute;
-    top: var(--border);  /* top offset */
-    left: var(--border); /* left offset */ 
-    width: var(--border-left-accent);
-    height: calc(100% - 2em); /* full height minus offset */
-    background-color: var(--color-background-accent); 
-    /* Optional: add border-radius, etc. */
-}
-
 .center-content {
     text-align: center;
     margin-top: var(--margin);
@@ -423,8 +406,72 @@ hr.divider, .divider, .section-divider {
     padding: var(--padding);
 }
 
+/* ========================================================= 
+   6. accent SECTION 
+   ========================================================= */
+
+.accent-section {
+    background-color: var(--color-background-medium);
+    color: var(--color-text-secondary);
+    margin: 1em 0 0.5em;
+    padding: 1em;
+    border: 2px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
+
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
+    font-size: 1em;
+    text-align: justify;
+    text-align-last: left;
+}
+
+.accent-section h3 {
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+}
+
+.accent-section a {
+    background-color: var(--color-background-dark);
+    color: var(--color-text);
+    display: block;
+    margin: 0.5em 1em;
+    border: 2px solid var(--color-border);
+
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
+    border-radius: 5px;
+    padding: 0.8em 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.accent-section a:hover {
+    background-color: var(--color-background-darker);
+}
+
+.accent-section.return-link a:hover {
+    color: var(--color-text);
+}
+
+/*.accent-container {
+/*    display: inline-block;
+/*    position: relative;
+/*    /* Optional: add padding if needed */
+/*}
+/*
+/* Pseudo-element for accent bar */
+/*.accent-container::before {
+/*    content: "";
+/*    position: absolute;
+/*    top: var(--border);  /* top offset */
+/*    left: var(--border); /* left offset */ 
+/*    width: var(--border-left-accent);
+/*    height: calc(100% - 2em); /* full height minus offset */
+/*    background-color: var(--color-background-accent); 
+/*    /* Optional: add border-radius, etc. */
+/*}
+*/
+
 /* ============================================================
-   6. BUTTON LINKS 
+   7. BUTTON LINKS 
    ============================================================ */
 
 /* General Button Deffinitions */
@@ -497,7 +544,7 @@ hr.divider, .divider, .section-divider {
 }
 
 /* ========================================================= 
-   7. HEADERS, NAVIGATION & FOOTERS 
+   8. HEADERS, NAVIGATION & FOOTERS 
    ========================================================= */
 
 header, nav, footer, .site-header {
@@ -603,51 +650,6 @@ footer .site-nav li a {
     justify-content: center;
     text-align: center;
     text-align-last: center;
-}
-
-/* ========================================================= 
-   8. accent SECTION 
-   ========================================================= */
-
-.accent-section {
-    background-color: var(--color-background-medium);
-    color: var(--color-text-secondary);
-    margin: 1em 0 0.5em;
-    padding: 1em;
-    border: 2px solid var(--color-border);
-    border-right: 1px solid var(--color-border);
-
-    border-left: var(--border-left-accent) solid var(--color-border-accent);
-    font-size: 1em;
-    text-align: justify;
-    text-align-last: left;
-}
-
-.accent-section h3 {
-    line-height: 1.3;
-    margin: 0;
-    padding: 0;
-}
-
-.accent-section a {
-    background-color: var(--color-background-dark);
-    color: var(--color-text);
-    display: block;
-    margin: 0.5em 1em;
-    border: 2px solid var(--color-border);
-
-    border-left: var(--border-left-accent) solid var(--color-border-accent);
-    border-radius: 5px;
-    padding: 0.8em 1.2em;
-    transition: background-color 0.3s ease;
-}
-
-.accent-section a:hover {
-    background-color: var(--color-background-darker);
-}
-
-.accent-section.return-link a:hover {
-    color: var(--color-text);
 }
 
 /* ========================================================= 
