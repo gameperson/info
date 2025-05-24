@@ -346,7 +346,7 @@ img.accent {
 }
 
 /* Figures and Figcaptions */
-figure, .figudre, figure.img, img.figure, {
+figure, .figure, figure.img, img.figure, {
     margin: var(--margin);
     margin-bottom: var(--margin-none); 
     margin-left: var(--margin-large); 
