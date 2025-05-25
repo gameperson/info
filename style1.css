@@ -88,7 +88,10 @@ body {
 :root {
     /* Widths: px: 10px; element: 10em; root-element: 10rem; parent-rel-width: 10%; page-rel-width: 10vw; - ALSO: length: 0cm; 0mm; 0in; points: 0pt; page-rel -height, -max, -min: 0vh, 0vmax, 0vmin; */
     --container-max-width; 1200px;
+   
     --figure-width: 85%;
+    --figure-width-wide: 95%;
+    --figure-width-narrow: 75%;
     --figure-max-width: 900px;
     --figure-min-width: 300px;
 
