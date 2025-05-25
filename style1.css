@@ -249,14 +249,16 @@ table th, table td {
 
 /* Code Blocks and Preformatted Text */
 pre, code, .code {
-    background: var(--color-background); /* Changed from --bg-alt */
-    padding: var(--padding-smaller);
     display: block;
     overflow-x: auto;
-    font-family: var(--font-family-mono);
-    font-size: var(--font-size-large);
+    background: var(--color-background);
     margin-bottom: var(--margin-small);
     margin-left: var(--margin-large);
+    border: var(--border) solid var(--color-border-light);
+    border-left: var(--border-left);
+    padding: var(--padding-smaller);
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-large);
 }
 
 /* Images */
