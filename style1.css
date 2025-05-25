@@ -311,7 +311,7 @@ figure, .figure, figure.img, img.figure, {
     margin: var(--margin);
     margin-bottom: var(--margin-none); 
     margin-left: var(--margin); 
-    width: var(--figure-width);
+    width: var(--figure-width-wide);
     max-width: var(--figure-max-width); 
     min-width: var(--figure-min-width); 
     height: auto;
