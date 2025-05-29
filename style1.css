@@ -605,7 +605,7 @@ footer .site-nav li a {
 
 .site-nav li a, .footer-content li a {
     color: var(--color-text);
-    display: inline-block;
+    display: flex; /* inline-block; */
     text-align: center;
     text-align-last: center;
 }
