@@ -255,8 +255,8 @@ pre, code, .code {
     background: var(--color-background);
     margin-bottom: var(--margin-small);
     margin-left: var(--margin-large);
-    border: var(--border) solid var(--color-border-light);
-    border-left: var(--border-left); solid var(--color-border-);
+    border: var(--border) solid var(--color-border);
+    border-left: var(--border-left); solid var(--color-border-lighter);
     padding: var(--padding-smaller);
     font-family: var(--font-family-mono);
     font-size: var(--font-size-large);
