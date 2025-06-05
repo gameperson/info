@@ -12,11 +12,11 @@ This site is a collection of in-depth analysis, research-driven content, and tho
 ## What We Offer
 - **Specialized Content:** Analysis and insights on challenging topics, with room for discussion and debate.
 - **Collaboration:** A welcoming space for contributing ideas, code, and thoughtful commentary.
-- **Support:** If you find our work valuable, consider supporting us! [Your contributions](./docs/DONATE.md) help cover the costs, research time, and further development of quality content.
+- **Support:** If you find our work valuable, consider supporting us! [Your contributions](./docs/DONATE.md) help cover costs, support research time, and enable further development of quality content.
 
-Gameperson hopes to be a hub for deep dives into the nature of knowledge, perception, and the hidden forces shaping our reality. Our mission is to promote intellectual freedom by uncovering truths, challenging assumptions, and fostering critical thinking.
+At gameperson the hope is to be a hub for deep dives into the nature of knowledge, perception, and the hidden forces shaping our reality. Our mission is to promote intellectual freedom by uncovering truths, challenging assumptions, and fostering critical thinking.
 
-## 🌟 What This Project Is Realy All About
+## 🌟 What This Project Is Really All About
 
 This repository serves as a collaborative platform to:
 - Explore philosophical, social, and scientific concepts that shape human understanding.
@@ -41,7 +41,7 @@ This repository serves as a collaborative platform to:
 
 Thank you in advance for your interest, your ideas, and your support!
 
-We welcome all contributions. Anyone passionate about intellectual exploration and truth-seeking, whether a patron, researcher, writer, seeker, browser, ocassional donor, or voracious learner, your input is valuable and appreciated.
+We welcome all contributions. Anyone passionate about intellectual exploration and truth-seeking, whether a patron, researcher or writer is encouraged to contribute. Even if you are a seeker, browser, occasional donor, or voracious learner, your input and support is valuable and appreciated.
 
 ## 👥 Join the Community
 Stay connected and contribute to our collective understanding:
@@ -54,7 +54,7 @@ This project is licensed under the following terms and conditions:
 
 **&copy; Copyright**: The content of this site and repository is shared under copyright (c) and [restrictions apply](./docs/LICENSE.md). 
 
-Permission is granted, free of charge, to use, copy, modify, merge, publish, and distribute the Software and *select protions of content* as long as properly attributed and not used for commercial activities without prior written consent. Reproductions or modifications for commercial purposes are strictly prohibited unless explicit consent is provided and copied in full. Any questions are directed to *[gameperson@github](mailto:gamesomeotherday@gmail.com)*.
+Permission is granted, free of charge, to use, copy, modify, merge, publish, and distribute the Software and *select portions of content* as long as properly attributed and not used for commercial activities without prior written consent. Reproductions or modifications for commercial purposes are strictly prohibited unless explicit consent is provided and copied in full. Any questions are directed to *[gameperson@github](mailto:gamesomeotherday@gmail.com)*.
 
 The Software is provided *"as is,"* without warranty of any kind. 
 
