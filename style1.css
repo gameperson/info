@@ -86,7 +86,7 @@ body {
     --line-height-smaller: 1.2;
 
     /* Widths: px: 10px; element: 10em; root-element: 10rem; parent-rel-width: 10%; page-rel-width: 10vw; - ALSO: length: 0cm; 0mm; 0in; points: 0pt; page-rel -height, -max, -min: 0vh, 0vmax, 0vmin; */
-    --container-max-width; 1200px;
+    --container-max-width: 1200px;
    
     --figure-width: 95%;
     --figure-width-wide: 100%;
@@ -246,7 +246,7 @@ pre, code, .code {
     margin-bottom: var(--margin-small);
     margin-left: var(--margin-large);
     border: var(--border) solid var(--color-border);
-    border-left: var(--border-left); solid var(--color-border-lighter);
+    border-left: var(--border-left) solid var(--color-border-lighter);
     padding: var(--padding-smaller);
     font-family: var(--font-family-mono);
     font-size: var(--font-size-large);
@@ -344,12 +344,19 @@ section {
     margin-bottom: var(--margin);
 }
 
+.content-section ul, .content-section ol {
+    display: block;
+    flex-direction: initial;
+    align-items: initial;
+    justify-content: initial;
+}
+
 /* Dividers */
 hr {
     width: 100%;
     border-top: none;
     border-right: var(--border);
-    border-botom: var(--border) solid var(--color-border-light);
+    border-bottom: var(--border) solid var(--color-border-light);
     border-left: var(--border) solid var(--color-border);
     border-radius: var(--border-radius);
 }
@@ -358,14 +365,14 @@ hr.divider, .divider, .section-divider {
     width: 100%;
     border-top: var(--border-none);
     border-right: var(--border-none);
-    border-botom: var(--accent-border-bottom-width) solid var(--accent-color);
-    border-left: var(--accent-border-left-width) solid var(--accent-color);
+    border-bottom: var(--border-bottom-accent) solid var(--accent-color);
+    border-left: var(--border-left-accent) solid var(--accent-color);
     border-radius: var(--border-radius);
 }
 
 .section-divider {
     border-left: var(--border-left-accent) solid var(--accent-color);
-    border-botom: var(--border-bottom-accent) solid var(--accent-color);
+    border-bottom: var(--border-bottom-accent) solid var(--accent-color);
     padding: var(--padding);
 }
 
