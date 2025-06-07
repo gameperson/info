@@ -20,6 +20,7 @@ html {      /* Base HTML and Body Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
     line-height: 1.7;
+    margin: 1rem; /* ?px */
     padding: 1.25rem; /* 20px */
     padding-bottom: 3rem; /* 60px */
     transition: background-color 0.3s ease; /* For smooth theme transitions */
@@ -52,10 +53,9 @@ body {
     --color-btn-hover: #b44;
     --color-link: #a33; 
     --color-link-hover: #b44; 
-}
 
-:root {
     /* Font Families */
+/*    --font-family: Arial, sans-serif; */
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
     --font-family-serif: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, serif;
     --font-family-mono: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, monospace;
@@ -84,9 +84,7 @@ body {
     --line-height: 1.75;
     --line-height-small: 1.5;
     --line-height-smaller: 1.2;
-}
 
-:root {
     /* Widths: px: 10px; element: 10em; root-element: 10rem; parent-rel-width: 10%; page-rel-width: 10vw; - ALSO: length: 0cm; 0mm; 0in; points: 0pt; page-rel -height, -max, -min: 0vh, 0vmax, 0vmin; */
     --container-max-width; 1200px;
    
@@ -114,9 +112,7 @@ body {
     --padding-large: 1.5em;
     --padding-larger: 2.5em;
     --padding-none: 0;
-}
 
-:root {
     /* Borders */
     --border: 1px;
     --border-top: 1px;
@@ -192,10 +188,10 @@ p { margin-bottom: var(--margin); }
 ul, ol {
    padding: var(--padding);  
    padding-left: var(--padding-smaller);  
-   margin: var(--margin) var(--margin-none);  
+   margin: var(--margin) var(--margin-large);  
 }
 
-/* ul li, ol li { margin-bottom: var(--margin-small); } */
+ul li, ol li { margin: var(--margin-small); } */
 
 /* Links */
 a {
