@@ -269,20 +269,28 @@ img.accent {
     display: inline-block; /* width and height, respects margins */
 /*    vertical-align: middle; */
     margin: none var(--margin-small);
-    border: 1px dotted var(--color-border-light);
+    border: 1px solid var(--color-border-light);
     padding: var(--padding-smaller);
-    max-width: 40%;
+    max-width: 500px;
     height: auto;
+    overflow: hidden;
 }
 
 .image-left-inline {
     float: left;
-/*    margin-right: var(--margin); */
+    margin-right: var(--margin); 
     width: 40%; 
   }
 
 .image-right-inline {
     float: right;
+    margin-left: var(--margin); 
+    width: 33%; 
+}
+
+.image-center-inline {
+    float: right;
+    margin: none var(--margin);
     width: 33%; 
 }
 
