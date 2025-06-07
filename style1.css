@@ -239,18 +239,38 @@ table th, table td {
 }
 
 /* Code Blocks and Preformatted Text */
-pre, code, .code {
+pre {
     display: block;
     overflow-x: auto;
-    background: var(--color-background);
+    background: var(--color-background-dark);
+    margin: var(--margin);
     margin-bottom: var(--margin-small);
     margin-left: var(--margin-large);
     border: var(--border) solid var(--color-border);
     border-left: var(--border-left) solid var(--color-border-lighter);
-    padding: var(--padding-smaller);
+    border-radius: var(--border-radius-small);
+    padding: var(--padding);
     font-family: var(--font-family-mono);
     font-size: var(--font-size-large);
+    color: var(--color-text-bright);
 }
+
+pre code {
+    display: block;
+    background: var(--color-background-dark);
+    margin: var(--margin-none);
+    padding: var(--padding-smaller);
+    font-family: var(--font-family-mono);
+    color: inherit;
+}
+
+/*
+.code {   /* for inline sections *
+    background: var(--color-background-dark);
+    font-family: var(--font-family-mono);
+    color: var(--color-text-bright);
+}
+*/
 
 /* Images */
 img {
