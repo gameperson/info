@@ -271,30 +271,25 @@ img.accent {
     padding: var(--padding);
 }
 
-.image-left-inline {
+.image-left-inline, .image-right-inline {
     display: inline-block; /* width and height, respects margins */
-    float: left;
-/*    margin-right: var(--margin); */
-
-    margin: none var(--margin);
-    border: 1em solid var(--color-border-light);
+/*    vertical-align: middle; */
+    margin: none var(--margin-small);
+    border: 1px dotted var(--color-border-light);
     padding: var(--padding-smaller);
-
-    vertical-align: middle;
-    width: 35%; 
     max-width: 40%;
     height: auto;
+}
+
+.image-left-inline {
+    float: left;
+/*    margin-right: var(--margin); */
+    width: 40%; 
   }
 
 .image-right-inline {
-    display: inline-block;
     float: right;
-    margin: none var(--margin);
-    border: 1em solid var(--color-border-light);
-    padding: var(--padding-smaller);
-    width: 30%; 
-    max-width: 40%;
-    height: auto;
+    width: 33%; 
 }
 
 /* Theme-Toggles */
