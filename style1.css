@@ -264,17 +264,17 @@ pre code {
     color: inherit;
 }
 
-/*
-.code {   /* for inline sections *
+.code {   /* for inline sections */
     background: var(--color-background-dark);
     font-family: var(--font-family-mono);
     color: var(--color-text-bright);
 }
-*/
 
 /* Images */
 img {
     display: inline-block;
+    max-width: 100%;
+    height: auto;
     margin: var(--margin);
     padding: var(--padding);
 }
@@ -287,7 +287,8 @@ img.accent {
 
 .image-inline {
     display: inline-block; /* width and height, respects margins */
-/*    vertical-align: middle; */
+    max-width: 100%;
+    height: auto;
     margin: none var(--margin-small);
     border: 1px solid var(--color-border-light);
     padding: var(--padding-smaller);
