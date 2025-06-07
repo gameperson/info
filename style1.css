@@ -190,12 +190,11 @@ p, ul, ol, li, table, dl {
 p { margin-bottom: var(--margin); }
 
 ul, ol {
-   list-style: none; 
-   padding-left: var(--padding-smaller); 
-   margin: var(--margin) var(--margin-none); 
+/*   padding-left: var(--padding-smaller);  */ 
+/*   margin: var(--margin) var(--margin-none); */ 
 }
 
-ul li, ol li { margin-bottom: var(--margin-small); }
+/* ul li, ol li { margin-bottom: var(--margin-small); } */
 
 /* Links */
 a {
@@ -634,7 +633,7 @@ footer .site-nav li a {
    11. INDEX PAGE
    ============================================================ */
 
-/* Index Page Layout */
+/* Index Page Layout 
 .index-page, .index-list, .index-list li {
     background-color: var(--color-background-light);
     color: var(--color-text);
@@ -666,6 +665,7 @@ footer .site-nav li a {
 .index-list li a:hover {
     background-color: var(--color-background-darker);
 }
+*/ 
 
 /* ============================================================
    12. RESPONSIVE DESIGN
