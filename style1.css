@@ -134,24 +134,18 @@ body {
 /* section 3. Light Theme ----- // ---------------------------- */
 /* moved to end --------------- // ---------------------------- */
 
-/* ---------------------------- // ---------------------------- 
-   Apply Theme Background and Text Colors 
-   ---------------------------- // ---------------------------- */
-body {
-    background-color: var(--color-background);
-    color: var(--color-text);
-    border-color: var(--color-border);
-}
-
 /* ============================================================
    4. PAGE TYPOGRAPHY
    ============================================================ */
 
 body {
+    background-color: var(--color-background);
     font-family: var(--font-family);
     font-size: var(--font-size);
     font-weight: var(--font-weight);
+    color: var(--color-text);
     margin: var(--margin);
+    border-color: var(--color-border);
     border-radius: var(--border-radius);
     padding: var(--padding);
     line-height: var(--line-height);
@@ -426,25 +420,6 @@ hr.divider, .divider, .section-divider {
     color: var(--color-text);
 }
 
-/*.accent-container {
-/*    display: inline-block;
-/*    position: relative;
-/*    /* Optional: add padding if needed */
-/*}
-/*
-/* Pseudo-element for accent bar */
-/*.accent-container::before {
-/*    content: "";
-/*    position: absolute;
-/*    top: var(--border);  /* top offset */
-/*    left: var(--border); /* left offset */ 
-/*    width: var(--border-left-accent);
-/*    height: calc(100% - 2em); /* full height minus offset */
-/*    background-color: var(--color-background-accent); 
-/*    /* Optional: add border-radius, etc. */
-/*}
-*/
-
 /* ============================================================
    7. BUTTON LINKS 
    ============================================================ */
@@ -628,45 +603,7 @@ footer .site-nav li a {
 }
 
 /* ============================================================
-   11. INDEX PAGE
-   ============================================================ */
-
-/* Index Page Layout 
-.index-page, .index-list, .index-list li {
-    background-color: var(--color-background-light);
-    color: var(--color-text);
-    max-width: 600px;
-    margin: var(--margin) auto;
-    border: 1px solid var(--color-border);
-    border-radius: var(--border-radius);
-    padding: 0.5em 1.2em 0em 1.2em;
-    font-size: var(--font-size-small);
-    text-align: center;
-    text-align-last: center;
-}
-
-.index-list li {
-    display: block;
-    margin: var(--margin);
-    padding: 0.7em;
-    border-radius: 5px;
-    padding: 0.8em 1.2em;
-    transition: background-color 0.3s ease;
-}
-
-.index-list li a {
-    color: var(--color-text);
-    border-left: var(--border-left-accent) solid var(--color-border-accent);
-    border-radius: var(--border-radius);
-}
-
-.index-list li a:hover {
-    background-color: var(--color-background-darker);
-}
-*/ 
-
-/* ============================================================
-   12. RESPONSIVE DESIGN
+   9. RESPONSIVE DESIGN
    ============================================================ */
 
 @media (max-width: 992px) {
@@ -763,10 +700,8 @@ footer .site-nav li a {
 }
 
 /* ============================================================
-   13. END OF STYLESHEET 
+   10. END OF STYLESHEET 
    ============================================================*/
-
-/* section 3. Light Theme -- // -------------------------- */
 
 /* ============================================================
    3. LIGHT THEME OVERRIDES (CSS Variables)
@@ -820,3 +755,4 @@ footer .site-nav li a {
 }
 */
 
+/* END FILE */
