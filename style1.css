@@ -259,7 +259,7 @@ pre code {
     display: block;
     background: var(--color-background-dark);
     margin: var(--margin-none);
-    padding: var(--padding-smaller);
+    padding: var(--padding-none);
     font-family: var(--font-family-mono);
     color: inherit;
 }
@@ -285,7 +285,7 @@ img.accent {
     padding: var(--padding);
 }
 
-.image-left-inline, .image-right-inline {
+.image-inline {
     display: inline-block; /* width and height, respects margins */
 /*    vertical-align: middle; */
     margin: none var(--margin-small);
@@ -296,22 +296,26 @@ img.accent {
     overflow: hidden;
 }
 
-.image-left-inline {
+/* Float Location */
+.image-inline.left {
+    width: 35%; 
     float: left;
     margin-right: var(--margin); 
-    width: 40%; 
-  }
-
-.image-right-inline {
-    float: right;
-    margin-left: var(--margin); 
-    width: 33%; 
+    margin-left: var(--margin-none);
 }
 
-.image-center-inline {
+.image-inline.right {
+    width: 35%; 
     float: right;
-    margin: none var(--margin);
-    width: 33%; 
+    margin-left: var(--margin); 
+    margin-right: var(--margin-none); 
+}
+
+.image-inline.center {
+    display: block;
+    width: 30%; 
+    float: none;
+    margin: var(--margin-none) auto;
 }
 
 /* Theme-Toggles */
