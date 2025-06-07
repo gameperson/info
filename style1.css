@@ -190,8 +190,9 @@ p, ul, ol, li, table, dl {
 p { margin-bottom: var(--margin); }
 
 ul, ol {
-/*   padding-left: var(--padding-smaller);  */ 
-/*   margin: var(--margin) var(--margin-none); */ 
+   padding: var(--padding);  
+   padding-left: var(--padding-smaller);  
+   margin: var(--margin) var(--margin-none);  
 }
 
 /* ul li, ol li { margin-bottom: var(--margin-small); } */
@@ -277,20 +278,26 @@ img.accent {
 .image-left-inline {
     display: inline-block; /* width and height, respects margins */
     float: left;
-    margin-right: var(--margin);
+/*    margin-right: var(--margin); */
+
+    margin: none var(--margin);
+    border: 1em solid var(--color-border-light);
+    padding: var(--padding-smaller);
+
     vertical-align: middle;
-    width: 50%; 
-    max-width: 50%;
+    width: 35%; 
+    max-width: 40%;
     height: auto;
   }
 
 .image-right-inline {
     display: inline-block;
     float: right;
-    margin-left: var(--margin);
-    vertical-align: middle;
-    width: 50%; 
-    max-width: 50%;
+    margin: none var(--margin);
+    border: 1em solid var(--color-border-light);
+    padding: var(--padding-smaller);
+    width: 30%; 
+    max-width: 40%;
     height: auto;
 }
 
