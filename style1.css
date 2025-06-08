@@ -292,7 +292,7 @@ img.accent {
     display: inline-block; /* width and height, respects margins */
     max-width: 100%;
     height: auto;
-    margin: none var(--margin-small);
+    margin: 0 var(--margin-small);
     border: 1px solid var(--color-border-light);
     padding: var(--padding-smaller);
     max-width: 500px;
@@ -337,7 +337,7 @@ img.accent {
 }
 
 /* Figures and Figcaptions */
-figure, .figure, figure.img, img.figure, {
+figure, .figure, figure.img, img.figure {
     margin: var(--margin);
     margin-bottom: var(--margin-none); 
     margin-left: var(--margin); 
