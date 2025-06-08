@@ -36,7 +36,8 @@ body {
     /* Colors */
     --color-background: #1e1e1e;
     --color-background-light: #121212;
-    --color-background-dark: #333;
+    --color-background-dark: #333333;
+    --color-background-darker: #353535;
     --color-background-accent: #302020;
 
     --color-border: #444;
@@ -185,7 +186,7 @@ ul, ol {
    margin: var(--margin) var(--margin-large);  
 }
 
-ul li, ol li { margin: var(--margin-small); } */
+ul li, ol li { margin: var(--margin-small); } 
 
 /* Links */
 a,
@@ -423,8 +424,8 @@ hr.divider, .divider, .section-divider {
    ========================================================= */
 
 .accent-section {
-    background-color: var(--color-background-medium);
-    color: var(--color-text-secondary);
+    background-color: var(--color-background);
+    color: var(--color-text);
     margin: 1em 0 0.5em;
     padding: 1em;
     border: 2px solid var(--color-border);
@@ -512,7 +513,7 @@ hr.divider, .divider, .section-divider {
 }
 
 .box-btn h3 { color: var(--color-btn-text); }
-.box-btn h3:hover { color: var(--color-btn--hover); }
+.box-btn h3:hover { color: var(--color-btn-hover); }
 
 /* Header and Footer Buttons */
 .header-btn, .footer-btn {
@@ -541,8 +542,8 @@ hr.divider, .divider, .section-divider {
    ========================================================= */
 
 header, nav, footer, .site-header {
-    background-color: var(--color-background-medium);
-    color: var(--color-text-secondary);
+    background-color: var(--color-background);
+    color: var(--color-text);
     padding: var(--padding-smaller) var(--padding) var(--padding); 
     margin: var(--margin) auto;
     margin-bottom: var(--margin);
@@ -558,7 +559,7 @@ header, .site-header {
 }
 
 header #header, .site-header, .header-content,
-.header-text, {
+.header-text {
     display: flex;
     justify-content: center;
     align-items: center;
