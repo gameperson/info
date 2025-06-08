@@ -188,15 +188,18 @@ ul, ol {
 ul li, ol li { margin: var(--margin-small); } */
 
 /* Links */
-a {
+a,
+a:visited {
     color: var(--color-link);
     text-decoration: none;
     font-weight: var(--font-weight);
     transition: color 0.3s;
 }
 
-a:hover {
+a:hover,
+a:active {
     color: var(--color-link-hover);
+    text-decoration: underline;
 }
 
 /* ============================================================
