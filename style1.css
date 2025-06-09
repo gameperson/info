@@ -92,12 +92,19 @@ body {
     /* Widths: px: 10px; element: 10em; root-element: 10rem; parent-rel-width: 10%; page-rel-width: 10vw; - ALSO: length: 0cm; 0mm; 0in; points: 0pt; page-rel -height, -max, -min: 0vh, 0vmax, 0vmin; */
     --container-max-width: 1200px;
    
+    /* figures */ 
     --figure-width: 95%;
     --figure-width-wide: 100%;
     --figure-width-narrow: 80%;
     --figure-max-width: 1080px;
     --figure-min-width: 420px;
-
+   
+   /* images */ 
+    --image-inline-width: 30%;
+    --image-inline-left-width: 30%;
+    --image-inline-right-width: 30%;
+    --image-inline-center-width: 30%;
+   
     /* Theme Toggle */
     --theme-toggle-width: 20vw; 
     --theme-toggle-min-width: 80px; 
@@ -294,34 +301,34 @@ img.accent {
 
 .image-inline {
     display: inline-block; /* width and height, respects margins */
+    width: var(--image-inline-width);
     max-width: 100%;
-    height: auto;
-    margin: 0 var(--margin-small);
-    border: 1px solid var(--color-border-light);
-    padding: var(--padding-small);
-    max-width: 500px;
+    max-width: 420px;
     height: auto;
     overflow: hidden;
+    margin: 0 var(--margin-small);
+    border: 1px solid var(--color-border-light);
+    border-left: 1px dotted var(--color-border-accent);
+    padding: var(--padding-small);
 }
 
 /* Float Location */
 .image-inline.left {
-    width: 30%; 
+    width: var(--image-inline-left-width);
     float: left;
     margin-right: var(--margin); 
     margin-left: var(--margin-none);
 }
 
 .image-inline.right {
-    width: 30%; 
+    width: var(--image-inline-right-width);
     float: right;
     margin-left: var(--margin); 
     margin-right: var(--margin-none); 
 }
 
 .image-inline.center {
-    display: block;
-    width: 30%; 
+    width: var(--image-inline-width);
     float: none;
     margin: var(--margin-none) auto;
 }
