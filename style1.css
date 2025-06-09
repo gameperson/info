@@ -55,6 +55,9 @@ body {
     --color-link: #a33; 
     --color-link-hover: #b44; 
 
+    --decoration-link: none;
+    --decoration-link-hover: none;
+
     /* Font Families */
 /*    --font-family: Arial, sans-serif; */
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
@@ -189,18 +192,18 @@ ul, ol {
 ul li, ol li { margin: var(--margin-small); } 
 
 /* Links */
-a,
-a:visited {
-    color: var(--color-link);
-    text-decoration: none;
+a, 
+a:visited, a:hover, a:active, a:focus {
+    text-decoration: var(--decoration-link);
     font-weight: var(--font-weight);
+    color: var(--color-link);
     transition: color 0.3s;
+
 }
 
-a:hover,
-a:active {
+a:hover, a:active {
     color: var(--color-link-hover);
-    text-decoration: underline;
+    text-decoration: var(--decoration-link-hover);
 }
 
 /* ============================================================
