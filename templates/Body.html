@@ -45,10 +45,11 @@
 
 <body>
 <!-- Site Header  -->
-§        <header class="site-header">
+    <header class="site-header">
         <h1 class="site-title" id="top">TITLE Body.html Template</h1>
         <h3 class="site-subtitle">SUBTITLE Body.html</h3>
-        <!-- <nav class="header-nav" id="header-nav"> -->        <nav class="site-nav"> 
+        <!-- <nav class="header-nav" id="header-nav"> --> 
+        <nav class="site-nav"> 
 <!-- Header Nav  -->
             <ul class="header-nav" id="header-nav"> 
                 <li><a href="#toc" class="btn header-btn" aria-label="Table of Contents">Table of Contents</a></li>
@@ -63,7 +64,7 @@
 <!-- More Links  --> 
             <hr class="divider">
 §                <br>
-<!-- Article Begin  --> 
+<!-- Article Begining  --> 
                 <li><a href="#abstract" class="btn header-btn" aria-label="Guide">Abstract</a></li>
                 <li><a href="#guide" class="btn header-btn" aria-label="Guide">Guide</a></li>
                 <li><a href="#overview" class="btn header-btn" aria-label="Overview">Overview</a></li>
@@ -74,14 +75,14 @@
                 <li><a href="#section-1" class="btn header-btn" aria-label="Select Section">Select Section</a></li>
                 <li><a href="#callout" class="btn header-btn" aria-label="Callout">Callout</a></li>
                 <li><a href="#code" class="btn header-btn" aria-label="Preformatted Text or Code Snippet">Code</a></li>
-<!-- Article End  --> 
+<!-- Article Ending  --> 
                 <li><a href="#conclusion" class="btn header-btn" aria-label="Conclusions">Conclusion</a></li>
                 <li><a href="#summary" class="btn header-btn" aria-label="Summary">Summary</a></li>
                 <li><a href="#insights" class="btn header-btn" aria-label="Key Takeaways">Takeaways</a></li>
                 <li><a href="#glossary" class="btn header-btn" aria-label="Glossary">Glossary</a></li>
                 <li><a href="#further-reading" class="btn header-btn" aria-label="Further Reading">Further Reading</a></li>
                 <li><a href="#references" class="btn header-btn" aria-label="References">References</a></li>
-<!-- Page End [Buttons] --> 
+<!-- Page End Disclaimer: About, Authors, COntact [Buttons] --> 
                 <li><a href="#article-top" class="btn header-btn" aria-label="Article Top">Article Top</a></li>
                 <li><a href="#top" class="btn header-btn" aria-label="Top of Page">Top of Page</a></li>
                 <li><a href="#nav" class="btn header-btn" aria-label="Quick Links">Quick Links</a></li>
@@ -338,12 +339,12 @@
                     illustrations, infographics, visualization, 
                     diagrams, etc.
                 </p>
-                <figure class="accent-section figure"> 
+§                <figure class="accent-section figure"> 
                     <!-- use: class="accent" inside img to hilight the image only  -->
-§                    <img src="../images/assets/these-lands.jpg" class="figure" 
+                    <img src="../images/assets/these-lands.jpg" class="figure" 
                         width="85%" height="auto" loading="lazy"
                         title="Image" alt="All These Lands Are Belong to Us!" />
-§                    <figcaption class="accent">Figure 1: Crazy white man believes he's native.</figcaption>
+                    <figcaption class="accent">Figure 1: Crazy white man believes he's native.</figcaption>
                 </figure>    
             </section>
 
@@ -355,20 +356,21 @@
                     Images illustrate the content of the surrounding text, Styles can be applied to text including 
                     <span class="accent">accented</span> and other <span class="bright bold">text elements</span>.
                     Here is some filler text to show how in-line images look embedded in a paragraph or other text.
-§center                    <img src="../images/assets/gameperson.png" alt="TITLE" class="image-inline center" width="30%" height="auto" style="">
+§CENTER                    <img src="../images/assets/gameperson.png" alt="TITLE" class="image-inline center" width="30%" height="auto" style="">
                     Define images.. style="width: 33%; height: auto; box-shadow: 0 4px 16px white; background: #222;  
                     margin: 0.2em; border: 1px solid black; border-radius: 12px; padding: 1em 1.2em; tag: value;" ..
                 </p>
                 <p> In-line images are visual elements embedded directly within the flow of a document’s text, 
                     enhancing both the aesthetic appeal and the informational value of written content. 
+§RIGHT                    <img src="../images/assets/gameperson.jpg" alt="TITLE" class="image-inline right" style="width: 25%;">
                     Unlike block-level images, which occupy their own distinct space and often 
                     interrupt the natural progression of text, in-line images are integrated seamlessly, 
+§LEFT                    <img src="../images/assets/gameperson.jpg" alt="TITLE" class="image-inline left" width="30%" height="auto">
                     allowing text to wrap around them or align alongside them. This approach is 
                     commonly used in articles, blogs, academic papers, and technical documentation, 
                     where supporting visuals—such as icons, logos, graphs, or small photographs—
                     are meant to complement the narrative without diverting the reader’s attention away 
                     from the main discussion. 
-§left                    <img src="../images/assets/gameperson.jpg" alt="TITLE" class="image-inline left" width="30%" height="auto">
                     In-line images can be positioned to the left, right, 
                     or center of the text, depending on the desired emphasis and the layout strategy. 
                     Modern web design leverages CSS classes and responsive design techniques to 
@@ -376,7 +378,6 @@
                     and visual harmony across devices. For example, floating an image to the 
                     left allows the subsequent text to occupy the remaining horizontal space, 
                     creating a magazine-style layout that feels both dynamic and engaging. 
-§right                    <img src="../images/assets/gameperson.jpg" alt="TITLE" class="image-inline right" style="width: 25%;">
                     Beyond images, the concept of “in-line” extends to other elements as well, 
                     such as in-line code snippets, icons, SVG graphics, and even mathematical equations, 
                     all of which are presented within the text flow to maintain contextual relevance. 
@@ -394,9 +395,9 @@
             </section>
 
 <!-- Preformatted Text  -->
-            <section class="content-section pre" id="preformat">
-§                <h2>Preformatted Text</h2>
-§                <pre class="bright">
+§            <section class="content-section pre" id="preformat">
+                <h2>Preformatted Text</h2>
+                <pre class="bright">
 <!-- PREFORMATTED TEXT  -->
 Some text without formatting,
 the text displays as-is.
@@ -406,9 +407,9 @@ the text displays as-is.
 
 <!-- Code  -->
             <section class="content-section" id="code">
-§                <h2>Code Example</h2>
-§                <p> A dedicated section for code snippets, CLI commands, programming examples, programming example, CLI command, scripts, functions, etc.</p>
-§                <pre><code class="bright">
+                <h2>Code Example</h2>
+                <p> A dedicated section for code snippets, CLI commands, programming examples, programming example, CLI command, scripts, functions, etc.</p>
+                <pre><code class="bright">
 <!-- CODE BLOCK or PREFORMATTED TEXT  -->
 function greet() {
     console.log("Hello, world!");
@@ -433,9 +434,9 @@ function greet() {
 §                <h2>Lists</h2>
 §                <p>Useful for processes, ranking, structured steps, workflows, methodologies, and step-by-step instructions.</p>
 <!-- Unordered List  -->
-                <div class="list">
-§                    <h3>Bulleted List Example</h3>
-§                    <ul>
+§                <div class="list">
+                    <h3>Bulleted List Example</h3>
+                    <ul>
                         <li><strong>Example:</strong> Analyze "economic trends."</li>
                         <li><strong>Example:</strong> Identify <span class="bold">key patterns</span> and correlations.</li>
                         <li><strong>Example:</strong> Draw conclusions and formulate recommendations.</li>
@@ -443,9 +444,9 @@ function greet() {
                 </div>
 
     <!-- Ordered List  -->
-                <div class="ordered-list">
-§                    <h3>Ordered List Example</h3>
-§                    <ol>
+§                <div class="ordered-list">
+                    <h3>Ordered List Example</h3>
+                    <ol>
                         <li><strong>Example:</strong>Analyze economic trends.</li>
                         <li><strong>Example:</strong>Assess political data.</li>
                         <li><strong>Example:</strong>Identify <span class="bold">key patterns</span> and <span class="bold accent">correlations</span>.</li>
@@ -456,26 +457,26 @@ function greet() {
             </section>
           
 <!-- Table  -->
-            <section class="content-section table" id="table">
-§                <h2>Simple Table Example</h2>
-§                <p>
+§            <section class="content-section table" id="table">
+                <h2>Simple Table Example</h2>
+                <p>
                     comparing data, showing structured information,
                     listing attributes, comparison table, feature list,
                     structured data, etc. 
                 </p>
                 <table>
                     <thead>
-§                        <tr>
+                        <tr>
                             <th>Feature</th>
                             <th>Details</th>
                         </tr>
                     </thead>
                     <tbody>
-§                        <tr>
+                        <tr>
                             <td>Speed</td>
                             <td>Fast</td>
                         </tr>
-§                        <tr>
+                        <tr>
                             <td>Accuracy</td>
                             <td>High</td>
                         </tr>
@@ -592,7 +593,7 @@ function greet() {
         <hr class="divider">
 <!-- END OF RETURN LINKS // ------------------- -->
 
-<!-- Tail - Legal, Brag, About & Contact, Footer  -->
+<!-- Page Ending - Legal, Brag, About & Contact, Footer  -->
 <!-- Legal  -->
         <section class="highlighted-section" id="legal">
 §            <h2>&copy; TODAY, 2025</h2>
