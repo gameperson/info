@@ -525,6 +525,10 @@ hr.divider, .divider, .section-divider {
 }
 
 /* Tanle of Contents Buttons */
+.toc-btn-list {
+   list-style-type: none; 
+}
+
 .toc-btn { 
     margin: var(--margin) auto; 
     padding: var(--padding-larger);
