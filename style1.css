@@ -400,6 +400,35 @@ section {
     justify-content: initial;
 }
 
+/* Table of Contents content area */
+.toc-content {
+    background: var(--color-background-dark);
+    border: 1px solid var(--color-border);
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
+    border-radius: var(--border-radius);
+    padding: var(--padding-large);
+    margin: 2em auto 2em auto;
+    max-width: 720px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.05);
+}
+
+/* Table of Contents navigation area */
+.toc-nav {
+    margin: 1em 0 1.5em 0;
+    padding: 0;
+    text-align: center;
+}
+
+.toc-nav ul, .toc-nav ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75em;
+    justify-content: center;
+}
+
 /* Dividers */
 hr {
     width: 100%;
@@ -513,6 +542,45 @@ hr.divider, .divider, .section-divider {
     border: none;
 }
 
+/* Inline navigation link list */
+.nav-link-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em auto 1em auto;
+    padding: 0;
+    list-style: none;
+}
+
+/* Distinct styling for single return links/blocks */
+.return-link {
+    display: block;
+    text-align: center;
+    margin: 2em auto 1em auto;
+    padding: 0.5em 0;
+}
+
+.return-link a, a.return-link {
+    display: inline-block;
+    color: var(--color-link);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-large);
+    text-decoration: underline;
+    padding: 0.2em 1em;
+    background: none;
+    border: none;
+    transition: color 0.2s;
+}
+
+.return-link a:hover,
+a.return-link:hover {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+    background: none;
+}
+
 /* ============================================================
    7. BUTTON LINKS 
    ============================================================ */
@@ -577,16 +645,14 @@ hr.divider, .divider, .section-divider {
     padding: 0;
 }
 
-/* Inline navigation link list */
-.nav-link-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5em auto 1em auto;
-    padding: 0;
-    list-style: none;
+/* Normal (narrow) button widths for nav-btn-list (default) */
+.nav-btn-list .nav-btn {
+    width: 28%;
+    min-width: 120px;
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Box Buttons */
