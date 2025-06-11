@@ -511,6 +511,118 @@ section {
 }
 
 /* ============================================================
+   7. BUTTONS & NAVIGATION
+   ============================================================ */
+
+/* --- Navigation Button Groups --- */
+.nav-btn-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    max-width: 800px;
+    margin: 0 auto 1em auto;
+    list-style-type: none;
+    padding: 0;
+}
+.nav-btn-list.wide .nav-btn {
+    width: var(--button-width-wide);
+    min-width: 280px;
+    max-width: 95vw;
+}
+.nav-btn-list .nav-btn {
+    width: var(--button-width);
+    min-width: 120px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- General Button Links --- */
+.btn, .nav-btn, .large-btn, .box-btn {
+    display: block;
+    outline: none;
+    background-color: var(--color-background-dark);
+    margin: var(--margin-small) auto;
+    border: var(--border) solid var(--color-border);
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
+    border-radius: var(--border-radius);
+    padding: var(--padding-large);
+    color: var(--color-btn-text);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight);
+    text-align: var(--text-align-button);
+    text-align-last: var(--text-align-button);
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+.btn:hover, .large-btn:hover, .box-btn:hover {
+    background: var(--color-background-darker);
+}
+.btn:hover, .btn a:hover, .large-btn:hover, .large-btn a:hover {
+    color: var(--color-btn-hover);
+}
+.btn h3, .large-btn h3, .box-btn h3 {
+    line-height: var(--line-height-smaller);
+    font-weight: var(--font-weight-semibold);
+    margin: var(--margin-none);
+    padding: var(--padding-none);
+}
+
+/* --- Inline Navigation Links --- */
+.nav-link-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em auto 1em auto;
+    padding: 0;
+    list-style: none;
+}
+.nav-link {
+    display: inline-block;
+    color: var(--color-link);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    text-decoration: underline;
+    background: none;
+    border: none;
+    padding: 0.2em 0.5em;
+    transition: color 0.2s;
+}
+.nav-link:hover, .nav-link:focus {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+}
+
+/* --- Standalone Return Links (Main Content) --- */
+.main-return-link, .main-return-link.wide {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    margin: 2.5em auto 1.5em auto;
+    padding: 0.6em 0;
+}
+.main-return-link.wide { max-width: 95vw; }
+.main-return-link a, a.main-return-link {
+    display: inline-block;
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-link);
+    text-decoration: underline;
+    padding: 0.25em 1.2em;
+    background: none;
+    border: none;
+    transition: color 0.2s, background 0.2s;
+}
+.main-return-link a:hover, a.main-return-link:hover {
+    color: var(--color-link-hover);
+    background: none;
+}
+
+/* ============================================================
    7. BUTTON LINKS 
    ============================================================ */
 
