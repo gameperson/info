@@ -506,20 +506,8 @@ hr.divider, .divider, .section-divider {
 }
 
 /* ============================================================
-   . BUTTON LINKS 
+   . LIST LINKS 
    ============================================================ */
-
-/* Inline navigation link list */
-.nav-link-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5em auto 1em auto;
-    padding: 0;
-    list-style: none;
-}
 
 /* Inline nav links (text-style, not button-style) */
 .nav-link {
