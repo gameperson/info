@@ -606,6 +606,7 @@ section {
 /* Distinct styling for single return links/blocks */
 .return-link {
     display: block;
+    width: var(--button-width-wide);   
     text-align: center;
     margin: 2em auto 1em auto;
     padding: 0.5em 0;
@@ -640,6 +641,38 @@ a.return-link:hover {
     margin: 0 auto 1em auto; /* Center and add bottom margin */
     list-style-type: none;
     padding: 0;
+}
+
+/* Explicit styling for retuirn links in main content */
+.main-return-link,
+.main-return-link.wide {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    margin: 2.5em auto 1.5em auto;
+    padding: 0.6em 0;
+}
+.main-return-link.wide {
+    max-width: 95vw;
+}
+.main-return-link a,
+a.main-return-link {
+    display: inline-block;
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-link);
+    text-decoration: underline;
+    padding: 0.25em 1.2em;
+    background: none;
+    border: none;
+    transition: color 0.2s, background 0.2s;
+}
+.main-return-link a:hover,
+a.main-return-link:hover {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+    background: none;
 }
 
 /* Box Buttons */
