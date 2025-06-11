@@ -92,8 +92,10 @@ body {
     /* Widths: px: 10px; element: 10em; root-element: 10rem; parent-rel-width: 10%; page-rel-width: 10vw; - ALSO: length: 0cm; 0mm; 0in; points: 0pt; page-rel -height, -max, -min: 0vh, 0vmax, 0vmin; */
     --container-max-width: 1200px;
 
-    --button-width: 30%;
+    --button-width: auto;
     --button-width-wide: 85%;
+    --button-width-minimuim: 80%;
+    --button-width-maximum: 100%;
    
     /* figures */ 
     --figure-width: 95%;
