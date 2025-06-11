@@ -94,7 +94,7 @@ body {
 
     --button-width: auto;
     --button-width-wide: 85%;
-    --button-width-minimuim: 80%;
+    --button-width-minimuim: 20%;
     --button-width-maximum: 100%;
    
     /* figures */ 
@@ -541,17 +541,17 @@ section {
     list-style-type: none;
     padding: 0;
 }
-.nav-btn-list.wide .nav-btn {
-    width: var(--button-width-wide);
-    min-width: 280px;
-    max-width: 95vw;
-}
 .nav-btn-list .nav-btn {
     width: var(--button-width);
-    min-width: 120px;
-    max-width: 300px;
+    min-width: var(--button-width-minimum);
+    max-width: var(--button-width-maximum);
     margin-left: auto;
     margin-right: auto;
+}
+.nav-btn-list.wide .nav-btn {
+    width: var(--button-width-wide) !important;
+    max-width: var(--button-width-wide);
+    min-width: var(--button-width-minimum);
 }
 
 /* --- General Button Links --- */
