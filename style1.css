@@ -518,6 +518,18 @@ hr.divider, .divider, .section-divider {
     padding: var(--padding-none);
 }
 
+/* Explicit styling for button group lists */
+.nav-btn-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    max-width: 800px;
+    margin: 0 auto 1em auto; /* Center and add bottom margin */
+    list-style-type: none;
+    padding: 0;
+}
+
 /* Box Buttons */
 .box-btn, .box-btn:hover, 
 .box-btn a, .box-btn a:hover {
