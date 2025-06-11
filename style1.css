@@ -509,10 +509,6 @@ section {
 }
 
 /* ============================================================
-   . LIST LINKS 
-   ============================================================ */
-
-/* ============================================================
    7. BUTTON LINKS 
    ============================================================ */
 
@@ -556,7 +552,7 @@ section {
 
 /* Normal (narrow) button widths for nav-btn-list (default) */
 .nav-btn-list .nav-btn {
-    width: 28%;
+    width: var(--button-width);
     min-width: 120px;
     max-width: 300px;
     display: block;
@@ -566,7 +562,7 @@ section {
 
 /* Modifier for wide button lists */
 .nav-btn-list.wide .nav-btn {
-    width: 85%;
+    width: var(--button-width-wide);
     min-width: 280px;
     max-width: 95vw;
     display: block;
