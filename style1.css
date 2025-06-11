@@ -477,6 +477,43 @@ hr.divider, .divider, .section-divider {
 }
 
 /* ============================================================
+   . BUTTON LINKS 
+   ============================================================ */
+
+/* Inline navigation link list */
+.nav-link-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em auto 1em auto;
+    padding: 0;
+    list-style: none;
+}
+
+/* Inline nav links (text-style, not button-style) */
+.nav-link {
+    display: inline-block;
+    color: var(--color-link);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    text-decoration: underline;
+    background: none;
+    border: none;
+    padding: 0.2em 0.5em;
+    transition: color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+    background: none;
+    border: none;
+}
+
+/* ============================================================
    7. BUTTON LINKS 
    ============================================================ */
 
@@ -518,6 +555,16 @@ hr.divider, .divider, .section-divider {
     padding: var(--padding-none);
 }
 
+/* Modifier for wide button lists */
+.nav-btn-list.wide .nav-btn {
+    width: 85%;
+    min-width: 280px;
+    max-width: 95vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Explicit styling for button group lists */
 .nav-btn-list {
     display: flex;
@@ -528,6 +575,18 @@ hr.divider, .divider, .section-divider {
     margin: 0 auto 1em auto; /* Center and add bottom margin */
     list-style-type: none;
     padding: 0;
+}
+
+/* Inline navigation link list */
+.nav-link-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em auto 1em auto;
+    padding: 0;
+    list-style: none;
 }
 
 /* Box Buttons */
