@@ -615,19 +615,43 @@ section {
 /* --- Standalone Return Links (Main Content) --- */
 .main-return-link, .main-return-link.wide {
     display: block;
-    width: 100%;
-    max-width: 650px;
+    width: var(--button-width-wide);
+    max-width: var(--button-width-wide, 90%);
     text-align: center;
     margin: 2.5em auto 1.5em auto;
     padding: 0.6em 0;
 }
+
+/* Style both anchor patterns */
+.main-return-link a,
+a.main-return-link,
+a.main-return-link.nav-btn {
+    display: inline-block;
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-link);
+    text-decoration: var(--return-link-decoration);
+    padding: 0.25em 1.2em;
+    background: none;
+    border: none;
+    transition: color 0.2s, background 0.2s;
+}
+.main-return-link a:hover,
+a.main-return-link:hover,
+a.main-return-link.nav-btn:hover {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+    background: none;
+}
+
 .main-return-link.wide { max-width: 95vw; }
+
 .main-return-link a, a.main-return-link {
     display: inline-block;
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-semibold);
     color: var(--color-link);
-    text-decoration: underline;
+    text-decoration: var(--decoration-link);
     padding: 0.25em 1.2em;
     background: none;
     border: none;
@@ -635,6 +659,7 @@ section {
 }
 .main-return-link a:hover, a.main-return-link:hover {
     color: var(--color-link-hover);
+    text-decoration: var(--decoration-link-hover);
     background: none;
 }
 
