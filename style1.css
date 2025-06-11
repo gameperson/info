@@ -210,7 +210,6 @@ a:visited, a:hover, a:active, a:focus {
     font-weight: var(--font-weight);
     color: var(--color-link);
     transition: color 0.3s;
-
 }
 
 a:hover, a:active {
@@ -219,25 +218,41 @@ a:hover, a:active {
 }
 
 /* ============================================================
-   4. PAGE TYPOGRAPHY (Continued)
+   UTILITIES: Alignment, Weight, Color, Spacing, Display
+   Simplified for easy variable-driven tweaks
    ============================================================ */
 
-/* Text Styles */
-.left { text-align: left; text-align-last: left; }
-.right { text-align: right; text-align-last: right; }
-.center { text-align: center; text-align-last: center; }
-.justify { text-align: justify; text-align-last: justify; }
+/* --- Alignment --- */
+.left    { text-align: left !important; }
+.right   { text-align: right !important; }
+.center  { text-align: center !important; }
+.justify { text-align: justify !important; }
 
-.bold { font-weight: var(--font-weight-bold); }
-.semibold { font-weight: var(--font-weight-semibold); }
-.light { font-weight: var(--font-weight-light); }
+/* --- Font Weight --- */
+.bold     { font-weight: var(--font-weight-bold) !important; }
+.semibold { font-weight: var(--font-weight-semibold) !important; }
+.light    { font-weight: var(--font-weight-light) !important; }
 
-.bright { color: var(--color-text-bright); }
-.muted { color: var(--color-text-muted); }
-.accent { color: var(--color-text-accent); }
+/* --- Text Color --- */
+.bright { color: var(--color-text-bright) !important; }
+.muted  { color: var(--color-text-muted) !important; }
+.accent { color: var(--color-text-accent) !important; }
 
-/* --- Lists - ordered, numbered, bulleted, etc.. --- */
+/* --- Quick Margin/Padding Utilities --- */
+.mt-1  { margin-top: var(--margin-small) !important; }
+.mb-1  { margin-bottom: var(--margin-small) !important; }
+.pt-1  { padding-top: var(--padding-small) !important; }
+.pb-1  { padding-bottom: var(--padding-small) !important; }
 
+/* --- Display Helpers --- */
+.hide        { display: none !important; }
+.inline      { display: inline !important; }
+.block       { display: block !important; }
+.inlineblock { display: inline-block !important; }
+
+/* ============================================================
+   4. PAGE TYPOGRAPHY (Continued)
+   ============================================================ */
 /* Tables */
 table {
     background-color: var(--color-background);
@@ -399,6 +414,7 @@ hr.divider, .divider, .section-divider {
     border-bottom: var(--border-bottom-accent) solid var(--accent-color);
     padding: var(--padding);
 }
+
 
 /* ========================================================= 
    5. SECTIONS, LAYOUT & CONTAINERS 
