@@ -91,6 +91,9 @@ body {
 
     /* Widths: px: 10px; element: 10em; root-element: 10rem; parent-rel-width: 10%; page-rel-width: 10vw; - ALSO: length: 0cm; 0mm; 0in; points: 0pt; page-rel -height, -max, -min: 0vh, 0vmax, 0vmin; */
     --container-max-width: 1200px;
+
+    --button-width: 30%;
+    --button-width-wide: 85%;
    
     /* figures */ 
     --figure-width: 95%;
@@ -370,6 +373,31 @@ figcaption, .figcaption {
 /*    font-style: oblique; */
 }
 
+/* Dividers */
+hr {
+    width: 100%;
+    border-top: none;
+    border-right: var(--border);
+    border-bottom: var(--border) solid var(--color-border-light);
+    border-left: var(--border) solid var(--color-border);
+    border-radius: var(--border-radius);
+}
+
+hr.divider, .divider, .section-divider {
+    width: 100%;
+    border-top: var(--border-none);
+    border-right: var(--border-none);
+    border-bottom: var(--border-bottom-accent) solid var(--accent-color);
+    border-left: var(--border-left-accent) solid var(--accent-color);
+    border-radius: var(--border-radius);
+}
+
+.section-divider {
+    border-left: var(--border-left-accent) solid var(--accent-color);
+    border-bottom: var(--border-bottom-accent) solid var(--accent-color);
+    padding: var(--padding);
+}
+
 /* ========================================================= 
    5. SECTIONS, LAYOUT & CONTAINERS 
    ========================================================= */
@@ -427,31 +455,6 @@ section {
     flex-wrap: wrap;
     gap: 0.75em;
     justify-content: center;
-}
-
-/* Dividers */
-hr {
-    width: 100%;
-    border-top: none;
-    border-right: var(--border);
-    border-bottom: var(--border) solid var(--color-border-light);
-    border-left: var(--border) solid var(--color-border);
-    border-radius: var(--border-radius);
-}
-
-hr.divider, .divider, .section-divider {
-    width: 100%;
-    border-top: var(--border-none);
-    border-right: var(--border-none);
-    border-bottom: var(--border-bottom-accent) solid var(--accent-color);
-    border-left: var(--border-left-accent) solid var(--accent-color);
-    border-radius: var(--border-radius);
-}
-
-.section-divider {
-    border-left: var(--border-left-accent) solid var(--accent-color);
-    border-bottom: var(--border-bottom-accent) solid var(--accent-color);
-    padding: var(--padding);
 }
 
 /* Center these specific sections */
