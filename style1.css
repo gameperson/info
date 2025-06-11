@@ -615,7 +615,6 @@ section {
 /* --- Standalone Return Links (Main Content) --- */
 .main-return-link, .main-return-link.wide {
     display: block;
-    width: var(--button-width-wide);
     max-width: var(--button-width-wide, 90%);
     text-align: center;
     margin: 2.5em auto 1.5em auto;
@@ -644,7 +643,15 @@ a.main-return-link.nav-btn:hover {
     background: none;
 }
 
-.main-return-link.wide { max-width: 95vw; }
+,main-return-link {
+   width: var(--button-width);
+   max-width: var(--button-width-wide);
+}   
+    
+.main-return-link.wide { 
+   width: var(--button-width-maximum);
+   max-width: 95vw; 
+}
 
 .main-return-link a, a.main-return-link {
     display: inline-block;
