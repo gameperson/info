@@ -652,6 +652,14 @@ header, nav, footer, .site-header {
     text-align-last: center;
 }
 
+.header-btn, .footer-btn {
+    display: inline-block;
+    margin: var(--margin-smaller) auto; 
+    border-radius: var(--border-radius-small);
+    padding: var(--padding-smaller);
+    font-size: var(--font-size-small);   
+}
+
 header, .site-header {
     font-size: 1.6em;
     border: 1px solid var(--color-border);
