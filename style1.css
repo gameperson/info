@@ -454,12 +454,14 @@ section {
     border-radius: var(--border-radius);
     padding: var(--padding-large);
     margin: 2em auto 2em auto;
-    max-width: 720px;
+    max-width: var(--container-max-width);
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.05);
-}
+}   
 
 /* Table of Contents navigation area */
 .toc-nav {
+    width: var(--button-width-maximum);
+    max-width: var(--container-max-width);
     margin: 1em 0 1.5em 0;
     padding: 0;
     text-align: center;
@@ -467,6 +469,8 @@ section {
 
 .toc-nav ul, .toc-nav ol {
     list-style: none;
+    width: var(--button-width-wide);
+    max-width: var(--button-width-maximum);
     padding: 0;
     margin: 0;
     display: flex;
