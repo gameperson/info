@@ -127,7 +127,7 @@
 <!-- TOC - Table of Contents-->
         <aside class="toc-content" id="toc">
             <h3>Table of Contents</h3>
-\<!-- for toc-link-list CHANGE: class="toc-btn-list" TO: class="toc-link-list"  -->
+<!-- for toc-link-list CHANGE: class="toc-btn-list" TO: class="toc-link-list"  -->
 §           <nav class="toc-nav" aria-label="Table of Contents">
                 <ul class="nav-btn-list">
                     <li><a href="#intro" class="btn toc-btn" aria-label="Introduction">Introduction</a></li>
@@ -148,7 +148,6 @@
                     <li><a href="#section-1" class="btn toc-btn" aria-label="FIRST SECTION">FIRST SECTION</a></li>
                     <li><a href="#section-2" class="btn toc-btn" aria-label="SECOND SECTION">SECOND SECTION</a></li>
                     <li><a href="#section-3" class="btn toc-btn" aria-label="THIRD SECTION">THIRD SECTION</a></li>
-                    <li><a href="#new" class="btn toc-btn" aria-label="New Section">New Section</a></li>
 <!-- Body Types-->
                     <li><a href="#callout" class="btn toc-btn" aria-label="Callout">Callout</a></li>
                     <li><a href="#quote" class="btn toc-btn" aria-label="Quote">Quote</a></li>
@@ -268,33 +267,30 @@
 
 <!-- Content Sections  -->
             <section class="content-section" id="section-1">
-§                <h2>Section 1 - "#section-1"</h2>
-§                <p>Section 1 Content</p>
-§                <p><span class="accent">Accented text</span></p>
-§                <h4>Subsections</h4>
-§                <p>Section 1 Subsection Content</p>
-            </section>
-        
-            <section class="content-section" id="section-2">
-§                <h2>Section 2 - "#section-2"</h2>
-§                <p>Section 2 Content</p>
-            </section>
-        
-            <section class="content-section" id="section-3">
-§                <h2>Section 3 - "#section-3"</h2>
-§                <p>Section 3 Content</p>
-            </section>
-   
-<!-- New Section  -->
-            <section class="content-section" id="new">
-§                <h2>New Section - "#new"</h2>
+§                <h2>Section 1</h2>
+§                <p>Section 1 Content id="#section-1"</p>
+§                <p>some more text and stuff</span></p>
+§                <h4><span class="accent">Subsection A</span>></h4>
+§                <p>Section 1 Subsection A </p>
 §                <p>
-                    Another section with anchor "#section".
-                    explanation, associated research, analysis, 
-                    deep dive, research findings, case study, etc.
+                    Another section with anchor "#section-n" containing
+                    <span class="bright">explanation, associated research, analysis, 
+                    deep dive, research findings, case study</span> and whateve else.
                     text can be <span class="accent">accented</span>
                     within the paragraphs.
                 </p>
+§                <h4>Subsection B</h4>
+§                <p>Section 1 Subsection B Content</p>
+            </section>
+        
+            <section class="content-section" id="section-2">
+§                <h2>Section 2</h2>
+§                <p>Section 2 Content id="#section-2"</p>
+            </section>
+        
+            <section class="content-section" id="section-3">
+§                <h2>Section 3</h2>
+§                <p>Section 3 Content id="#section-3"</p>
             </section>
             
             <div class="return-link">
@@ -568,6 +564,7 @@ function greet() {
             <a href="#toc" class="nav-btn" aria-label="Contents">Table of Contents</a>
         </div>
 <!-- ------------------- // ------------------- -->
+
         <hr class="divider">
 <!-- END OF BODY ------- // ------------------- -->
 
@@ -609,25 +606,13 @@ function greet() {
             <div> <!-- class="main-return-link wide"> --> 
                 <a href="#toc" class="nav-btn main-return-link" aria-label="Contents">Table of Contents</a>
             </div>
-            
         </section>
-                    <!-- class="main-return-link" broken -->
-            <a href="#toc" class="main-return-link nav-btn" aria-label="Contents">Table of Contents</a>
-            <div> <!-- class="main-return-link wide"> --> 
-                <a href="#toc" class="nav-btn main-return-link" aria-label="Contents">Table of Contents</a>
-            </div>
-            <div class="main-return-link wide">
-                <a href="#toc" class="nav-btn " aria-label="Contents">Table of Contents</a>
-            </div>
 
-        
-        <section class="content-section">
-                <!-- class="main-return-link" broken -->
-            <a href="#toc" class="main-return-link nav-btn" aria-label="Contents">Table of Contents</a>
-            <div> <!-- class="main-return-link wide"> --> 
-                <a href="#toc" class="nav-btn main-return-link" aria-label="Contents">Table of Contents</a>
-            </div>
-        </section>
+        <div class="return-link">
+            <a href="#toc" class="nav-btn" aria-label="Contents">Table of Contents</a>
+        </div>
+<!-- ------------------- // ------------------- -->
+
 
         <hr class="divider">
 <!-- END OF RETURN LINKS // ------------------- -->
