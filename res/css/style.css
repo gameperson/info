@@ -230,8 +230,9 @@ pre, code {
 
 /* Images */
 img {
-    max-width: 100px;
+    max-width: 100vw;
     height: auto;
+    display: block;
     margin: var(--margin-base);
 }
 
@@ -268,7 +269,7 @@ figcaption {
 
 .left { text-align: left; text-align-last: left; }
 .right { text-align: right; text-align-last: right; }
-.center { text-align: center; text-align-kast: center; }
+.center { text-align: center; text-align-last: center; }
 .justify { text-align: justify; text-align-last: justify; }
 
 .mb-16 { margin-bottom: 1rem; }
@@ -594,7 +595,7 @@ footer .site-nav li a {
     display: block;
     margin: 1em auto;
     text-align: justify;
-    text-align-last: ledt;
+    text-align-last: left;
 }
 
 /* ============================================================
