@@ -36,6 +36,7 @@ body {
     /* Colors */
     --color-background: #1e1e1e;
     --color-background-light: #121212;
+    --color-background-medium: #222;
     --color-background-dark: #333;
     --color-background-accent: #302020;
 
@@ -45,6 +46,7 @@ body {
     --color-border-accent: #b33;
 
     --color-text: #eee;
+    --color-text-secondary: #ccc;
     --color-text-bright: #fff;
     --color-text-muted: #999;
     --color-text-accent: #a44;
@@ -185,7 +187,7 @@ ul, ol {
    margin: var(--margin) var(--margin-large);  
 }
 
-ul li, ol li { margin: var(--margin-small); } */
+ul li, ol li { margin: var(--margin-small); } 
 
 /* Links */
 a {
@@ -334,7 +336,7 @@ img.accent {
 }
 
 /* Figures and Figcaptions */
-figure, .figure, figure.img, img.figure, {
+figure, .figure, figure.img, img.figure {
     margin: var(--margin);
     margin-bottom: var(--margin-none); 
     margin-left: var(--margin); 
@@ -398,14 +400,14 @@ hr.divider, .divider, .section-divider {
     width: 100%;
     border-top: var(--border-none);
     border-right: var(--border-none);
-    border-bottom: var(--border-bottom-accent) solid var(--accent-color);
-    border-left: var(--border-left-accent) solid var(--accent-color);
+    border-bottom: var(--border-bottom-accent) solid var(--color-text-accent);
+    border-left: var(--border-left-accent) solid var(--color-text-accent);
     border-radius: var(--border-radius);
 }
 
 .section-divider {
-    border-left: var(--border-left-accent) solid var(--accent-color);
-    border-bottom: var(--border-bottom-accent) solid var(--accent-color);
+    border-left: var(--border-left-accent) solid var(--color-text-accent);
+    border-bottom: var(--border-bottom-accent) solid var(--color-text-accent);
     padding: var(--padding);
 }
 
@@ -509,7 +511,7 @@ hr.divider, .divider, .section-divider {
 }
 
 .box-btn h3 { color: var(--color-btn-text); }
-.box-btn h3:hover { color: var(--color-btn--hover); }
+.box-btn h3:hover { color: var(--color-btn-hover); }
 
 /* Header and Footer Buttons */
 .header-btn, .footer-btn {
@@ -520,7 +522,7 @@ hr.divider, .divider, .section-divider {
     font-size: var(--font-size-small);   
 }
 
-/* Tanle of Contents Buttons */
+/* Table of Contents Buttons */
 .toc-btn { 
     margin: var(--margin) auto; 
     padding: var(--padding-larger);
@@ -555,7 +557,7 @@ header, .site-header {
 }
 
 header #header, .site-header, .header-content,
-.header-text, {
+.header-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -748,7 +750,7 @@ footer .site-nav li a {
   --color-text-muted: #6b7280;
   --color-link: #006580;
   --color-link-hover: #003d4d;
-  --accent-color: #cbd5e0;
+  --color-text-accent: #cbd5e0;
 }
 
 /* LIGHT THEME OVERRIDES */
