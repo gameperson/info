@@ -41,8 +41,8 @@
 
 <body>
 <!-- Site Header  -->
-        <header class="site-header">
-§        <h1 class="site-title" id="top">TITLE Body.html Template</h1>
+        <header class="site-header" id="top">
+§        <h1 class="site-title">TITLE Body.html Template</h1>
 §        <h3 class="site-subtitle">SUBTITLE Body.html</h3>
         <nav class="site-nav"> 
 <!-- Header Nav  -->
@@ -54,11 +54,10 @@
                 <li><a href="#about" class="btn header-btn" aria-label="About gameperson@github">About</a></li>
                 <li><a href="#contact" class="btn header-btn" aria-label="Contact gameperson@github">Contact</a></li>
                 <li><a href="javascript:history.back();" class="btn header-btn" aria-label="back">Back</a></li>
-                  <!-- check ../  --> 
-                <li><a href="../index.html#index" class="btn header-btn" aria-label="More Articles">More Articles from gameperson</a></li>                    
+                <li><a href="/index.html#index" class="btn header-btn" aria-label="More Articles">More Articles from gameperson</a></li>                    
 <!-- More Links  --> 
-            <hr class="divider">
-§§                <br>
+§§            <hr class="divider">
+                <br>
 <!-- Article Begin  --> 
                 <li><a href="#abstract" class="btn header-btn" aria-label="Guide">Abstract</a></li>
                 <li><a href="#guide" class="btn header-btn" aria-label="Guide">Guide</a></li>
@@ -113,9 +112,9 @@
     <main class="main-body" id="article-top">
         <section id="title">
 §            <h2>TITLE</h2>
-§            <p class="center"><a href="../templates/noBody.html">
-                noBody.html template (../templates/noBody.html)
-            </a></p>
+§            <p class="center"><a href="/src/templates/noBody.html">
+§                noBody.html template (/src/templates/noBody.html)</a>
+§            </p>
             <br>
         </section>
 
@@ -131,8 +130,8 @@
                     <li><a href="#section-3" class="btn toc-btn" aria-label="THIRD SECTION">THIRD SECTION</a></li>
                     <li><a href="#conclusion" class="btn toc-btn" aria-label="conclusion">Conclusions</a></li>
                     <li><a href="#references" class="btn toc-btn" aria-label="References and Further Reading">References and Further Reading</a></li>
- <!-- More Navigation Links--> 
-  §§              <hr class="divider">
+<!-- More Navigation Links--> 
+§§                <hr class="divider">
                     <br>
 <!-- Body Head  -->
                     <li><a href="#abstract" class="btn toc-btn" aria-label="Guide">Abstract</a></li>
@@ -187,11 +186,11 @@
 <!-- ------------------- // ------------------- -->
 
 <!-- Article Content  -->
-§§        <article class="content-body" id="article-top">
+        <article class="content-body" id="article-top">
             <section class="content-title">
-                <h2>Main Article Content</h2>
-§                <a href="../templates/noBody.html"><p>link to noBody.html template:<br>
-§                <b>../templates/noBody.html</b></p></a>
+§                <h2>Main Article Content</h2>
+§                <a href="/src/templates/noBody.html"><p>link to noBody.html template:<br>
+§                <b>/src/templates/noBody.html</b></p></a>
             </section>
             
 <!-- Abstract  -->
@@ -502,7 +501,7 @@ function greet() {
 <!-- Glossary  -->    
             <section class="content-section glossary" id="glossary">
                 <h2>Glossary</h2>
-§                <dl>
+                <dl>
                     <dt>Term 1</dt>
                     <dd>Definition of term 1.</dd>
                     <dt>Term 2</dt>
@@ -513,7 +512,7 @@ function greet() {
 <!-- Further Reading  -->    
             <section class="content-section further-reading"id="further-reading">
                 <h2>Further Reading</h2>
-§                <ul>
+                <ul>
                     <li><a href="#" class="further-reading-link" aria-label="Link to a Resource for Further Reading">Recommended Further reading</a></li>
                     <li><a href="#" class="further-reading-link" aria-label="Link to an Article or Book Resource">Recommended Article or Book for Further Reading</a></li>
                 </ul>
@@ -522,9 +521,9 @@ function greet() {
 <!-- References  -->
             <section class="content-section references" id="references">
                 <h2>References</h2>
-§                <ul>
-                    <li>Author, A. (2024). <em>Title of Reference</em>. <a href="#" class="reference-link" aria-label="Link to A Reference">Link to A Source</a></li>
-                    <li>Another, B. (2023). <em>Another Reference</em>. <a href="#" class="reference-link" aria-label="Link to Another Reference">Link to Another Source</a></li>
+                <ul>
+                    <li><a href="#" class="reference-link" aria-label="Link to A Reference">Link to A Source</a></li> <em>Title of Reference</em>; Author, A. (2024).
+                    <l>Another, B. (2023). <a href="#" class="reference-link" aria-label="Link to Another Reference"><em>Another Reference</em></a>.
                 </ul>
             </section>
         </div>
@@ -532,7 +531,7 @@ function greet() {
         <br>
         <hr class="divider">
         <br>
-        
+
 <!-- END OF BODY ------- // ------------------- -->
 
         <section class="site-nav"> 
@@ -549,7 +548,7 @@ function greet() {
 <!-- Return [Button] Links  -->
             <ul class="nav-btn-list">
                 <li><a href="#toc" class="nav-btn" aria-label="Contents">Table of Contents</a></li>
-                <li><a href="#" class="nav-btn" aria-label="Page Top">Page Top - #</a></li>
+                <li><a href="#top" class="nav-btn" aria-label="Page Top">Page Top - #</a></li>
                 <li><a href="#site-header" class="nav-btn" aria-label="Page Top">Page Top - #site-header</a></li>
                 <li><a href="#header-links" class="nav-btn" aria-label="Quick-Links">Quick-Links - #header-links</a></li>
                 <li><a href="#content-body" class="nav-btn" aria-label="Content Top">Content Top - #content-body</a></li>
@@ -560,6 +559,7 @@ function greet() {
         </section>
         <br>
         <hr class="divider">
+
 <!-- END OF RETURN LINKS // ------------------- -->
 
 <!-- Tail - Legal, Brag, About & Contact, Footer  -->
@@ -569,7 +569,7 @@ function greet() {
             <br>
             
             <div class="disclaimer-link">
-                <a href="../gameperson_Disclaimer.html"  class="btn large full-block-button" data-tags="legal notice, terms of use, information accuracy, liability disclaimer, AI-generated content, content responsibility" aria-label="This Content is for Informational Purposes and Should Not Be Considered Complete or Without Error">
+                <a href="/gameperson_Disclaimer.html"  class="btn large full-block-button" data-tags="legal notice, terms of use, information accuracy, liability disclaimer, AI-generated content, content responsibility" aria-label="This Content is for Informational Purposes and Should Not Be Considered Complete or Without Error">
                     <h3>Disclaimer</h3>
                     <br>
                     <p>The content here is for <strong>informational and thought provoking purposes</strong>. Find out how you can use our content and limitations that apply.</p>
@@ -603,10 +603,9 @@ function greet() {
                 We invite you to explore, question, and engage with the ideas presented here.</p>
         </section>
 
-
 <!-- Authors  -->
         <section class="authors content-section" id="authors">
-<!--            <h3>The Minds Behind the Insights</h3>  -->
+            <!-- <h3>The Minds Behind the Insights</h3>  -->
             <h3>Content Creation Contributors</h3>
             <p>The content featured here is the result of a dynamic collaboration, 
                 where cutting-edge artificial intelligence models – including the insightful contributions of 
@@ -631,6 +630,7 @@ function greet() {
                 </a>
             </div>
     </main>
+
 <!-- END OF END SECTION  // ------------------- -->
 
 <!-- Footer  -->
@@ -639,33 +639,29 @@ function greet() {
 §            <p class="footer-copy">&copy; 2025 gameperson@github</p>
         </div>
         <div class="footer-content">
-<!--            <nav class="footer-nav">
--->
             <nav class="site-nav">
                 <ul class="footer-btn-list">
                     <li><a href="javascript:history.back();" class="btn footer-btn" aria-label="Back">Back</a></li>
-                    <li><a href="#top" class="btn footer-btn" aria-label="Page Top">Page Top</a></li>
-                      <!-- check ../  --> 
-                    <li><a href="../index.html" class="btn footer-btn" aria-label="Site Index">Article Index Page</a></li>
+                    <li><a href="#top" class="btn footer-btn" aria-label="Page Top">Page Top</a></li> 
+                    <li><a href="/index.html" class="btn footer-btn" aria-label="Site Index">Article Index Page</a></li>
                 </ul>
             </nav>
         </div>
 
 <!-- Theme Toggle Button  -->
-        <div class="center theme-toggle">
-              <!-- check ../  --> 
-            <img id="theme-toggle-img" src="../images/bulb_white.png" 
+        <div class="theme-toggle center">
+            <img id="theme-toggle-img" src="/res/images/bulb_white.png" 
                 alt="Theme Toggle Icon"
                 style="width: 5%;" 
                 class="theme-toggle-img" 
                 onclick="toggleTheme()" 
-                aria-label="Toggle Theme (Footer)">
+                aria-label="Toggle Theme">
         </div> 
     </footer>
 <!-- END OF FOOTER ----- // ------------------- --> 
     
-<!-- javascript -- check ../  --> 
-    <script src="../js/theme-switch.js"></script>
+<!-- javascript --> 
+    <script src="/res/js/theme-switch.js"></script>
 <!-- END OF SCRIPTS ---- // ------------------- -->
 
 </body>
