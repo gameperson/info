@@ -9,7 +9,7 @@ function toggleTheme() {
     // Match all theme icons (update selector if needed)
     const icons = document.querySelectorAll('.theme-icon');
     icons.forEach(icon => {
-        icon.src = `/res/images/${iconName}`;
+        icon.src = `/info/res/images/${iconName}`;
     });
 
     // Optionally, persist preference
