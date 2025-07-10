@@ -34,14 +34,22 @@ body {
 
 :root {
     /* DARK THEME (Default) */
+
+    /* Backgrounds: Use a very light, almost white, base with subtle, slightly darker tones for hierarchy. */
     --color-background-light: #121212;
     --color-background-medium: #1e1e1e;
     --color-background-dark: #333;
+
+    /* Text: Strong contrast against light backgrounds. */
     --color-text-primary: #e0e0e0;
     --color-text-secondary: #cccccc;
     --color-text-muted: #999;
+
+    /* Links: Clear, distinctive, and Bauhaus-esque primary color. */
     --color-link-primary: #bbb;
     --color-link-hover: #fff;
+    /* Borders: Define structure without being intrusive. */
+    --color-border-primary: #C5C5C5;     /* A slightly darker grey for borders */
     --color-border-primary: #444;
 }
 
