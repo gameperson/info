@@ -46,6 +46,26 @@ body {
 }
 
 .light-theme {
+    /* LIGHT THEME - Bauhaus Inspired, Modern & Clean */
+
+    /* Backgrounds: Use a very light, almost white, base with subtle, slightly darker tones for hierarchy. */
+    --color-background-light: #F8F8F8;   /* Very light grey, almost white - primary background */
+    --color-background-medium: #EDEDED;  /* Slightly darker for cards, sections */
+    --color-background-dark: #DCDCDC;   /* Even darker for subtle separation, borders */
+
+    /* Text: Strong contrast against light backgrounds. */
+    --color-text-primary: #212121;       /* Dark charcoal for main text - excellent contrast */
+    --color-text-secondary: #5C5C5C;    /* Medium grey for secondary info, less emphasis */
+    --color-text-muted: #8E8E8E;        /* Lighter grey for subtle hints, disabled states */
+
+    /* Links: Clear, distinctive, and Bauhaus-esque primary color. */
+    --color-link-primary: #007bff;      /* A classic, clean blue for links */
+    --color-link-hover: #0056b3;       /* Darker shade of blue for hover state */
+
+    /* Borders: Define structure without being intrusive. */
+    --color-border-primary: #C5C5C5;     /* A slightly darker grey for borders */
+}
+/* .light-theme {
     /* LIGHT THEME */
     --color-background-light: #b0b8bf;
     --color-background-medium: #a8b0b8;
@@ -58,6 +78,7 @@ body {
     --color-link-hover: #3a4750;
     --color-border-primary: #c0c3c6;
 }
+*/
 
 /* Apply Background and Text Colors based on theme */
 body {
