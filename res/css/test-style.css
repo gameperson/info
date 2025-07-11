@@ -334,7 +334,7 @@ img.accent {
 }
 
 /* Figures and Figcaptions */
-figure, .figure, figure.img, img.figure, {
+figure, .figure, figure.img, img.figure {
     margin: var(--margin);
     margin-bottom: var(--margin-none); 
     margin-left: var(--margin); 
@@ -555,7 +555,7 @@ header, .site-header {
 }
 
 header #header, .site-header, .header-content,
-.header-text, {
+.header-text {
     display: flex;
     justify-content: center;
     align-items: center;
