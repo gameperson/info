@@ -1,0 +1,41 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Collapsible sections
+    var coll = document.getElementsByClassName("collapsible-header");
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+
+    // Reference dropdowns
+    var dropdownToggles = document.getElementsByClassName("dropdown-toggle");
+    for (var i = 0; i < dropdownToggles.length; i++) {
+        dropdownToggles[i].addEventListener("click", function() {
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
+
+    // Close dropdowns if clicked outside
+    window.addEventListener('click', function(event) {
+        if (!event.target.matches('.dropdown-toggle')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.style.display === "block") {
+                    openDropdown.style.display = "none";
+                }
+            }
+        }
+    });
+});
