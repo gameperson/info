@@ -1,0 +1,59 @@
+/* ============================================================
+   2. COLOR PALETTE TOKENS (CSS Variables)
+   ============================================================ */
+
+:root {
+    /* DARK THEME (Default) */
+}
+
+.light-theme {
+    /* LIGHT THEME */
+    /* Backgrounds: Use a very light, almost white, base with subtle, slightly darker tones for hierarchy. */
+    --color-background-light: #F8F8F8;   /* Very light grey, almost white - primary background */
+    --color-background-medium: #EDEDED;  /* Slightly darker for cards, sections */
+    --color-background-dark: #DCDCDC;   /* Even darker for subtle separation, borders */
+    --color-background-darker: #AAAAAA; */
+    /* Text: Strong contrast against light backgrounds. */
+    --color-text-primary: #212121;       /* Dark charcoal for main text - excellent contrast */
+    --color-text-secondary: #5C5C5C;    /* Medium grey for secondary info, less emphasis */
+    --color-text-muted: #8E8E8E;        /* Lighter grey for subtle hints, disabled states */
+    /* Links: Clear, distinctive, and Bauhaus-esque primary color. */
+    --color-link-primary: #007bff;      /* A classic, clean blue for links */
+    --color-link-hover: #0056b3;       /* Darker shade of blue for hover state */
+    /* Borders: Define structure without being intrusive. */
+    --color-border-primary: #C5C5C5;     /* A slightly darker grey for borders */
+}
+
+/* Light Theme Color Accents */
+.light-theme h1, .light-theme h2, .light-theme h3,
+.light-theme h4, .light-theme h5, .light-theme h6,
+.light-theme a {
+    color: var(--color-link-primary); /* Teal Headers and links */
+}
+
+.light-theme a:hover {
+    color: var(--color-link-hover);
+}
+
+.light-theme .highlighted-section {
+    background-color: #d0d8dd; /* Darker background for contrast */
+    border-color: var(--color-link-primary); /* Teal border */
+}
+
+.light-theme .highlighted-section a.button-link,
+.button-link {
+    /* Button Styles, applies to both themes */
+    display: block;
+    padding: 0.8em 1.2em;
+    background-color: var(--color-background-medium);
+    color: var(--color-text-primary);
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid var(--color-border-primary);
+    transition: background-color 0.3s ease;
+}
+
+.light-theme .highlighted-section a.button-link:hover,
+.button-link:hover {
+    background-color: var(--color-background-dark);
+}
