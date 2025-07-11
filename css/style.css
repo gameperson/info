@@ -1,34 +1,4 @@
 /* ============================================================
-   Global Stylesheet for Gameperson Web-Test (v1.0)
-   Purpose: Modular, easy-to-theme, and responsive
-   =========================================================== */
-
-/* ============================================================
-   1. RESET & BASE STYLES
-   ============================================================ */
-
-/* Reset Box Model and Margins */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* Base HTML and Body Styles */
-html {
-    font-size: 16px; /* 1rem = 16px */
-    scroll-behavior: smooth; /* Smooth scrolling */
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
-    line-height: 1.7;
-    padding: 1.25rem; /* 20px */
-    padding-bottom: 3rem; /* 60px */
-    transition: background-color 0.3s ease; /* For smooth theme transitions */
-}
-
-/* ============================================================
    2. COLOR PALETTE TOKENS (CSS Variables)
    ============================================================ */
 
@@ -57,13 +27,6 @@ body {
     --color-link-primary: #386870;
     --color-link-hover: #3a4750;
     --color-border-primary: #c0c3c6;
-}
-
-/* Apply Background and Text Colors based on theme */
-body {
-    background-color: var(--color-background-light);
-    color: var(--color-text-primary);
-    border-color: var(--color-border-primary);
 }
 
 /* Light Theme Color Accents */
