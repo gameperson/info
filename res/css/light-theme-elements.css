@@ -4,6 +4,7 @@
 
 :root {
     /* DARK THEME (Default) */
+    --color-something: #777777;
 }
 
 .light-theme {
