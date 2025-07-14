@@ -34,19 +34,43 @@ body {
 
 :root {
     /* DARK THEME (Default) */
+
+    /* Backgrounds: Use dark base with subtle, slightly different tones for hierarchy. */
     --color-background-light: #121212;
     --color-background-medium: #1e1e1e;
     --color-background-dark: #333;
+    /* Text: Strong contrast against dark backgrounds. */
     --color-text-primary: #e0e0e0;
     --color-text-secondary: #cccccc;
     --color-text-muted: #999;
+    /* Links: Clear, distinctive, and Bauhaus-esque primary color. */
     --color-link-primary: #bbb;
     --color-link-hover: #fff;
+    /* Borders: Define structure without being intrusive. */
+    --color-border-primary: #C5C5C5;
     --color-border-primary: #444;
 }
 
 .light-theme {
-    /* LIGHT THEME */
+    /* LIGHT THEME - Bauhaus Inspired, Modern & Clean */
+
+    /* Backgrounds: Use a very light, almost white, base with subtle, slightly darker tones for hierarchy. */
+    --color-background-light: #F8F8F8;   /* Very light grey, almost white - primary background */
+    --color-background-medium: #EDEDED;  /* Slightly darker for cards, sections */
+    --color-background-dark: #DCDCDC;   /* Even darker for subtle separation, borders */
+    /* Text: Strong contrast against light backgrounds. */
+    --color-text-primary: #212121;       /* Dark charcoal for main text - excellent contrast */
+    --color-text-secondary: #5C5C5C;    /* Medium grey for secondary info, less emphasis */
+    --color-text-muted: #8E8E8E;        /* Lighter grey for subtle hints, disabled states */
+    /* Links: Clear, distinctive, and Bauhaus-esque primary color. */
+    --color-link-primary: #007bff;      /* A classic, clean blue for links */
+    --color-link-hover: #0056b3;       /* Darker shade of blue for hover state */
+    /* Borders: Define structure without being intrusive. */
+    --color-border-primary: #C5C5C5;     /* A slightly darker grey for borders */
+}
+
+/* .light-theme {
+    /* LIGHT THEME */ /*
     --color-background-light: #b0b8bf;
     --color-background-medium: #a8b0b8;
     --color-background-dark: #98a0a8;
@@ -58,6 +82,7 @@ body {
     --color-link-hover: #3a4750;
     --color-border-primary: #c0c3c6;
 }
+*/
 
 /* Apply Background and Text Colors based on theme */
 body {
@@ -230,8 +255,9 @@ pre, code {
 
 /* Images */
 img {
-    max-width: 100px;
+    max-width: 100vw;
     height: auto;
+    display: block;
     margin: var(--margin-base);
 }
 
@@ -268,7 +294,7 @@ figcaption {
 
 .left { text-align: left; text-align-last: left; }
 .right { text-align: right; text-align-last: right; }
-.center { text-align: center; text-align-kast: center; }
+.center { text-align: center; text-align-last: center; }
 .justify { text-align: justify; text-align-last: justify; }
 
 .mb-16 { margin-bottom: 1rem; }
@@ -378,6 +404,95 @@ figcaption {
 /* Ensure button hover styles still apply */
 .btn.large.full-block-button:hover, .button-link.large.full-block-button:hover {
     background: var(--color-background-darker);
+}
+
+/* ========================================================= 
+   6.5. Collapsible Headers & Dropdowns
+   ========================================================= */
+
+/* Style for collapsible headers */
+.collapsible-header {
+    background-color: var(--color-background-dark);
+    color: var(--color-text-primary);
+    cursor: pointer;
+    padding: var(--padding-base);
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    border-radius: var(--border-radius-base);
+    margin-bottom: var(--margin-small);
+}
+
+.collapsible-header:hover {
+    background-color: var(--color-background-darker);
+}
+
+/* Add a background color to the button if it is clicked on (add the "active" class) */
+.collapsible-header.active {
+    background-color: var(--color-link-primary); /* Example active color */
+}
+
+/* Style the collapsible content. Note: Hidden by default */
+.collapsible-content {
+    padding: 0 var(--padding-base);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: var(--color-background-medium);
+    border-radius: var(--border-radius-base);
+    margin-bottom: var(--margin-base);
+}
+
+/* Dropdown Button */
+.dropdown-toggle {
+    background-color: var(--color-background-dark);
+    color: var(--color-text-primary);
+    padding: var(--padding-base);
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border-radius: var(--border-radius-base);
+    margin-top: var(--margin-small);
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+    background-color: var(--color-background-darker);
+}
+
+/* Dropdown Content (Hidden by default) */
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: var(--color-background-medium);
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: var(--border-radius-base);
+    padding: var(--padding-base);
+    margin-bottom: var(--margin-base);
+}
+
+/* Links inside the dropdown */
+.dropdown-content ul {
+    list-style: none; /* Remove default list style */
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li {
+    padding: var(--padding-small) 0;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li:hover {
+    background-color: var(--color-background-light); /* Example hover color for list items */
 }
 
 /* ========================================================= 
@@ -594,7 +709,7 @@ footer .site-nav li a {
     display: block;
     margin: 1em auto;
     text-align: justify;
-    text-align-last: ledt;
+    text-align-last: left;
 }
 
 /* ============================================================
@@ -846,6 +961,8 @@ section {
     }
 }
 
+/* End of Global Stylesheet for Gameperson Web-Test (v1.0) */
 /* ============================================================
    13. END OF STYLESHEET
    ============================================================ */
+
