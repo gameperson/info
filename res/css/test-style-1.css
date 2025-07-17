@@ -1,10 +1,18 @@
 /* ============================================================
    Global Stylesheet for Gameperson /Info/  (v2.0)
+   1. Reset & Base Styles
+   2. Theme and Typography Tokens
+   3. Light Theme Styles
+   4. Page Typography
+   5. Sections, Layout & Containers
+   6. Accent Section
+   7. Button Links
+   8. Headers, Navigation & Footers
+   9. Responsive Design  
    ============================================================ */
-/* ---------------------------- // ---------------------------- */
-/* ============================================================
-   1. RESET & BASE STYLES
-   ============================================================ */
+
+   /* ============================================================
+   1. RESET & BASE STYLES */
 
 * {         /* Reset Box Model and Margins */
     box-sizing: border-box;
@@ -20,19 +28,18 @@ html {      /* Base HTML and Body Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
     line-height: 1.7;
-    margin: 1rem; /* ?px */
-    padding: 1.25rem; /* 20px */
+    margin: 1rem; /* 10px */
+    padding: 1.25rem; /* 15px */
     padding-bottom: 3rem; /* 60px */
     transition: background-color 0.3s ease; /* For smooth theme transitions */
 }
 
-/* ---------------------------- // ---------------------------- */
-/* ============================================================
-   2. THEME and TYPOGRAPHY TOKENS (Default CSS Variables)
-   ============================================================ */
+/* =========================================================== 
+   2. DARK THEME and TYPOGRAPHY TOKENS (Default CSS Variables)  */
 
 /* - DARK THEME (Default) ----- // ---------------------------- */
 :root {
+    
     /* Colors */
     --color-background: #1e1e1e;
     --color-background-light: #121212;
@@ -55,7 +62,6 @@ body {
     --color-link-hover: #b44; 
 
     /* Font Families */
-/*    --font-family: Arial, sans-serif; */
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
     --font-family-serif: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, serif;
     --font-family-mono: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, monospace;
@@ -130,9 +136,27 @@ body {
     --border-left-accent: 4px;
 }
 
-/* ---------------------------- // ---------------------------- */
-/* section 3. Light Theme ----- // ---------------------------- */
-/* moved to end --------------- // ---------------------------- */
+/* ============================================================
+   3. LIGHT THEME COLORS and TYPOGRAPHY TOKENS */
+
+/* LIGHT THEME - Bauhaus, Modern & Clean --------------------*/
+.light-theme {
+
+    /* Colors */
+    /* Backgrounds: Use a very light, almost white, base with subtle, slightly darker tones for hierarchy. */
+    --color-background-light: #F8F8F8;   /* Very light grey, almost white - primary background */
+    --color-background-medium: #EDEDED;  /* Slightly darker for cards, sections */
+    --color-background-dark: #DCDCDC;   /* Even darker for subtle separation, borders */
+    /* Text: Strong contrast against light backgrounds. */
+    --color-text-primary: #212121;       /* Dark charcoal for main text - excellent contrast */
+    --color-text-secondary: #5C5C5C;    /* Medium grey for secondary info, less emphasis */
+    --color-text-muted: #8E8E8E;        /* Lighter grey for subtle hints, disabled states */
+    /* Links: Clear, distinctive, and Bauhaus-esque primary color. */
+    --color-link-primary: #007bff;      /* A classic, clean blue for links */
+    --color-link-hover: #0056b3;       /* Darker shade of blue for hover state */
+    /* Borders: Define structure without being intrusive. */
+    --color-border-primary: #C5C5C5;     /* A slightly darker grey for borders */
+}
 
 /* ============================================================
    4. PAGE TYPOGRAPHY
@@ -730,60 +754,5 @@ footer .site-nav li a {
     }
 }
 
-/* ============================================================
-   10. END OF STYLESHEET 
-   ============================================================*/
-
-/* ============================================================
-   3. LIGHT THEME OVERRIDES (CSS Variables)
-   ============================================================ */
-
-/*.light-theme {
-  --color-background: #f2f4f7;
-  --color-background-light: #ffffff;
-  --color-background-medium: #e4e7eb;
-  --color-background-dark: #d0d4d9;
-  --color-text: #1a1a1a;
-  --color-text-secondary: #444c56;
-  --color-text-muted: #6b7280;
-  --color-link: #006580;
-  --color-link-hover: #003d4d;
-  --accent-color: #cbd5e0;
-}
-
-/* LIGHT THEME OVERRIDES */
-/*.light-theme h1, .light-theme h2, .light-theme h3,
-.light-theme h4, .light-theme h5, .light-theme h6,
-.light-theme a {
-    color: var(--color-link); /* Teal Headers and links
-}
-
-/*.light-theme a:hover {
-    color: var(--color-link-hover);
-}
-
-/*.light-theme .accent-section {
-    background-color: #d0d8dd;
-    border-color: var(--color-link);
-}
-
-/* Button Styles, applies to both themes */
-/*.light-theme .accent-section a.button-link,
-.button-link {
-    display: block;
-    padding: 0.8em 1.2em;
-    background-color: var(--color-background-medium);
-    color: var(--color-text);
-    text-align: center;
-    border-radius: 5px;
-    border: 1px solid var(--color-border);
-    transition: background-color 0.3s ease;
-}
-
-/*.light-theme .accent-section a.button-link:hover,
-.button-link:hover {
-    background-color: var(--color-background-dark);
-}
-*/
-
-/* END FILE */
+/* ---------------------------- // ---------------------------- */
+/* 10. END OF STYLESHEET ------ // -----------------------------*/
