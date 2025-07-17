@@ -11,7 +11,7 @@
    9. Responsive Design  
    ============================================================ */
 
-   /* ============================================================
+/* ============================================================
    1. RESET & BASE STYLES */
 
 * {         /* Reset Box Model and Margins */
@@ -159,8 +159,7 @@ body {
 }
 
 /* ============================================================
-   4. PAGE TYPOGRAPHY
-   ============================================================ */
+   4. PAGE TYPOGRAPHY */
 
 body {
     background-color: var(--color-background);
@@ -224,8 +223,7 @@ a:hover {
 }
 
 /* ============================================================
-   4. PAGE TYPOGRAPHY (Continued)
-   ============================================================ */
+   4. PAGE TYPOGRAPHY (Continued) */
 
 /* Text Styles */
 .left { text-align: left; text-align-last: left; }
@@ -379,8 +377,7 @@ figcaption, .figcaption {
 }
 
 /* ========================================================= 
-   5. SECTIONS, LAYOUT & CONTAINERS 
-   ========================================================= */
+   5. SECTIONS, LAYOUT & CONTAINERS */
 
 section {
     margin-bottom: 1em;
@@ -440,8 +437,7 @@ hr.divider, .divider, .section-divider {
 }
 
 /* ========================================================= 
-   6. accent SECTION 
-   ========================================================= */
+   6. accent SECTION */
 
 .accent-section {
     background-color: var(--color-background-medium);
@@ -485,8 +481,7 @@ hr.divider, .divider, .section-divider {
 }
 
 /* ============================================================
-   7. BUTTON LINKS 
-   ============================================================ */
+   7. BUTTON LINKS */
 
 /* General Button Deffinitions */
 .btn, .nav-btn, 
@@ -558,8 +553,7 @@ hr.divider, .divider, .section-divider {
 }
 
 /* ========================================================= 
-   8. HEADERS, NAVIGATION & FOOTERS 
-   ========================================================= */
+   8. HEADERS, NAVIGATION & FOOTERS */
 
 header, nav, footer, .site-header {
     background-color: var(--color-background-medium);
@@ -667,8 +661,7 @@ footer .site-nav li a {
 }
 
 /* ============================================================
-   9. RESPONSIVE DESIGN
-   ============================================================ */
+   9. RESPONSIVE DESIGN */
 
 @media (max-width: 992px) {
     body {
