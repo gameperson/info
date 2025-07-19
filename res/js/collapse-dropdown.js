@@ -1,11 +1,12 @@
+// Collapsible Sections and Dropdown Buttons
 document.addEventListener('DOMContentLoaded', function() {
-    // Collapsible sections
-    var coll = document.getElementsByClassName("collapsible-header");
-    for (var i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
+    // Collapsible Sections
+    var collapsibleHeaders = document.querySelectorAll('.collapsible-header');
+    for (var i = 0; i < collapsibleHeaders.length; i++) {
+        collapsibleHeaders[i].addEventListener("click", function() {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
-            if (content.style.maxHeight){
+            if (content.style.maxHeight) {
                 content.style.maxHeight = null;
             } else {
                 content.style.maxHeight = content.scrollHeight + "px";
@@ -13,10 +14,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Reference dropdowns
+    // Dropdown Toggles
     var dropdownToggles = document.getElementsByClassName("dropdown-toggle");
     for (var i = 0; i < dropdownToggles.length; i++) {
-        dropdownToggles[i].addEventListener("click", function() {
+        dropdownToggles[i].addEventListener("click", function(event) {
+            event.stopPropagation();
             var dropdownContent = this.nextElementSibling;
             if (dropdownContent.style.display === "block") {
                 dropdownContent.style.display = "none";
@@ -31,9 +33,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!event.target.matches('.dropdown-toggle')) {
             var dropdowns = document.getElementsByClassName("dropdown-content");
             for (var i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.style.display === "block") {
-                    openDropdown.style.display = "none";
+                if (dropdowns[i].style.display === "block") {
+                    dropdowns[i].style.display = "none";
                 }
             }
         }
