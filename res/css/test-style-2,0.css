@@ -1,0 +1,751 @@
+/* ============================================================
+   Global Stylesheet for Gameperson /Info/  (v2.0)
+   1. Reset & Base Styles
+   2. Theme and Typography Tokens
+   3. Light Theme Styles
+   4. Page Typography
+   5. Sections, Layout & Containers
+   6. Accent Section
+   7. Button Links
+   8. Headers, Navigation & Footers
+   9. Responsive Design  
+   ============================================================ */
+
+/* ============================================================
+   1. RESET & BASE STYLES */
+
+* {         /* Reset Box Model and Margins */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {      /* Base HTML and Body Styles */
+    font-size: 16px; /* 1rem = 16px */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+    line-height: 1.7;
+    margin: 1rem; /* 10px */
+    padding: 1.25rem; /* 15px */
+    padding-bottom: 3rem; /* 60px */
+    transition: background-color 0.3s ease; /* For smooth theme transitions */
+}
+
+/* =========================================================== 
+   2. DARK THEME and TYPOGRAPHY TOKENS (Default CSS Variables)  */
+
+/* - DARK THEME (Default) ----- // ---------------------------- */
+:root {
+    
+    /* Colors */
+    --color-background: #1e1e1e;
+    --color-background-light: #121212;
+    --color-background-dark: #333;
+    --color-background-accent: #302020;
+
+    --color-border: #444;
+    --color-border-light: #666;
+    --color-border-lighter: #aaa;
+    --color-border-accent: #b33;
+
+    --color-text: #eee;
+    --color-text-bright: #fff;
+    --color-text-muted: #999;
+    --color-text-accent: #a44;
+
+    --color-btn-text: #a33;
+    --color-btn-hover: #b44;
+    --color-link: #a33; 
+    --color-link-hover: #b44; 
+
+    /* Font Families */
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+    --font-family-serif: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, serif;
+    --font-family-mono: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, monospace;
+
+    /* Font Sizes */
+    --font-size: 1rem;
+    --font-size-small: 0.825rem;
+    --font-size-large: 1.15rem;
+    --font-size-larger: 1.3rem;
+
+    /* Font Weights */
+    --font-weight: 450;
+    --font-weight-light: 350;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Text Alignment */
+    --text-align: justify;
+    --text-align-last: left;
+    --text-align-header: center;
+    --text-align-button: center;
+    --text-align-table: left;
+    --text-align-figcaption: left;
+
+    /* Line Heights */
+    --line-height: 1.75;
+    --line-height-small: 1.5;
+    --line-height-smaller: 1.2;
+
+    /* Widths: px: 10px; element: 10em; root-element: 10rem; parent-rel-width: 10%; page-rel-width: 10vw; - ALSO: length: 0cm; 0mm; 0in; points: 0pt; page-rel -height, -max, -min: 0vh, 0vmax, 0vmin; */
+    --container-max-width: 1200px;
+   
+    --figure-width: 95%;
+    --figure-width-wide: 100%;
+    --figure-width-narrow: 80%;
+    --figure-max-width: 1080px;
+    --figure-min-width: 420px;
+
+    /* Theme Toggle */
+    --theme-toggle-width: 20vw; 
+    --theme-toggle-min-width: 80px; 
+    --theme-toggle-max-width: 200px; 
+
+    /* Spacing (Margins, Padding) */
+    --margin: 1em;
+    --margin-small: 0.5em;
+    --margin-large: 1.5em;
+    --margin-larger: 2em;
+    --margin-none: 0;
+   
+    --padding: 1em;
+    --padding-small: 0.75em;
+    --padding-smaller: 0.5em;
+    --padding-large: 1.5em;
+    --padding-larger: 2.5em;
+    --padding-none: 0;
+
+    /* Borders */
+    --border: 1px;
+    --border-top: 1px;
+    --border-right: none;
+    --border-bottom: 1px;
+    --border-left: 2px;
+    --border-none: 0; 
+    --border-radius: 5px;
+    --border-radius-small: 4px;
+   
+    --border-accent: 4px;
+    --border-top-accent: 2px;
+    --border-right-accent: 1px;
+    --border-bottom-accent: 2px;
+    --border-left-accent: 4px;
+}
+
+/* ============================================================
+   3. LIGHT THEME COLORS and TYPOGRAPHY TOKENS */
+
+/* LIGHT THEME - Bauhaus, Modern & Clean --------------------*/
+.light-theme {
+
+    /* Colors */
+    /* Backgrounds: Use a very light, almost white, base with subtle, slightly darker tones for hierarchy. */
+    --color-background-light: #F8F8F8;   /* Very light grey, almost white - primary background */
+    --color-background-medium: #EDEDED;  /* Slightly darker for cards, sections */
+    --color-background-dark: #DCDCDC;   /* Even darker for subtle separation, borders */
+    /* Text: Strong contrast against light backgrounds. */
+    --color-text-primary: #212121;       /* Dark charcoal for main text - excellent contrast */
+    --color-text-secondary: #5C5C5C;    /* Medium grey for secondary info, less emphasis */
+    --color-text-muted: #8E8E8E;        /* Lighter grey for subtle hints, disabled states */
+    /* Links: Clear, distinctive, and Bauhaus-esque primary color. */
+    --color-link-primary: #007bff;      /* A classic, clean blue for links */
+    --color-link-hover: #0056b3;       /* Darker shade of blue for hover state */
+    /* Borders: Define structure without being intrusive. */
+    --color-border-primary: #C5C5C5;     /* A slightly darker grey for borders */
+}
+
+/* ============================================================
+   4. PAGE TYPOGRAPHY */
+
+body {
+    background-color: var(--color-background);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    color: var(--color-text);
+    margin: var(--margin);
+    border-color: var(--color-border);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    line-height: var(--line-height);
+    text-align: var(--text-align);
+    text-align-last: var(--text-align-last);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text);
+    margin: var(--margin);
+    padding: var(--padding-none);
+    line-height: var(--line-height-smaller);
+    font-weight: var(--font-weight-semibold);
+    text-align: var(--text-align-header);
+    text-align-last: var(--text-align-header);
+}
+
+h1 { font-size: 2.5rem; font-weight: var(--font-weight-bold); margin: var(--margin-small); }
+h2 { font-size: 2.0em; font-weight: var(--font-weight-bold); margin-bottom: var(--margin-small); }
+h3 { font-size: 1.5em; font-weight: var(--font-weight-semibold); margin-bottom: var(--margin-small); }
+h4 { font-size: 1.4em; font-weight: var(--font-weight-semibold); margin: var(--margin-small); }
+h5 { font-size: 1.4em; font-weight: var(--font-weight-bold); margin: var(--margin-small); }
+h6 { font-size: 1.25em; font-weight: var(--font-weight-semibold); margin: var(--margin-small); }
+
+/* Paragraphs and Lists */
+p, ul, ol, li, table, dl { 
+    text-align: var(--text-align);
+    text-align-last: var(--text-align-last);
+}
+
+p { margin-bottom: var(--margin); }
+
+ul, ol {
+   padding: var(--padding);  
+   padding-left: var(--padding-smaller);  
+   margin: var(--margin) var(--margin-large);  
+}
+
+ul li, ol li { margin: var(--margin-small); } */
+
+/* Links */
+a {
+    color: var(--color-link);
+    text-decoration: none;
+    font-weight: var(--font-weight);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--color-link-hover);
+}
+
+/* ============================================================
+   4. PAGE TYPOGRAPHY (Continued) */
+
+/* Text Styles */
+.left { text-align: left; text-align-last: left; }
+.right { text-align: right; text-align-last: right; }
+.center { text-align: center; text-align-last: center; }
+.justify { text-align: justify; text-align-last: justify; }
+
+.bold { font-weight: var(--font-weight-bold); }
+.semibold { font-weight: var(--font-weight-semibold); }
+.light { font-weight: var(--font-weight-light); }
+
+.bright { color: var(--color-text-bright); }
+.muted { color: var(--color-text-muted); }
+.accent { color: var(--color-text-accent); }
+
+/* --- Lists - ordered, numbered, bulleted, etc.. --- */
+
+/* Tables */
+table {
+    background-color: var(--color-background);
+    width: 100%;
+    margin: var(--margin-large) auto;
+    border: var(--border) solid var(--color-border);
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+}
+
+table th, table td {
+    background: var(--color-background);
+    border: 1px solid var(--color-border);
+    padding: var(--padding-small);
+    text-align: var(--text-align-table);
+    text-align-last: var(--text-align-table);
+}
+
+/* Code Blocks and Preformatted Text */
+pre {
+    display: block;
+    overflow-x: auto;
+    background: var(--color-background-dark);
+    margin: var(--margin);
+    margin-bottom: var(--margin-small);
+    margin-left: var(--margin-large);
+    border: var(--border) solid var(--color-border);
+    border-left: var(--border-left) solid var(--color-border-lighter);
+    border-radius: var(--border-radius-small);
+    padding: var(--padding);
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-large);
+    color: var(--color-text-bright);
+}
+
+pre code {
+    display: block;
+    background: var(--color-background-dark);
+    margin: var(--margin-none);
+    padding: var(--padding-none);
+    font-family: var(--font-family-mono);
+    color: inherit;
+}
+
+.code {   /* for inline sections */
+    background: var(--color-background-dark);
+    font-family: var(--font-family-mono);
+    color: var(--color-text-bright);
+}
+
+/* Images */
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    margin: var(--margin);
+    padding: var(--padding);
+}
+
+img.accent {
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
+    margin: var(--margin-large);
+    padding: var(--padding);
+}
+
+.image-inline {
+    display: inline-block; /* width and height, respects margins */
+    max-width: 100%;
+    height: auto;
+    margin: none var(--margin-small);
+    border: 1px solid var(--color-border-light);
+    padding: var(--padding-smaller);
+    max-width: 500px;
+    height: auto;
+    overflow: hidden;
+}
+
+/* Float Location */
+.image-inline.left {
+    width: 35%; 
+    float: left;
+    margin-right: var(--margin); 
+    margin-left: var(--margin-none);
+}
+
+.image-inline.right {
+    width: 35%; 
+    float: right;
+    margin-left: var(--margin); 
+    margin-right: var(--margin-none); 
+}
+
+.image-inline.center {
+    display: block;
+    width: 30%; 
+    float: none;
+    margin: var(--margin-none) auto;
+}
+
+/* Theme-Toggles */
+.theme-toggle-img, .theme-toggle img { /* img.theme-toggle, */
+    display: block;
+    width: var(--theme-toggle-width);
+    min-width: var(--theme-toggle-min-width);
+    max-width: var(--theme-toggle-max-width);
+    height: auto;
+    margin: var(--margin-none); 
+    border: var(--border-none);
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer;
+}
+
+/* Figures and Figcaptions */
+figure, .figure, figure.img, img.figure {
+    margin: var(--margin);
+    margin-bottom: var(--margin-none); 
+    margin-left: var(--margin); 
+    width: var(--figure-width-wide);
+    max-width: var(--figure-max-width); 
+    min-width: var(--figure-min-width); 
+    height: auto;
+}
+
+figcaption, .figcaption {
+    margin: var(--margin);
+    margin-top: var(--margin-none); 
+    margin-left: var(--margin); 
+    padding: var(--padding);
+    text-align: var(--text-align-figcaption);
+    text-align-last: var(--text-align-figcaption);
+/*    font-style: oblique; */
+}
+
+/* ========================================================= 
+   5. SECTIONS, LAYOUT & CONTAINERS */
+
+section {
+    margin-bottom: 1em;
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin: var(--margin-none) auto;
+    padding: var(--padding-smaller);
+}
+
+.center-content {
+    text-align: center;
+    margin-top: var(--margin);
+}
+
+.content-section {
+    margin-bottom: var(--margin);
+}
+
+.content-section ul, .content-section ol {
+    display: block;
+    flex-direction: initial;
+    align-items: initial;
+    justify-content: initial;
+}
+
+/* Dividers */
+hr {
+    width: 100%;
+    border-top: none;
+    border-right: var(--border);
+    border-bottom: var(--border) solid var(--color-border-light);
+    border-left: var(--border) solid var(--color-border);
+    border-radius: var(--border-radius);
+}
+
+hr.divider, .divider, .section-divider {
+    width: 100%;
+    border-top: var(--border-none);
+    border-right: var(--border-none);
+    border-bottom: var(--border-bottom-accent) solid var(--accent-color);
+    border-left: var(--border-left-accent) solid var(--accent-color);
+    border-radius: var(--border-radius);
+}
+
+.section-divider {
+    border-left: var(--border-left-accent) solid var(--accent-color);
+    border-bottom: var(--border-bottom-accent) solid var(--accent-color);
+    padding: var(--padding);
+}
+
+/* Center these specific sections */
+#toc, #overview, #conclusion {
+    text-align: center;
+    text-align-last: center;
+}
+
+/* ========================================================= 
+   6. accent SECTION */
+
+.accent-section {
+    background-color: var(--color-background-medium);
+    color: var(--color-text-secondary);
+    margin: 1em 0 0.5em;
+    padding: 1em;
+    border: 2px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
+
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
+    font-size: 1em;
+    text-align: justify;
+    text-align-last: left;
+}
+
+.accent-section h3 {
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+}
+
+.accent-section a {
+    background-color: var(--color-background-dark);
+    color: var(--color-text);
+    display: block;
+    margin: 0.5em 1em;
+    border: 2px solid var(--color-border);
+
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
+    border-radius: 5px;
+    padding: 0.8em 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.accent-section a:hover {
+    background-color: var(--color-background-darker);
+}
+
+.accent-section.return-link a:hover {
+    color: var(--color-text);
+}
+
+/* ============================================================
+   7. BUTTON LINKS */
+
+/* General Button Deffinitions */
+.btn, .nav-btn, 
+.large-btn, .box-btn {
+    display: block;
+    outline: none;
+    background-color: var(--color-background-dark); 
+    margin: var(--margin-small) auto; 
+    border: var(--border) solid var(--color-border);
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
+    border-radius: var(--border-radius);
+    padding: var(--padding-large);
+    color: var(--color-btn-text);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight);
+    text-align: var(--text-align-button);
+    text-align-last: var(--text-align-button);
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover, 
+.large-btn:hover, .box-btn:hover  {
+    background: var(--color-background-darker); 
+}
+
+.btn:hover, .btn a:hover, 
+.large-btn:hover, .large-btn a:hover  {
+    color: var(--color-btn-hover);
+}
+
+.btn h3, 
+.large-btn h3, .box-btn h3 {
+    line-height: var(--line-height-smaller);
+    font-weight: var(--font-weight-semibold);
+    margin: var(--margin-none);
+    padding: var(--padding-none);
+}
+
+/* Box Buttons */
+.box-btn, .box-btn:hover, 
+.box-btn a, .box-btn a:hover {
+    color: var(--color-text);
+}
+
+.box-btn h3 { color: var(--color-btn-text); }
+.box-btn h3:hover { color: var(--color-btn--hover); }
+
+/* Header and Footer Buttons */
+.header-btn, .footer-btn {
+    display: inline-block;
+    margin: var(--margin-smaller) auto; 
+    border-radius: var(--border-radius-small);
+    padding: var(--padding-smaller);
+    font-size: var(--font-size-small);   
+}
+
+/* Tanle of Contents Buttons */
+.toc-btn { 
+    margin: var(--margin) auto; 
+    padding: var(--padding-larger);
+    font-size: var(--font-size);
+}
+
+/* Button Text Alignment */
+.btn-large.justify, .btn-box.justify {
+    text-align: justify;
+    text-align-last: center;
+}
+
+/* ========================================================= 
+   8. HEADERS, NAVIGATION & FOOTERS */
+
+header, nav, footer, .site-header {
+    background-color: var(--color-background-medium);
+    color: var(--color-text-secondary);
+    padding: var(--padding-smaller) var(--padding) var(--padding); 
+    margin: var(--margin) auto;
+    margin-bottom: var(--margin);
+    text-align: center;
+    text-align-last: center;
+}
+
+header, .site-header {
+    font-size: 1.6em;
+    border: 1px solid var(--color-border);
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
+    border-top: var(--border-top-accent) solid var(--color-border-accent);
+}
+
+header #header, .site-header, .header-content,
+.header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav {
+    font-size: 0.7em;
+    color: var(--color-text);
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+footer {
+    margin-top: 2em;
+    border: 1px solid var(--color-border);
+    
+    border-left: var(--border-left-accent) solid var(--color-border-accent);
+    border-bottom: var(--border-bottom-accent) solid var(--color-border-accent);
+/*    padding: 1em; */
+}
+
+footer nav {
+    outline: none;
+    font-size: 0.7em;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+footer img {
+    margin: 0.5em;
+}
+
+/* Footer Text Alignment */
+footer, footer nav, .footer-content, .footer-content ul, .footer-content li, footer .btn {
+    text-align: center;
+    text-align-last: center;
+}
+
+footer #footer, .footer-content, footer p.footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Ensure any buttons inside footer nav are also centered */
+footer .site-nav li a {
+    text-align: center;
+    text-align-last: center;
+    display: inline-block;
+}
+
+/* Center list items and buttons inside nav and footer */
+.site-nav ul, .site-nav li, .footer-content ul, .footer-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-nav li a, .footer-content li a {
+    color: var(--color-text);
+    display: flex; /* inline-block; */
+    text-align: center;
+    text-align-last: center;
+}
+
+.site-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Center entire header and footer contents */
+.site-header, footer, .footer-content, footer nav, .site-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-align-last: center;
+}
+
+/* ============================================================
+   9. RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+/*    .index-page .index-list li {
+        padding: 0.8em;
+    }
+
+    .index-title {
+        font-size: 2.2em;
+    }
+
+    .index-subtitle {
+        font-size: 1.4em;
+    }
+*/
+   
+    footer {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+/*    .index-list li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .index-title {
+        font-size: 1.9em;
+    }
+ */
+   
+    .inline-img-left,
+    .inline-img-right,
+    .inline-img-center {
+        float: none !important; /* Remove float to make it full width */
+        display: block; /* Ensure it takes full width */ 
+        margin: 1em auto; /* Center the image with top/bottom margin */
+        width: 100% !important; /* Occupy full width on small screens */ 
+        max-width: 100% !important; /* Occupy full width on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+/*    .index-title {
+        font-size: 1.7em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+*/
+   
+    .image-left-inline,
+    .image-right-inline, 
+    .image-center-inline {
+         float: none; /* Don't float on smaller screens */
+         display: block; /* Make it take up a full line */
+         margin: 1rem auto; /* Center the image with some top/bottom margin */
+         width: 100%; /* Make it responsive within its container */
+         max-width: 100%; /* Make it responsive within its container */
+    }
+}
+
+/* ---------------------------- // ---------------------------- */
+/* 10. END OF STYLESHEET ------ // -----------------------------*/
