@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Text Pad</title>
+    <!-- Use Tailwind CSS for a simple, utility-first approach -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap');
+        
+        body {
+            /* Deep, dark background for a gothic feel */
+            background-color: #0d0d0d;
+            font-family: 'Cormorant Garamond', serif;
+            color: #d1d5db; /* Light gray text for contrast */
+            /* Ensure the body takes up the full viewport */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        /* Basic styling for the text area to fit the full page with padding */
+        .text-input-area {
+            background-color: #111;
+            border: 1px solid #333;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        /* Customize scrollbar to match the dark theme */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #4a4a4a;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <!-- The text area is the main 'panel' of the page, taking up the full viewport -->
+    <textarea 
+        class="text-input-area w-full h-[90vh] rounded-xl p-6 text-gray-200 resize-none outline-none transition-shadow duration-300 focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50"
+        placeholder="Start typing here..."
+    ></textarea>
+
+</body>
+</html>
