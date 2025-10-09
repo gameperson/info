@@ -46,7 +46,7 @@ We welcome all contributions. Anyone passionate about intellectual exploration a
 ## 👥 Join the Community
 Stay connected and contribute to our collective understanding:
 - **Discussions**: [Join open conversations about content and ideas](https://github.com/gameperson/info/discussions).
-- **Contact Us**: *[Reach out via email](mailto:gamesomeotherday@gmail.com)* for inquiries about commissions, collaborations or anything else.
+- **Contact Us**: *[Reach out via email](mailto:&#103;&#97;&#109;&#101;&#115;&#111;&#109;&#101;&#111;&#116;&#104;&#101;&#114;&#100;&#97;&#121;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;)* for inquiries about commissions, collaborations or anything else.    
 
 ## 📜 License
 
@@ -54,7 +54,7 @@ This project is licensed under the following terms and conditions:
 
 **&copy; Copyright**: The content of this site and repository is shared under copyright (c) and [restrictions apply](./docs/LICENSE.md). 
 
-Permission is granted, free of charge, to use, copy, modify, merge, publish, and distribute the Software and *select portions of content* as long as properly attributed and not used for commercial activities without prior written consent. Reproductions or modifications for commercial purposes are strictly prohibited unless explicit consent is provided and copied in full. Any questions are directed to *[gameperson@github](mailto:gamesomeotherday@gmail.com)*.
+Permission is granted, free of charge, to use, copy, modify, merge, publish, and distribute the Software and *select portions of content* as long as properly attributed and not used for commercial activities without prior written consent. Reproductions or modifications for commercial purposes are strictly prohibited unless explicit consent is provided and copied in full. Any questions are directed to *[gameperson@github](mailto:&#103;&#97;&#109;&#101;&#115;&#111;&#109;&#101;&#111;&#116;&#104;&#101;&#114;&#100;&#97;&#121;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;)*.
 
 The Software is provided *"as is,"* without warranty of any kind. 
 
