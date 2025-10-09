@@ -14,7 +14,7 @@ As the repository owner, gameperson acknowledges still being a learniner of GitH
 - Encourage unique expresion and points or view.
 
 ## Reporting
-If you experience or observe any behavior that violates these guidelines, please reach out to us at [gamesomeotherday@gmail.com](mailto:gamesomeotherday@gmail.com).
+If you experience or observe any behavior that violates these guidelines, please reach out to us at [gamesomeotherday@gmail.com](mailto:&#103;&#97;&#109;&#101;&#115;&#111;&#109;&#101;&#111;&#116;&#104;&#101;&#114;&#100;&#97;&#121;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;).
 
 ## Contibutions
 If you have suggestions for improving this repository, its processes, or its subject matter please feel free to share them. [Your support of the project is appreciated.](./CONTRIBUTE.md)
